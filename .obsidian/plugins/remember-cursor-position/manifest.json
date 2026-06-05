@@ -1,0 +1,10 @@
+{
+    "id": "remember-cursor-position",
+    "name": "Remember cursor position",
+    "version": "1.0.9",
+    "minAppVersion": "0.9.12",
+    "description": "记住每个笔记的光标和滚动位置",
+    "author": "Dmitry Savosh",
+    "authorUrl": "https://github.com/dy-sh/",
+    "isDesktopOnly": false
+}

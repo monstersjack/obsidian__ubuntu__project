@@ -1,0 +1,10 @@
+{
+    "id": "obsidian-file-cleaner",
+    "name": "File Cleaner",
+    "version": "0.1.5",
+    "minAppVersion": "0.12.0",
+    "description": "帮助清理仓库中的空文件与未使用附件",
+    "author": "Johnson0907",
+    "authorUrl": "https://github.com/Johnson0907",
+    "isDesktopOnly": false
+}

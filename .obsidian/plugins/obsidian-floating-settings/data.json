@@ -1,0 +1,11 @@
+{
+  "isReplaceDefaultSettings": true,
+  "width": 900,
+  "height": 600,
+  "maxWaitTime": 10,
+  "isHoverEditorNotice": true,
+  "isFloatMarket": true,
+  "isMarketMultiIns": true,
+  "isAutoScroll": true,
+  "isAllowShowHide": true
+}

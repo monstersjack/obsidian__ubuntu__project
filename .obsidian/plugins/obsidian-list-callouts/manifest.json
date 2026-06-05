@@ -1,0 +1,10 @@
+{
+    "id": "obsidian-list-callouts",
+    "name": "List Callouts",
+    "version": "1.2.8",
+    "minAppVersion": "1.1.1",
+    "description": "在列表中创建简单标注。",
+    "author": "mgmeyers",
+    "authorUrl": "https://github.com/mgmeyers/obsidian-list-callouts",
+    "isDesktopOnly": false
+}

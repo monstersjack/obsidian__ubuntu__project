@@ -1,0 +1,10 @@
+{
+    "id": "better-fn",
+    "name": "Better footnote",
+    "version": "1.0.1",
+    "minAppVersion": "0.12.4",
+    "description": "Obsidian 弹出脚注",
+    "author": "aidenlx",
+    "authorUrl": "",
+    "isDesktopOnly": true
+}

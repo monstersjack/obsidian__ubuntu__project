@@ -1,0 +1,168 @@
+.default-theme {
+    /* Variables */
+    --border-color: #80808073;
+    --default-border: solid 1px var(--border-color);
+    --link-color: rgb(45, 122, 174);
+    --font-family-headers: Arial, Helvetica, sans-serif;
+
+    /* Dataview Table */
+    .table-view-table {
+        & > tbody > tr > td,
+        & > thead > tr > th {
+            font-size: 16px;
+            border-bottom: var(--default-border);
+            font-size: calc(var(--font-text-size) * 0.8);
+        }
+    }
+
+    .block-language-dataview {
+        font-size: 17px;
+    }
+
+    /* Callouts */
+    .markdown-source-view.mod-cm6 .callout {
+        border: var(--default-border);
+        margin: 10px;
+        background-color: transparent;
+    }
+
+    .callout:not(.admonition).drop-shadow {
+        border: solid 0.01px;
+    }
+
+    /* Links and Code */
+    .markdown-source-view.mod-cm6 {
+        .cm-link .cm-underline,
+        .cm-url .cm-underline {
+            color: var(--link-color) !important;
+            text-decoration-line: none;
+        }
+        
+        .cm-underline {
+            color: rgb(45, 129, 174) !important;
+            text-decoration-line: none;
+        }
+    }
+
+    .cm-s-obsidian {
+        span.cm-link { color: var(--text-normal); }
+        
+        .cm-inline-code:not(.cm-formatting) {
+            background: rgba(96, 98, 96, 0.2);
+        }
+        
+        span.cm-hmd-internal-link {
+            color: rgb(148, 146, 78);
+        }
+        
+        span.cm-formatting-highlight,
+        span.cm-highlight {
+            border-radius: var(--code-radius);
+        }
+    }
+
+    /* Headers */
+    h1,
+    .markdown-rendered h1,
+    .HyperMD-header {
+        .cm-header-1, .cm-header-2, .cm-header-3,
+        .cm-header-4, .cm-header-5, .cm-header-6 {
+            font-family: var(--font-family-headers);
+        }
+    }
+
+    /* Layout Elements */
+    body { --img-border-radius: 0px; }
+
+    .status-bar {
+        padding: 0;
+        margin: 0;
+        &-item { line-height: 0.5; }
+    }
+
+    /* Images */
+    .markdown-preview-view img:not([width]),
+    .markdown-rendered img:not([width]) {
+        border-radius: 5px;
+    }
+
+    /* Column Layout */
+    .columnParent,
+    div[data-callout="col"].callout > div.callout-content {
+        border-top: none;
+        padding: 0;
+    }
+
+    .columnChild,
+    div[data-callout="col"].callout > div.callout-content > * {
+        margin-top: 0;
+    }
+
+    /* Lists */
+    .table-view-table {
+        ul, ol { text-align: left; }
+    }
+
+    /* Margins */
+    .markdown-rendered p { margin: 1px; }
+
+    .is-live-preview .admonition-content>*:last-child {
+        margin: 1px 0;
+    }
+
+    /* Hide Status Bar Items */
+    div.status-bar-item {
+        &.plugin-obsidian-spaced-repetition.mod-clickable,
+        &.plugin-js-engine.mod-clickable,
+        &.plugin-editing-toolbar.cMenuToolbar-statusbar-button,
+        &.plugin-dinox-sync {
+            display: none;
+        }
+    }
+
+    /* Links */
+    .metadata-container .internal-link,
+    .markdown-rendered .internal-link {
+        text-decoration-line: none;
+    }
+
+    .external-link,
+    .external-link:hover {
+        color: rgb(var(--ctp-sky));
+    }
+}
+
+/* Anupuccin Theme Overrides */
+.default-theme {
+    .anp-colorful-frame.anuppuccin-accent-toggle .sidebar-toggle-button,
+    .anp-colorful-frame.anp-colorful-frame.anp-colorful-frame .sidebar-toggle-button {
+        background: rgba(var(--ctp-crust), 0.3) !important;
+    }
+
+    .style-settings-heading:is([data-id=anuppuccin-theme-settings], 
+    [data-id=anuppuccin-theme-settings-extended]) .setting-item-name {
+        color: var(--text-normal);
+    }
+
+    .is-focused:not(.anp-mini-tab-toggle.anp-colorful-frame) .mod-active 
+    .workspace-tab-header.is-active {
+        .workspace-tab-header-inner-icon,
+        .workspace-tab-header-inner-title {
+            color: rgb(var(--ctp-sky));
+        }
+    }
+
+    .anp-alternate-tab-toggle .mod-root .workspace-tabs:not(.mod-stacked)
+    .mod-active .workspace-tab-header.is-active {
+        .workspace-tab-header-inner,
+        .workspace-tab-header-inner-title,
+        .workspace-tab-header-inner-close-button,
+        .workspace-tab-header-inner-icon {
+            background: var(--background-primary);
+        }
+    }
+}
+
+.shib-callout-toggle.shib-callout-style-2 .callout:not(.is-collapsible), .shib-callout-toggle.shib-callout-style-3 .callout:not(.is-collapsible), body:not(.shib-callout-toggle) .callout:not(.is-collapsible){
+    border: 0.2px, solid, #80808087;
+}

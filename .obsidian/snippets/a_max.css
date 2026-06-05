@@ -1,0 +1,135 @@
+:root,
+.theme-dark {
+	--accent-0-rgb: 162, 162, 162; /*var(--main-text);*/
+	--accent-1-rgb: 245, 112, 76;
+	--accent-2-rgb: 245, 161, 76;
+	--accent-3-rgb: 237, 228, 130;
+	--accent-4-rgb: 170, 222, 98;
+	--accent-5-rgb: 98, 222, 172;
+	--accent-6-rgb: 98, 183, 222;
+	--accent-7-rgb: 208, 123, 244;
+	/*--accent-0-rgb: 162, 162, 162;
+	--accent-1-rgb: var(--color-red-rgb);
+	--accent-2-rgb: var(--color-orange-rgb);
+	--accent-3-rgb: var(--color-yellow-rgb);
+	--accent-4-rgb: var(--color-green-rgb);
+	--accent-5-rgb: var(--color-cyan-rgb);
+	--accent-6-rgb: var(--color-blue-rgb);
+	--accent-7-rgb: var(--color-purple-rgb);
+	--accent-8-rgb: var(--color-pink-rgb);*/
+	--accent-0: rgb(var(--accent-0-rgb));
+	--accent-1: rgb(var(--accent-1-rgb));
+	--accent-2: rgb(var(--accent-2-rgb));
+	--accent-3: rgb(var(--accent-3-rgb));
+	--accent-4: rgb(var(--accent-4-rgb));
+	--accent-5: rgb(var(--accent-5-rgb));
+	--accent-6: rgb(var(--accent-6-rgb));
+	--accent-7: rgb(var(--accent-7-rgb));
+	--main-background-rgb: 36, 36, 36;
+	--secondary-background-rgb: 27, 27, 27;
+	--main-background: rgb(var(--main-background-rgb));
+	--secondary-background: rgb(var(--secondary-background-rgb));
+
+	--ab-bright-color: #ffbe00;
+}
+
+:root,
+.theme-light {
+	--accent-0-rgb: 38, 38, 38; /*var(--main-text);*/
+	--accent-1-rgb: 245, 112, 76;
+	--accent-2-rgb: 245, 161, 76;
+	--accent-3-rgb: 183, 173, 58;
+	--accent-4-rgb: 138, 197, 54;
+	--accent-5-rgb: 60, 173, 127;
+	--accent-6-rgb: 98, 183, 222;
+	--accent-7-rgb: 208, 123, 244;
+	--accent-0: rgb(var(--accent-0-rgb));
+	--accent-1: rgb(var(--accent-1-rgb));
+	--accent-2: rgb(var(--accent-2-rgb));
+	--accent-3: rgb(var(--accent-3-rgb));
+	--accent-4: rgb(var(--accent-4-rgb));
+	--accent-5: rgb(var(--accent-5-rgb));
+	--accent-6: rgb(var(--accent-6-rgb));
+	--accent-7: rgb(var(--accent-7-rgb));
+	/* --main-background-rgb: 36, 36, 36; */
+	/* --secondary-background-rgb: 27, 27, 27; */
+	/* --main-background: rgb(var(--main-background-rgb)); */
+	/* --secondary-background: rgb(var(--secondary-background-rgb)); */
+
+	 --ab-bright-color: #0b0601; /*设置--ab-bright-color是黑色 */
+}
+
+/* 大纲着色 */
+body .workspace-tab-container
+.tree-item-self {
+	color: #0a0a0a;
+}
+body .workspace-tab-container
+.tree-item-children .tree-item-self {
+	color: #c40707;
+}
+body .workspace-tab-container
+.tree-item-children .tree-item-children .tree-item-self {
+	color: #04642c;
+}
+body .workspace-tab-container
+.tree-item-children .tree-item-children .tree-item-children .tree-item-self {
+	color: #e05cdd;
+}
+body .workspace-tab-container
+.tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-self {
+	color: #828d08;
+}
+body .workspace-tab-container
+.tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-children .tree-item-self {
+	color: #3608ed;
+}
+/* Obsidian 1.3.3 更新后存在bug */
+/* body .workspace-tab-container 
+.tree-item-self {
+	padding-bottom: 1;
+	padding-top: 1;
+	padding: 1px !important;
+} */
+
+/* 文件目录着色 */
+body .nav-files-container.node-insert-event 
+.nav-folder-children .nav-folder-title{
+	color: rgb(var(--accent-1-rgb));
+}
+body .nav-files-container.node-insert-event 
+.nav-folder-children .nav-folder-children .nav-folder-title{
+	color: rgb(var(--accent-2-rgb));
+}
+body .nav-files-container.node-insert-event 
+.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title{
+	color: rgb(var(--accent-3-rgb));
+}
+body .nav-files-container.node-insert-event 
+.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title{
+	color: rgb(var(--accent-4-rgb));
+}
+body .nav-files-container.node-insert-event 
+.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title{
+	color: rgb(var(--accent-5-rgb));
+}
+body .nav-files-container.node-insert-event 
+.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title{
+	color: rgb(var(--accent-6-rgb));
+}
+body .nav-files-container.node-insert-event 
+.nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-children .nav-folder-title{
+	color: rgb(var(--accent-7-rgb));
+}
+body .nav-files-container.node-insert-event 
+.nav-file-title{
+	color: rgb(var(--accent-0-rgb)) !important;
+}
+.nav-folder-title-content::before{
+	content: none !important;
+}
+
+/* 让标题的#号不跳转出来 */
+.cm-formatting.cm-header {position: absolute; transform: translateX(-100%);} /*#号*/ 
+.cm-formatting.cm-header-2 {left: 1px;}
+

@@ -1,0 +1,10 @@
+{
+    "id": "obsidian-outliner",
+    "name": "Outliner",
+    "version": "4.8.2",
+    "minAppVersion": "1.8.7",
+    "description": "像在 Workflowy 或 RoamResearch 中一样使用你的列表。",
+    "author": "Viacheslav Slinko",
+    "authorUrl": "https://github.com/vslinko",
+    "isDesktopOnly": false
+}

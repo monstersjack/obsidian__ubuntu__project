@@ -1,0 +1,384 @@
+{
+  "workspaces": {
+    "ros2": {
+      "main": {
+        "id": "01d0788c7747c61a",
+        "type": "split",
+        "children": [
+          {
+            "id": "54caab3eb56f748a",
+            "type": "tabs",
+            "dimension": 73.63989637305698,
+            "children": [
+              {
+                "id": "dd887f515f413ee7",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "我的ubuntu设置/快捷键，主要问题.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "快捷键，主要问题"
+                }
+              },
+              {
+                "id": "9c486055dc13d72b",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ros笔记/计算机知识补充.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "计算机知识补充"
+                }
+              },
+              {
+                "id": "b8bc4c3b3198aa7d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ros笔记/linux命令.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "linux命令"
+                }
+              },
+              {
+                "id": "8e0408d4a36b78b3",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ros笔记/ROS视频笔记/第六章---6.4.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "第六章---6.4"
+                }
+              },
+              {
+                "id": "06514d7ebfc4ba56",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ros笔记/ros指令，.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "ros指令，"
+                }
+              }
+            ],
+            "currentTab": 3
+          },
+          {
+            "id": "90a1aec5804fbc12",
+            "type": "tabs",
+            "dimension": 26.36010362694301,
+            "children": [
+              {
+                "id": "890f908473554158",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "未命名 1.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "未命名 1"
+                }
+              },
+              {
+                "id": "bc78c5fab49d91f6",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "未命名.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "未命名"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "d100921e0bc0b34a",
+        "type": "split",
+        "children": [
+          {
+            "id": "cef8274092267bd7",
+            "type": "tabs",
+            "dimension": 29.282700421940927,
+            "children": [
+              {
+                "id": "fb4a75ea00267528",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical",
+                    "autoReveal": false
+                  },
+                  "icon": "lucide-folder-closed",
+                  "title": "文件列表"
+                }
+              },
+              {
+                "id": "73563c03a9265849",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "启动",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  },
+                  "icon": "lucide-search",
+                  "title": "搜索"
+                }
+              },
+              {
+                "id": "ae383ed341f649b9",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {},
+                  "icon": "lucide-bookmark",
+                  "title": "书签"
+                }
+              }
+            ]
+          },
+          {
+            "id": "55ac83130a80e553",
+            "type": "tabs",
+            "dimension": 70.71729957805907,
+            "children": [
+              {
+                "id": "9a2463929679c332",
+                "type": "leaf",
+                "state": {
+                  "type": "quiet-outline",
+                  "state": {},
+                  "icon": "lines-of-text",
+                  "title": "Quiet Outline"
+                }
+              },
+              {
+                "id": "e9396647e42405ad",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "重要文件/obsidian使用技巧.md",
+                    "followCursor": false,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-list",
+                  "title": "obsidian使用技巧 的大纲"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 200
+      },
+      "right": {
+        "id": "1d28683343e4e058",
+        "type": "split",
+        "children": [
+          {
+            "id": "5e9c4dcb27a9f495",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "e945cd831f5a6652",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {},
+                  "icon": "calendar-with-checkmark",
+                  "title": "Calendar"
+                }
+              },
+              {
+                "id": "99b8d5d8587c350b",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "重要文件/obsidian使用技巧.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "obsidian使用技巧 的反向链接列表"
+                }
+              },
+              {
+                "id": "76cce13632587ac7",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "重要文件/obsidian使用技巧.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-going-out",
+                  "title": "obsidian使用技巧 的出链列表"
+                }
+              },
+              {
+                "id": "c49d04d050aa9511",
+                "type": "leaf",
+                "state": {
+                  "type": "mxmind-view",
+                  "state": {},
+                  "icon": "lucide-ghost",
+                  "title": "mxmind-view"
+                }
+              },
+              {
+                "id": "ab8fcee8fda53bed",
+                "type": "leaf",
+                "state": {
+                  "type": "footnotes",
+                  "state": {
+                    "file": "计算机视觉/yolov5 原理.md"
+                  },
+                  "icon": "lucide-file-signature",
+                  "title": "脚注"
+                }
+              },
+              {
+                "id": "e0c0a2d25035698f",
+                "type": "leaf",
+                "state": {
+                  "type": "all-properties",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-archive",
+                  "title": "添加笔记属性"
+                }
+              },
+              {
+                "id": "dd8e9abbb8a44964",
+                "type": "leaf",
+                "state": {
+                  "type": "file-properties",
+                  "state": {
+                    "file": "重要文件/obsidian使用技巧.md"
+                  },
+                  "icon": "lucide-info",
+                  "title": "obsidian使用技巧的笔记属性"
+                }
+              },
+              {
+                "id": "ee8325fa03edab1d",
+                "type": "leaf",
+                "state": {
+                  "type": "floating-settings",
+                  "state": {},
+                  "icon": "settings",
+                  "title": "设置"
+                }
+              }
+            ],
+            "currentTab": 6
+          },
+          {
+            "id": "2707ac3f4df6bc32",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5965d1bde841cd63",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true,
+                    "showSearch": false,
+                    "searchQuery": ""
+                  },
+                  "icon": "lucide-tags",
+                  "title": "标签"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 475.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "bases:新建数据库": false,
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "markdown-importer:打开 Markdown 格式转换器": false,
+          "pkmer:Open Pkmer Market": false,
+          "obsidian-excalidraw-plugin:新建绘图文件": false,
+          "media-extended:打开媒体": false,
+          "omnisearch:Omnisearch": false,
+          "obsidian-memos:Thino": false,
+          "obsidian-file-cleaner:清理文件": false,
+          "cloze:显/隐所有填空": false,
+          "mxmind:Mxmind": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "templater-obsidian:Templater": false,
+          "math-indicator-changer:Change math indicator": false,
+          "i18n:I18N": false,
+          "header-adjuster:Adjust headers": false,
+          "workspaces:管理工作区布局": false,
+          "obsidian42-brat:BRAT": false,
+          "pdf-plus:PDF++: Toggle auto-copy": false,
+          "pdf-plus:PDF++: Toggle auto-focus": false,
+          "pdf-plus:PDF++: Toggle auto-paste": false
+        }
+      },
+      "active": "8e0408d4a36b78b3",
+      "mtime": "2026-05-04T23:45:19+08:00"
+    }
+  },
+  "active": "ros2"
+}

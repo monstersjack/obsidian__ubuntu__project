@@ -1,0 +1,154 @@
+/* @settings
+name: Sidenotes Print Style
+id: sidenotes-print
+settings:
+    - 
+        id: print-layout
+        title: Print Layout Style
+        type: class-select
+        allowEmpty: false
+        default: print-align-sides
+        options:
+            - 
+                label: Align to Sides
+                value: print-align-sides
+            - 
+                label: Inline with Text
+                value: print-inline-text
+*/
+
+:root {
+  --aside-width: 200px;
+  --aside-offset: 16px;
+  --block-spacing: 0.75rem;
+  --base-z-index: 1;
+  --hover-z-index: 1000;
+}
+
+/* 批注基础样式 */
+.sidenote,
+.sidenote-L {
+  position: absolute;
+  width: var(--aside-width);
+  margin: 0;
+  padding: 8px;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(var(--font-text-size) * 0.7);
+  word-break: break-word;
+  white-space: normal;
+  z-index: var(--base-z-index);
+  transition: z-index 0s, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 添加悬停效果 */
+.sidenote:hover{
+  z-index: var(--hover-z-index);
+  transform: scale(1.05) translateX(-20px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.sidenote-L:hover {
+  z-index: var(--hover-z-index);
+  transform: scale(1.05) translateX(20px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+/* 为包含批注的容器添加相对定位 */
+:is(p, li, div):has(> span.sidenote),
+:is(p, li, div):has(> span.sidenote-L) {
+  position: relative !important;
+}
+
+/* 右侧批注位置 */
+span.sidenote {
+  right: calc(-1 * (var(--aside-width) + var(--aside-offset)));
+  position: absolute;
+  margin-top: -2em; 
+}
+
+/* 左侧批注位置 */
+span.sidenote-L {
+  left: calc(-1 * (var(--aside-width) + var(--aside-offset)));
+  position: absolute;
+  margin-top: -2em; 
+}
+
+/* 主题样式 */
+.theme-light .sidenote,
+.theme-light .sidenote-L {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.theme-dark .sidenote,
+.theme-dark .sidenote-L {
+  background-color: var(--background-secondary);
+  border: 1px solid #646363;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* 打印样式 */
+@media print {
+  /* 样式 1：与边对齐 */
+  .print-align-sides .sidenote,
+  .print-align-sides .sidenote-L {
+    position: static;
+    width: var(--aside-width);
+    page-break-inside: avoid;
+    overflow: visible;
+    max-height: none;
+    right: 0 !important;
+    left: auto !important;
+    float: right;
+    clear: both;
+    padding:3px;
+    margin-top: 0em; 
+  }
+
+  .print-align-sides .sidenote-L {
+    margin-left: 0;
+    margin-right: auto;
+    float: left;
+  }
+
+  /* 样式 2：内嵌文本 */
+  .print-inline-text .sidenote,
+  .print-inline-text .sidenote-L {
+    position: static;
+    width: auto;
+    max-width: var(--aside-width);
+    display: inline-block;
+    margin: 0 0.5em;
+    padding: 0 8px;
+    border-radius: 6px;
+    overflow: visible;
+    max-height: none;
+    float: none;
+    clear: none;
+    font-size: calc(var(--font-text-size) * 0.7);
+    border: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+  }
+
+  /* 重置两种风格的变换 */
+  .print-align-sides .markdown-preview-view .sidenote,
+  .print-align-sides .markdown-reading-view .sidenote,
+  .print-align-sides .markdown-preview-view .sidenote-L,
+  .print-align-sides .markdown-reading-view .sidenote-L,
+  .print-inline-text .markdown-preview-view .sidenote,
+  .print-inline-text .markdown-reading-view .sidenote,
+  .print-inline-text .markdown-preview-view .sidenote-L,
+  .print-inline-text .markdown-reading-view .sidenote-L {
+    position: static !important;
+    transform: none !important;
+    right: auto !important;
+    left: auto !important;
+  }
+}

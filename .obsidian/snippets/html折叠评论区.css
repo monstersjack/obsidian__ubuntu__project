@@ -1,0 +1,15 @@
+/* 折叠区块的视觉样式（可自行调颜色） */
+details {
+  background:#f9f9f9;
+  border:1px solid #ddd;
+  border-radius:4px;
+  padding:0.8rem;
+}
+details > summary {
+  cursor:pointer;
+  font-weight:600;
+  color:#555;
+}
+details[open] {
+  background:#fff;
+}

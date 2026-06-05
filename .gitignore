@@ -1,0 +1,32 @@
+# =========================
+# Obsidian GitHub 公开同步规则
+# 目标：同步全部笔记和资料，只排除指定附件目录
+# =========================
+
+# 只忽略这个附件目录
+z_资料库/attachment/
+
+# Obsidian 本地状态文件，不建议同步
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Obsidian 回收站
+.trash/
+
+# 压缩备份包
+.obsidian.zip
+
+# 密钥和环境变量
+.env
+*.env
+.env.*
+secrets/
+token.txt
+tokens.txt
+password.txt
+passwords.txt
+
+# 系统垃圾文件
+.DS_Store
+Thumbs.db
+desktop.ini

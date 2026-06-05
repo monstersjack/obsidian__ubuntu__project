@@ -1,0 +1,215 @@
+/*
+name: note-cssclasses
+id: 鱼先生的模块化Obsidian
+Bilibili: https://space.bilibili.com/2035394961?spm_id_from=333.1007.0.0
+小红书：https://www.xiaohongshu.com/user/profile/63cfeb720000000026010489
+*/
+
+
+/* 
+1.学术论文样式
+1.1 正文字体 16px （需自行删除代码中的注释符，16px在屏幕中看起来很小，影响视力）
+1.2 优先宋体
+1.3 正文左右对齐
+1.4 1.5倍行距
+1.5 标题颜色黑白，16pt,黑体
+1.6 正文缩进2em
+*/
+
+body:not(.font-family-change-to-default) .academic-paper.markdown-source-view, 
+body:not(.font-family-change-to-default) .academic-paper.markdown-source-view.mod-cm6 .cm-scroller, 
+body:not(.font-family-change-to-default) .academic-paper:is(.markdown-preview-view,.markdown-rendered)
+{
+  font-family: "宋体",'Times New Roman',Georgia, Palatino;
+  text-align: justify;
+  /* font-size: 16px;*/
+  line-height: 1.5em;
+}
+body.shiba-clutter-free-headings .academic-paper div:not(.cm-active).cm-line span:not(.cm-formatting-header):not(.cm-hashtag):not(.cm-inline-code):not(.cm-highlight).cm-header::before{
+  font-size: 10px;
+}
+.academic-paper .hr.cm-line,
+.academic-paper .cm-line.HyperMD-list-line{
+  text-indent: 0em !important;
+}
+.academic-paper ul, 
+.academic-paper ol {
+  padding-left: 2em !important;  
+}
+
+.academic-paper .cm-line:not(progress):not(p),
+.academic-paper.markdown-rendered p:not(progress):not(p) {
+  text-indent: 2em;
+}
+
+.theme-dark .academic-paper .cm-strong{
+  color: #dad5d5 !important;
+}
+.theme-light .academic-paper .cm-strong{
+  color: #2a2727 !important;
+}
+
+/* 统一标题的基础样式 */
+.academic-paper .HyperMD-header[class*="HyperMD-header-"].cm-line ,
+.academic-paper :is(.markdown-rendered h1, h2, h3, h4, h5, h6){
+  text-indent: 0;
+  font-size: 16pt;
+  line-height: 1.5em;
+}
+
+/* 深色模式标题颜色 */
+.theme-dark .academic-paper .HyperMD-header[class*="HyperMD-header-"].cm-line {
+  color: #dad5d5;
+}
+
+/* 浅色模式标题颜色 */
+.theme-light .academic-paper .HyperMD-header[class*="HyperMD-header-"].cm-line{
+  color: #2a2727;
+}
+
+/* 
+2. 焦点写作模式
+2.1 编辑模式下，专注于当前编辑的段落，淡化其他内容
+2.2 字体大小随软件设置
+2.3 深色模式效果更好
+2.4 预览模式下的焦点效果
+*/
+.focus-mode .cm-editor .cm-line {
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
+}
+
+.focus-mode .cm-editor .cm-line.cm-active {
+  opacity: 1;
+}
+
+.focus-mode .cm-editor .cm-active {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 2px 0;
+}
+
+.theme-dark .focus-mode .cm-editor .cm-active {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+
+.focus-mode .markdown-preview-view p,
+.focus-mode .markdown-preview-view li,
+.focus-mode .markdown-preview-view h1,
+.focus-mode .markdown-preview-view h2,
+.focus-mode .markdown-preview-view h3,
+.focus-mode .markdown-preview-view h4,
+.focus-mode .markdown-preview-view h5,
+.focus-mode .markdown-preview-view h6 {
+  opacity: 0.5;
+  transition: opacity 0.2s ease;
+}
+
+.focus-mode .markdown-preview-view p:hover,
+.focus-mode .markdown-preview-view li:hover,
+.focus-mode .markdown-preview-view h1:hover,
+.focus-mode .markdown-preview-view h2:hover,
+.focus-mode .markdown-preview-view h3:hover,
+.focus-mode .markdown-preview-view h4:hover,
+.focus-mode .markdown-preview-view h5:hover,
+.focus-mode .markdown-preview-view h6:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 4px;
+}
+
+.theme-dark .focus-mode .markdown-preview-view p:hover,
+.theme-dark .focus-mode .markdown-preview-view li:hover,
+.theme-dark .focus-mode .markdown-preview-view h1:hover,
+.theme-dark .focus-mode .markdown-preview-view h2:hover,
+.theme-dark .focus-mode .markdown-preview-view h3:hover,
+.theme-dark .focus-mode .markdown-preview-view h4:hover,
+.theme-dark .focus-mode .markdown-preview-view h5:hover,
+.theme-dark .focus-mode .markdown-preview-view h6:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+/* 
+3. 网格背景
+3.1 鼠标悬浮区域高亮 
+3.2 智能聚焦衰减 
+*/
+.grid-background {
+  --bg-color-notebook: #fef9f1; 
+  --grid-notebook-line-color-1: #c7c7c740;
+  --grid-notebook-line-color-2: #afafaf40;
+}
+
+.theme-dark .grid-background {
+  --bg-color-notebook: #2a2825;
+  --grid-notebook-line-color-1: #c7c7c70e;
+  --grid-notebook-line-color-2: #7474741b;
+}
+
+.grid-background .cm-scroller {
+  background-color: var(--bg-color-notebook) !important;
+  background-image: 
+    linear-gradient(var(--grid-notebook-line-color-2) 1px, transparent 0),
+    linear-gradient(90deg, var(--grid-notebook-line-color-2) 1px, transparent 0),
+    linear-gradient(var(--grid-notebook-line-color-1) 1px, transparent 0),
+    linear-gradient(90deg, var(--grid-notebook-line-color-1) 1px, transparent 0) !important;
+  background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px !important;
+  background-attachment: local !important;
+}
+.grid-background .markdown-preview-view {
+  background: transparent !important;
+}
+
+.theme-dark .grid-background .cm-line:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.theme-light .grid-background .cm-line:hover {
+  background: rgba(48, 47, 47, 0.2);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.grid-background .cm-line:not(.cm-active) {
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+.grid-background .cm-line:not(.cm-active):hover {
+  opacity: 0.9 !important;
+  transform: translateX(2px);
+}
+
+
+
+/* 
+4.信件样式 
+4.1 保持空行也有横线
+*/
+
+.letter-style .cm-editor .cm-line.cm-active,
+.letter-style .cm-line:not(.cm-active):not(.HyperMD-codeblock):not(.cm-formatting-list) {
+  border-bottom: 1px solid #9a9393b8;
+  padding-bottom: 0.2em;
+  min-height: 1.5em; /* 保持空行也有横线 */
+}
+
+.letter-style.markdown-preview-view p,
+.letter-style.markdown-preview-view li {
+  position: relative;
+  border-bottom: 1px solid #9a9393b8;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.5em !important;
+}
+
+.letter-style :is(pre, blockquote, table, hr) {
+  border-bottom: none !important;
+}
+
+.letter-style li::before {
+  position: relative;
+  z-index: 1;
+  background-color: var(--background-primary);
+  padding-right: 0.5em;
+}
+

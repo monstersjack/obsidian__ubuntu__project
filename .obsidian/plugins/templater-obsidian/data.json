@@ -1,0 +1,32 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "资料库/模板",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": false,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": true,
+  "shell_path": "",
+  "user_scripts_folder": "",
+  "enable_folder_templates": true,
+  "folder_templates": [],
+  "enable_file_templates": false,
+  "file_templates": [
+    {
+      "regex": ".*",
+      "template": "资料库/模板/日记.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "syntax_highlighting_mobile": true,
+  "enabled_templates_hotkeys": [
+    "资料库/模板/周记.md"
+  ],
+  "startup_templates": [
+    "资料库/模板/周记.md"
+  ]
+}

@@ -1,0 +1,752 @@
+
+
+/* meta bind 网格颜色 */
+.theme-dark {
+    --bg-color-notebook: #2a2825;
+    --grid-notebook-line-color-1: #c7c7c71f;
+    --grid-notebook-line-color-2: #74747440;
+    --dotted-notebook-dot-color: #c7c7c71f;
+  }
+  .theme-light {
+    --bg-color-notebook: #fef9f1;
+    --grid-notebook-line-color-1: #c7c7c740;
+    --grid-notebook-line-color-2: #afafaf40;
+    --dotted-notebook-dot-color: #c7c7c780;
+  }
+/* meta bind 通用设置 */
+  .editor-input.svelte-1tfnqy0>div.svelte-1tfnqy0>{
+    background-color: var(--callout-content-background);
+  }
+div.editor-input.card.svelte-1tfnqy0{
+    background-color: var(--callout-content-background);
+}
+.textLayer{
+    background-color: #FFFAF0;
+}
+.editor-input.svelte-1tfnqy0>div.svelte-1tfnqy0{
+    padding-top: 0px !important;
+}
+.mb-suggest-input{
+    line-height: 20px;
+}
+
+.meta-bind-full-width > *{
+    width:99.5%;
+}
+.mod-right-split .markdown-preview-view, 
+.mod-left-split .markdown-preview-view, 
+.mod-right-split .markdown-source-view.mod-cm6 .cm-scroller, 
+.mod-left-split .markdown-source-view.mod-cm6 .cm-scroller{
+    padding-right: 0px;
+}
+textarea, input.metadata-input-text, input[type='date'], input[type='datetime-local'], input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number']{
+    font-family:"Microsoft YaHei",  "PingFang SC";
+}
+/* 去除opton选项提示 */
+.mb-search-modal-element-description {
+    display: none;
+}
+
+/* meta bind 康奈尔笔记title */
+.textArea-1-title > textArea {
+    width: 67%;
+    height: 45px;
+    background: #5f60600d;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+.text-title > input[type="text" i] {
+    width: 57%;
+    font-size:var(--font-text-size);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+
+}
+.text-title-kapianhe > input[type="text" i] {
+    width: 86%;
+    font-size:var(--font-text-size);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+    color: #6cb2e4;
+
+}
+.text-title-23 > input[type="text" i] {
+    width: 23%;
+
+}
+.textArea-date-title > textArea {
+    width: 29%;
+    height: 45px;
+    background: #5f60600d;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+  .textArea-cornell-title > textArea {
+    width: 99%;
+    height: 90px;
+    background: #00ffff0d;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+.textArea-summary > textArea {
+    width: 99%;
+    height: 100px;
+    background: #9091900e;
+    font-size: 18px;
+    text-align: justify;
+    color: rgb(215, 65, 65);
+    font-family:'Times New Roman', Times, serif;
+    }
+
+/* meta bind textArea 常规 */
+.textArea-45 > textArea,
+.textArea-90 > textArea,
+.textArea-135 > textArea,
+.textArea-180 > textArea,
+.textArea-225 > textArea,
+.textArea-270 > textArea,
+.textArea-315 > textArea,
+.textArea-360 > textArea,
+.textArea-405 > textArea,
+.textArea-450 > textArea,
+.textArea-495 > textArea,
+.textArea-540 > textArea,
+.textArea-585 > textArea,
+.textArea-630 > textArea,
+.textArea-675 > textArea {
+    width: 97.5%;
+    font-size: calc(var(--font-text-size) * 0.8);
+    padding: 0px;
+    }
+
+.textArea-45 > textArea {
+    height: 45px;
+    }
+.textArea-90 > textArea {
+    height: 90px;
+    }
+
+.textArea-135 > textArea {
+    height: 135px;
+    }
+
+.textArea-180 > textArea {
+    height: 180px;
+    }
+.textArea-225 > textArea {
+    height: 225px;
+    }
+.textArea-270 > textArea {
+    height: 270px;
+    }
+
+.textArea-315 > textArea {
+    height: 315px;
+    }
+.textArea-360 > textArea {
+    height: 360px;
+}
+ .textArea-405 > textArea {
+    height: 405px;
+    }
+.textArea-450 > textArea {
+    height: 450px;
+    }
+.textArea-495 > textArea {
+    height: 495px;
+    }
+.textArea-540 > textArea {
+    height: 540px;
+    }
+.textArea-585 > textArea {
+    height: 585px;
+    }
+
+.textArea-630 > textArea {
+    height: 630px;
+    }
+
+.textArea-675 > textArea {
+    height: 675px;
+    }
+
+
+/* meta bind textArea 网格 */
+.textArea-45-grid > textArea,
+.textArea-90-grid > textArea,
+.textArea-135-grid > textArea,
+.textArea-180-grid > textArea,
+.textArea-225-grid > textArea,
+.textArea-270-grid > textArea,
+.textArea-315-grid > textArea,
+.textArea-360-grid > textArea,
+.textArea-405-grid > textArea,
+.textArea-450-grid > textArea,
+.textArea-495-grid > textArea,
+.textArea-540-grid > textArea,
+.textArea-585-grid > textArea,
+.textArea-630-grid > textArea,
+.textArea-675-grid > textArea {
+    width: 97.5%;
+    text-align: justify;
+    font-size: calc(var(--font-text-size) * 0.8);
+    line-height: 45px;
+    background-image:
+    linear-gradient(var(--grid-notebook-line-color-2) 1px, transparent 0);
+ background-size: 45px 45px, 45px 45px, 15px 15px, 15px 15px;
+    }
+
+
+.textArea-45-grid > textArea {
+    height: 45px;
+    }
+.textArea-90-grid > textArea {
+    height: 90px;
+    }
+.textArea-135-grid > textArea {
+    height: 135px;
+    }
+.textArea-180-grid > textArea {
+    height:180px;
+    }
+.textArea-225-grid > textArea {
+    height:225px;
+    }
+.textArea-270-grid > textArea {
+    height:270px;
+    }
+.textArea-315-grid > textArea {
+    height:315px;
+    }
+.textArea-360-grid > textArea {
+    height: 360px;
+    }
+.textArea-405-grid > textArea {
+    height:405px;
+    }
+.textArea-450-grid > textArea {
+    height: 450px;
+    }
+.textArea-495-grid > textArea {
+    height:495px;
+    }
+.textArea-540-grid > textArea {
+    height:545px;
+    }
+.textArea-585-grid > textArea {
+    height:585px;
+    }
+.textArea-630-grid > textArea {
+    height: 630px;
+    }
+.textArea-675-grid > textArea {
+    height: 675px;
+    }
+
+
+/* meta bind textArea 横线 */
+
+.textArea-45-line > textArea,
+.textArea-90-line > textArea,
+.textArea-135-line > textArea,
+.textArea-180-line > textArea,
+.textArea-225-line > textArea,
+.textArea-270-line > textArea,
+.textArea-315-line > textArea,
+.textArea-360-line > textArea,
+.textArea-405-line > textArea,
+.textArea-450-line > textArea,
+.textArea-495-line > textArea,
+.textArea-540-line > textArea,
+.textArea-585-line > textArea,
+.textArea-630-line > textArea,
+.textArea-675-line > textArea {
+    border: none;
+    width: 97.5%;
+    text-align: justify;
+    font-size:  calc(var(--font-text-size) * 0.8);
+    line-height: 45px;
+    background-image:
+    linear-gradient(var(--grid-notebook-line-color-2) 1px, transparent 0);
+ background-size: 45px 45px, 45px 45px, 15px 15px, 15px 15px;
+}
+
+.textArea-45-line > textArea {
+    height: 45px;
+    }
+.textArea-90-line > textArea {
+    height: 90px;
+    }
+.textArea-135-line > textArea {
+    height: 135px;
+    }
+.textArea-180-line > textArea {
+    height:180px;
+    }
+.textArea-225-line > textArea {
+    height:225px;
+    }
+.textArea-270-line > textArea {
+    height:270px;
+    }
+.textArea-315-line > textArea {
+    height:315px;
+    }
+.textArea-360-line > textArea {
+    height: 360px;
+    }
+.textArea-405-line > textArea {
+    height:405px;
+    }
+.textArea-450-line > textArea {
+    height: 450px;
+    }
+.textArea-495-line > textArea {
+    height:495px;
+    }
+.textArea-540-line > textArea {
+    height:540px;
+    }
+.textArea-585-line > textArea {
+    height:585px;
+    }
+.textArea-630-line > textArea {
+    height: 630px;
+    }
+.textArea-675-line > textArea {
+    height: 675px;
+    }
+
+
+/* meta bind editor 常规  */
+.editor-45>.mb-editor-input,
+.editor-90>.mb-editor-input,
+.editor-135>.mb-editor-input,
+.editor-180>.mb-editor-input,
+.editor-225>.mb-editor-input,
+.editor-270>.mb-editor-input,
+.editor-315>.mb-editor-input,
+.editor-360>.mb-editor-input,
+.editor-405>.mb-editor-input,
+.editor-450>.mb-editor-input,
+.editor-495>.mb-editor-input,
+.editor-540>.mb-editor-input,
+.editor-585>.mb-editor-input,
+.editor-630>.mb-editor-input,
+.editor-675>.mb-editor-input {
+    background-color: var(--callout-content-background) ;
+    text-align: justify;
+}
+.editor-45>.mb-editor-input{
+    height: 45px;
+}
+.editor-90>.mb-editor-input{
+    height: 90px;
+}
+.editor-110>.mb-editor-input{
+    height: 110px;
+}
+.editor-135>.mb-editor-input{
+    height: 135px;
+}
+.editor-180>.mb-editor-input{
+    height: 180px;
+}
+.editor-225>.mb-editor-input{
+    height: 225px;
+}
+.editor-270>.mb-editor-input{
+    height: 270px;
+}
+.editor-315>.mb-editor-input{
+    height: 315px;
+}
+.editor-360>.mb-editor-input{
+    height: 360px;
+}
+.editor-405>.mb-editor-input{
+    height: 405px;
+}
+.editor-450>.mb-editor-input{
+    height: 450px;
+}
+.editor-495>.mb-editor-input{
+    height: 495px;
+}
+.editor-540>.mb-editor-input{
+    height: 540px;
+}
+.editor-585>.mb-editor-input{
+    height: 585px;
+}
+.editor-630>.mb-editor-input{
+    height: 630px;
+}
+.editor-675>.mb-editor-input{
+    height: 675px;
+}
+
+/* meta bind editor 网格  */
+.editor-45-grid>.mb-editor-input,
+.editor-90-grid>.mb-editor-input,
+.editor-135-grid>.mb-editor-input,
+.editor-180-grid>.mb-editor-input,
+.editor-225-grid>.mb-editor-input,
+.editor-270-grid>.mb-editor-input,
+.editor-315-grid>.mb-editor-input,
+.editor-360-grid>.mb-editor-input,
+.editor-405-grid>.mb-editor-input,
+.editor-450-grid>.mb-editor-input,
+.editor-495-grid>.mb-editor-input,
+.editor-540-grid>.mb-editor-input,
+.editor-585-grid>.mb-editor-input,
+.editor-630-grid>.mb-editor-input,
+.editor-675-grid>.mb-editor-input {
+    background-color: var(--callout-content-background);
+    text-align: justify;
+    background-image:
+    linear-gradient(var(--grid-notebook-line-color-2) 1px, transparent 0),
+    linear-gradient(90deg, var(--grid-notebook-line-color-2) 1px,transparent 0),
+    linear-gradient(var(--grid-notebook-line-color-1) 1px,
+    transparent 0),
+    linear-gradient(90deg,var(--grid-notebook-line-color-1) 1px,
+    transparent 0);
+ background-size: 22.5px 22.5px, 22.5px 22.5px;
+}
+
+
+.editor-45-grid>.mb-editor-input{
+    height: 45px;
+}
+
+.editor-90-grid>.mb-editor-input{
+    height: 90px;
+}
+.editor-135-grid>.mb-editor-input{
+    height: 135px;
+}
+.editor-180-grid>.mb-editor-input{
+    height: 180px;
+}
+.editor-225-grid>.mb-editor-input{
+    height: 225px;
+}
+.editor-270-grid>.mb-editor-input{
+    height: 270px;
+}
+.editor-315-grid>.mb-editor-input{
+    height: 315px;
+}
+.editor-360-grid>.mb-editor-input{
+    height: 360px;
+}
+.editor-405-grid>.mb-editor-input{
+    height: 405px;
+}
+.editor-450-grid>.mb-editor-input{
+    height: 450px;
+}
+.editor-495-grid>.mb-editor-input{
+    height: 495px;
+}
+.editor-540-grid>.mb-editor-input{
+    height: 540px;
+}
+.editor-585-grid>.mb-editor-input{
+    height: 585px;
+}
+.editor-630-grid>.mb-editor-input{
+    height: 630px;
+}
+.editor-675-grid>.mb-editor-input{
+    height: 675px;
+}
+
+/* 共用的基础按钮样式 */
+.para-4col button,
+.connections-4col button,
+.qita-4col button,
+.cardnotes-4col button,
+.para-2col button,
+.connections-2col button,
+.qita-2col button,
+.cardnotes-2col button,
+.para-3col button,
+.connections-3col button,
+.qita-3col button {
+    height: 30px;
+    color: #fef9f1;
+    margin: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* 4列布局的宽度 */
+.para-4col button,
+.connections-4col button,
+.qita-4col button,
+.cardnotes-4col button {
+    width: 22% !important;
+}
+
+/* 3列布局的宽度 */
+.para-3col button,
+.connections-3col button,
+.qita-3col button {
+    width: 30% !important;
+}
+
+/* 2列布局的宽度 */
+.para-2col button,
+.connections-2col button,
+.qita-2col button,
+.cardnotes-2col button {
+    width: 48% !important;
+}
+
+/* 为所有主题定义根变量（不依赖特定主题类名） */
+.theme-light,
+.theme-light.lily-light,
+.theme-light.ivory-light,
+.theme-light.sky-light,
+.theme-light.stone-light,
+.theme-dark.default-dark-theme,
+.theme-dark.pure-dark,
+.theme-dark.Lilac-dark,
+.theme-dark.warm-dark{
+    --para-border: #5091db;
+    --connections-border: #ca9e61;
+    --qita-border: #de7474;
+    --cardnotes-border: #4ba542;
+}
+
+/* 使用 CSS 变量的按钮样式 */
+.para-4col button, 
+.para-3col button, 
+.para-2col button {
+
+    border-right: 10px solid var(--para-border) !important;
+    justify-content: left;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 0.5px solid #8a8888;
+    background-color: transparent;
+}
+
+.connections-4col button, 
+.connections-3col button, 
+.connections-2col button {
+
+    border-right: 10px solid var(--connections-border) !important;
+    justify-content: left;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 0.5px solid #8a8888;
+    background-color: transparent;
+}
+
+.qita-4col button, 
+.qita-3col button, 
+.qita-2col button {
+
+    border-right: 10px solid var(--qita-border) !important;
+    justify-content: left;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 0.5px solid #8a8888;
+    background-color: transparent;
+}
+
+.cardnotes-4col button, 
+.cardnotes-3col button, 
+.cardnotes-2col button {
+    border-right: 10px solid var(--cardnotes-border) !important;
+    justify-content: left;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 0.5px solid #8a8888;
+    background-color: transparent;
+}
+
+
+
+
+/* 增强悬停效果 */
+.para-2col button:hover,
+.para-3col button:hover,
+.para-4col button:hover,
+.connections-2col button:hover,
+.connections-3col button:hover,
+.connections-4col button:hover,
+.qita-2col button:hover,
+.qita-3col button:hover,
+.qita-4col button:hover,
+.cardnotes-2col button:hover,
+.cardnotes-3col button:hover,
+.cardnotes-4col button:hover {
+    background-image: var(--background-modifier-hover);
+    transform: translateX(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-right-width: 20px !important;
+}
+
+/* 为所有按钮添加微妙的发光效果 */
+
+.cardnotes-4col button, 
+.cardnotes-3col button, 
+.cardnotes-2col button {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    color: var(--cardnotes-border);
+}
+.para-4col button, 
+.para-3col button, 
+.para-2col button{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    color: var(--para-border);
+}
+
+.connections-4col button, 
+.connections-3col button, 
+.connections-2col button{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    color: var(--connections-border);
+}
+
+.qita-4col button, 
+.qita-3col button, 
+.qita-2col button{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    color: var(--qita-border);
+}
+
+
+/* meta bind text 常规 */
+.text-10 > input[type="text" i] ,
+.text-20 > input[type="text" i] ,
+.text-30 > input[type="text" i] ,
+.text-40 > input[type="text" i] ,
+.text-50 > input[type="text" i] ,
+.text-60 > input[type="text" i] ,
+.text-70 > input[type="text" i] ,
+.text-80 > input[type="text" i] ,
+.text-90 > input[type="text" i] ,
+.text-100 > input[type="text" i] {
+    font-size: var(--font-text-size);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+    background-color: var(--callout-content-background);
+}
+
+.text-10 > input[type="text" i] {
+    width: 10%;
+}
+.text-20 > input[type="text" i] {
+    width: 20%;
+}
+.text-30 > input[type="text" i] {
+    width: 30%;
+}
+.text-40 > input[type="text" i] {
+    width: 40%;
+}
+.text-50 > input[type="text" i] {
+    width: 50%;
+}
+.text-60 > input[type="text" i] {
+    width: 60%;
+}
+.text-70 > input[type="text" i] {
+    width: 70%;
+}
+.text-80 > input[type="text" i] {
+    width: 80%;
+}
+.text-90 > input[type="text" i] {
+    width: 90%;
+}
+.text-100 > input[type="text" i] {
+    width: 99%;
+}
+
+
+/* meta bind text横线输入 */
+.text-bottom-line1 > input[type="text" i],
+.text-bottom-line2 > input[type="text" i],
+.text-bottom-line3 > input[type="text" i],
+.text-bottom-line4 > input[type="text" i],
+.text-bottom-line5 > input[type="text" i],
+.text-bottom-line6 > input[type="text" i],
+.text-bottom-line7 > input[type="text" i],
+.text-bottom-line8 > input[type="text" i],
+.text-bottom-line9 > input[type="text" i],
+.text-bottom-line10 > input[type="text" i],
+.text-bottom-line11 > input[type="text" i],
+.text-bottom-line12 > input[type="text" i],
+.text-bottom-line13 > input[type="text" i],
+.text-bottom-line14 > input[type="text" i],
+.text-bottom-line15 > input[type="text" i]{
+    width: 97.5%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+    background-color: var(--callout-content-background);
+    height: 45px;
+    font-size: var(--font-text-size);
+}
+
+/* meta bind 卡片盒笔记 */
+.editor-lit > .mb-editor-input{
+    background-color: var(--callout-content-background);
+    height: 45px;
+  }
+.editor-45-lit > .mb-editor-input{
+    background-color: var(--callout-content-background);
+    height: 55px;
+    text-align: justify;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0%;
+}
+.dropdown{
+    border-radius: 6px !important;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* 导航页 */
+
+.mb-inline-list-item:hover{
+    background-color: #646d6c95 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.mb-inline-list-item .cm-s-obsidian span.cm-hmd-internal-link, 
+.mb-inline-list-item .cm-s-obsidian span.cm-link, a.internal-link{
+    text-decoration: none !important;
+}
+
+
+/* canvas note */
+.canvasnote .mb-whitespace-pre {
+    white-space: pre-wrap;  /* 保留空白符序列但允许自动换行 */
+    max-width: 500px;
+}

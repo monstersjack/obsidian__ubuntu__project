@@ -1,0 +1,10 @@
+{
+    "id": "media-extended",
+    "name": "Media Extended",
+    "version": "3.2.6",
+    "minAppVersion": "1.5.7",
+    "description": "改善 Obsidian 中的媒体（视频/音频）播放的体验,你可以通过简单的方法在 OB 中播放视频并添加时间戳来记录对应节点的笔记了。",
+    "author": "AidenLx",
+    "authorUrl": "https://github.com/AidenLx/",
+    "isDesktopOnly": true
+}

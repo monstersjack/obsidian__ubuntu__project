@@ -1,0 +1,361 @@
+{
+  "main": {
+    "id": "01d0788c7747c61a",
+    "type": "split",
+    "children": [
+      {
+        "id": "54caab3eb56f748a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92423b0b3d5d015a",
+            "type": "leaf",
+            "state": {
+              "type": "pkmer-downloader",
+              "state": {},
+              "icon": "bookmark",
+              "title": "Pkmer Market"
+            }
+          },
+          {
+            "id": "33b5e462d64376b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机视觉/yolov5 原理.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "yolov5 原理"
+            }
+          },
+          {
+            "id": "9ad7b47740e41a58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机视觉/yolov5数据集格式和文件格式.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "yolov5数据集格式和文件格式"
+            }
+          },
+          {
+            "id": "f7cdbb5f6fd81121",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机视觉/yolov5额外知识.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "yolov5额外知识"
+            }
+          },
+          {
+            "id": "abf0b5416941fa73",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "计算机视觉/yolov5课程日志.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "yolov5课程日志"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d100921e0bc0b34a",
+    "type": "split",
+    "children": [
+      {
+        "id": "cef8274092267bd7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb4a75ea00267528",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "e9396647e42405ad",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "计算机视觉/yolov5数据集格式和文件格式.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "yolov5数据集格式和文件格式 的大纲"
+            }
+          },
+          {
+            "id": "9a2463929679c332",
+            "type": "leaf",
+            "state": {
+              "type": "quiet-outline",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "quiet-outline"
+            }
+          },
+          {
+            "id": "73563c03a9265849",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#不够时间就不讲",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ae383ed341f649b9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 238.5
+  },
+  "right": {
+    "id": "1d28683343e4e058",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e9c4dcb27a9f495",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e945cd831f5a6652",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "calendar"
+            }
+          },
+          {
+            "id": "99b8d5d8587c350b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "重要文件/obsidian使用技巧.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "obsidian使用技巧 的反向链接列表"
+            }
+          },
+          {
+            "id": "76cce13632587ac7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "重要文件/obsidian使用技巧.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "obsidian使用技巧 的出链列表"
+            }
+          },
+          {
+            "id": "c49d04d050aa9511",
+            "type": "leaf",
+            "state": {
+              "type": "mxmind-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "mxmind-view"
+            }
+          },
+          {
+            "id": "ab8fcee8fda53bed",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "计算机视觉/yolov5数据集格式和文件格式.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "脚注"
+            }
+          },
+          {
+            "id": "e0c0a2d25035698f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "dd8e9abbb8a44964",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "重要文件/obsidian使用技巧.md"
+              },
+              "icon": "lucide-info",
+              "title": "obsidian使用技巧的笔记属性"
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "2707ac3f4df6bc32",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5965d1bde841cd63",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 325.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "pkmer:Open Pkmer Market": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "i18n:I18N": false,
+      "media-extended:打开媒体": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-memos:Thino": false,
+      "obsidian-file-cleaner:清理文件": false,
+      "cloze:显/隐所有填空": false,
+      "mxmind:Mxmind": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "math-indicator-changer:Change math indicator": false
+    }
+  },
+  "active": "9ad7b47740e41a58",
+  "lastOpenFiles": [
+    "计算机视觉/yolov5额外知识.md",
+    "计算机视觉/yolov5课程日志.md",
+    "资料库/attachment/Pasted image 20251023121018.png",
+    "计算机视觉/yolov5数据集格式和文件格式.md",
+    "计算机视觉/yolov5 原理.md",
+    "资料库/attachment/Pasted image 20251023100831.png",
+    "资料库/attachment/Pasted image 20251023100822.png",
+    "资料库/attachment/Pasted image 20251022153342.png",
+    "我的文件/电子产品.md",
+    "我的文件/电动车.md",
+    "我的文件/pycharm.md",
+    "资料库/attachment/Pasted image 20251004075101.png",
+    "资料库/attachment/Pasted image 20251004073359.png",
+    "资料库/attachment/Pasted image 20251004073248.png",
+    "资料库/attachment/Pasted image 20251004014913.png",
+    "资料库/attachment/Pasted image 20251004014632.png",
+    "资料库/attachment/Pasted image 20251004014425.png",
+    "新中特讲稿(2).md",
+    "新中特讲稿(1).md",
+    "新中特讲稿.md",
+    "思政课.md",
+    "资料库/attachment",
+    "资料库",
+    "我的文件/电脑设置.md",
+    "超光谱/小车.md",
+    "我的文件",
+    "超光谱",
+    "重要文件/obsidian使用技巧.md",
+    "华农/课程/机器学习和深度学习.md",
+    "yolo的yaml.txt",
+    "文档/电子产品.md",
+    "自己的日程管理/日程管理.md",
+    "01. 日记/周记/2025-第42周.md",
+    "新建 DOCX 文档.docx",
+    "华农/学校消息.md",
+    "未命名 1.md",
+    "新建 文本文档.txt",
+    "新建文件夹",
+    "~$ DOCX 文档.docx",
+    "dwt_demo.html.md",
+    "文件/callout分栏等，来PKMER/docs/multi-column/02-multi-column-callout.md",
+    "文件/callout分栏等，来PKMER/docs/gallery-cards/02-image-gallery.md",
+    "01. 日记/周记/2025-第40周.md",
+    "讲稿.html",
+    "01. 日记/周记/2025-第45周.md"
+  ]
+}

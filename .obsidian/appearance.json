@@ -1,0 +1,28 @@
+{
+  "cssTheme": "Shiba Inu",
+  "showRibbon": true,
+  "interfaceFontFamily": "iA Writer Quattro S,FZPingXianYaSong-R-GBK",
+  "textFontFamily": "FZPingXianYaSong-R-GBK,iA Writer Quattro S",
+  "monospaceFontFamily": "FZPingXianYaSong-R-GBK,iA Writer Quattro S",
+  "enabledCssSnippets": [
+    "AnuPpuccin主题",
+    "custom-admonitions-c9c6cb",
+    "custom-admonitions.c9c6cb",
+    "meta-bind",
+    "minimalcards",
+    "note-cssclasses",
+    "outline 标题显示自动编号",
+    "MCL Gallery Cards",
+    "MCL Wide Views",
+    "MCL Multi Column",
+    "a_max",
+    "Shiba Inu主题",
+    "其他排版美化",
+    "默认、Nord、Things等主题（适用于未提供style-settings插件的主题)",
+    "显示标题级别",
+    "sidenotes",
+    "评论区折叠功能",
+    "html折叠评论区"
+  ],
+  "baseFontSize": 20
+}

@@ -1,0 +1,70 @@
+/*使用此 CSS 宜按照 Markdown 语言推荐写法，标题前后各空一行*/
+body {
+  --line-height-normal: 1.52; /*行间距*/
+  --heading-spacing: calc(var(--p-spacing) * 1.2); /*阅读模式标题间距，星号后面的数字是倍数可以自己调*/
+}
+.cm-s-obsidian .cm-line.HyperMD-header {padding-block: 0; /*编辑模式标题间距*/}
+
+/*折叠按钮交互*/
+.collapse-indicator {--cursor: pointer; /*显示小手*/}
+.HyperMD-codeblock .collapse-indicator /*代码块折叠三角*/ {right: var(--size-4-1) !important; padding-right: 0 !important;}
+
+/*小标题折叠按钮*/
+:is(h1, h2, h3, h4, h5, h6, .HyperMD-header) {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    font-weight: bold; /*加粗*/
+    font-size: 1.0rem; /*字号*/
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(-1 * var(--size-4-4) - 50px); /*与文本间距,修改找个px就行*/
+  }
+  &:not(:hover)::before {
+    opacity: 1; /*平时隐藏，悬停显示*/
+    transition: var(--anim-duration-superfast); /*过渡动画时间*/
+  }
+  & .collapse-indicator {
+    width: var(--size-4-5); /*小标题点不到按钮改大这个*/
+    & > svg {opacity: 0;} /*隐藏小标题折叠三角*/
+  }
+}
+:is(div.is-collapsed > :is(h1, h2, h3, h4, h5, h6), .HyperMD-header:has(> .cm-foldPlaceholder))::before {
+  opacity: 1; /*折叠保持标识显示*/
+  text-decoration: underline 0.1rem; /*下划线*/
+}
+
+/*各级小标题折叠按钮文本及颜色*/
+:is(h6, .HyperMD-header-6)::before {content: "H6"; color: hsl(258, 88%, 66%);}
+:is(h5, .HyperMD-header-5)::before {content: "H5"; color: hsl(218, 100%, 55%);}
+:is(h4, .HyperMD-header-4)::before {content: "H4"; color: hsl(194, 100%, 45%);}
+:is(h3, .HyperMD-header-3)::before {content: "H3"; color: hsl(46, 100%, 45%);}
+:is(h2, .HyperMD-header-2)::before {content: "H2"; color: hsl(23, 100%, 45%);}
+
+
+
+/* 下面是折叠标题的样式设置 */
+/* 恢复三角可见 */
+.collapse-indicator > svg {
+  opacity: 1 !important;
+  width: 1.2em;
+  height: 1.2em;
+  color: var(--text-muted);
+}
+
+/* 让三角更大更好点 */
+.collapse-indicator {
+  width: 5em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: calc(-1 * var(--size-4-4) - 50px); /*与文本间距,修改找个px就行*/
+
+}
+
+/* 悬停高亮 */
+.collapse-indicator:hover > svg {
+  color: var(--text-accent);
+}

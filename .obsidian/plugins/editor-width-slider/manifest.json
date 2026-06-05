@@ -1,0 +1,11 @@
+{
+    "id": "editor-width-slider",
+    "name": "Editor Width Slider",
+    "version": "1.0.5",
+    "minAppVersion": "0.15.0",
+    "description": "使用滑块自定义 Obsidian 的编辑器宽度，以获得量身定制的编辑体验。",
+    "author": "@MugishoMp",
+    "authorUrl": "https://github.com/MugishoMp",
+    "fundingUrl": "https://www.paypal.com/donate/?hosted_button_id=E4APAMMHVJE4N",
+    "isDesktopOnly": true
+}

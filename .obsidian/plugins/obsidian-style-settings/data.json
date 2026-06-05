@@ -1,0 +1,815 @@
+{
+  "maple-basic@@color-use-custom": false,
+  "maple-basic@@setting-accent-h-light": 35,
+  "maple-workspace@@titlebar-colorful": false,
+  "maple-workspace@@status-bar-style-float": true,
+  "maple-workspace@@tab-title-bar-round": true,
+  "maple-workspace@@explorer-nav-decoration": true,
+  "maple-editor@@heading-level-enable": true,
+  "maple-editor@@heading-h2-underline": false,
+  "maple-editor@@heading-h1-center": false,
+  "maple-editor@@setting-underline-offset": 1.5,
+  "maple-editor@@link-hover-expand": false,
+  "maple-editor@@hr-enable": false,
+  "maple-workspace@@bg-enable": "bg-default",
+  "maple-workspace@@setting-bg-color@@dark": "#000000",
+  "maple-workspace@@explorer-item-height": 1.4,
+  "maple-workspace@@status-bar-style-center": false,
+  "maple-workspace@@status-bar-style": "status-bar-hidden",
+  "maple-workspace@@tab-float": true,
+  "maple-workspace@@labeled-nav": false,
+  "maple-workspace@@tab-show-close": "tab-show-close-all",
+  "maple-workspace@@outline-enable": true,
+  "maple-workspace@@search-internal-enable": true,
+  "maple-workspace@@tab-slide-up": true,
+  "maple-workspace@@tab-title-bar-shadow": false,
+  "maple-workspace@@tab-title-bar-text": "tab-title-bar-text-hidden",
+  "maple-workspace@@modal-header": false,
+  "maple-workspace@@setting-group-title": true,
+  "maple-workspace@@modal-toggle": "modal-toggle-default",
+  "maple-workspace@@menu-normal": true,
+  "maple-workspace@@scrollbar-hide": false,
+  "maple-workspace@@scrollbar-hover": "scrollbar-hover-expand",
+  "maple-editor@@setting-editor-p-spacing": 11,
+  "maple-editor@@setting-text-highlight-radius": 0,
+  "maple-editor@@text-highlight-margin": true,
+  "maple-editor@@setting-text-bold-style": "\"\"",
+  "maple-editor@@setting-text-bold-color@@light": "#E81BA0E6",
+  "maple-editor@@setting-text-italic-style": "\"\"",
+  "maple-editor@@setting-text-italic-color@@light": "#4707F3",
+  "maple-editor@@link-icon": true,
+  "maple-editor@@link-heading": true,
+  "maple-editor@@link-click-to-edit-in-live-preview": false,
+  "maple-editor@@fix-line-number": true,
+  "maple-editor@@heading-level-fix": false,
+  "maple-editor@@heading-underline-thin": true,
+  "maple-editor@@heading-h6-variant": false,
+  "maple-editor@@image-zoom-out": true,
+  "maple-editor@@quote-theme": true,
+  "maple-editor@@quote-mark": false,
+  "maple-editor@@list-checkbox-alternative": false,
+  "maple-editor@@tag-click-to-edit": false,
+  "maple-workspace@@status-bar-enable": true,
+  "maple-editor@@image-alt": false,
+  "maple-editor@@table-colorful": false,
+  "minimal-style@@base@@dark": "#3B3363",
+  "anuppuccin-theme-settings-extended@@anp-theme-ext-light": true,
+  "anuppuccin-theme-settings-extended@@anp-theme-ext-dark": true,
+  "anuppuccin-theme-settings-extended@@catppuccin-theme-extended": "ctp-notion-light",
+  "anuppuccin-theme-settings-extended@@catppuccin-theme-dark-extended": "ctp-notion-dark",
+  "workspaces": {
+    "PDF引用模板": {
+      "main": {
+        "id": "f7f18286ccaf911d",
+        "type": "split",
+        "children": [
+          {
+            "id": "4f10015eee802fcd",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "781eaaeaf303478b",
+                "type": "leaf",
+                "state": {
+                  "type": "bm-book-view",
+                  "state": {
+                    "bid": "CtfEfcawawNjlSyL",
+                    "viewerState": {
+                      "page": 460,
+                      "progress": 460
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "b9d6b4216b841923",
+        "type": "split",
+        "children": [
+          {
+            "id": "019845ee6e37c9ad",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4942ff8686317412",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "3bd5da04d1fb4657",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#消防泵站泵房工艺工程为4",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "d3bd6d1d4ad8cf9d",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              },
+              {
+                "id": "482f256cef0a119d",
+                "type": "leaf",
+                "state": {
+                  "type": "bm-explorer-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "e9fe21737275f434",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "13 笔记/001 概算审核/001 长水改扩建/功能区编码.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "horizontal",
+        "width": 644
+      },
+      "right": {
+        "id": "678d3599282a3de4",
+        "type": "split",
+        "children": [
+          {
+            "id": "e3aead01eec37037",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8a1470130715ebe0",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "13 笔记/001 概算审核/001 长水改扩建/功能区编码.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": true,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "17ac33c8c8dfa347",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "13 笔记/001 概算审核/001 长水改扩建/功能区编码.md",
+                    "linksCollapsed": true,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "bb8fcf88036a7880",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "fda2e8efa148523a",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "13 笔记/001 概算审核/001 长水改扩建/功能区编码.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 2
+          }
+        ],
+        "direction": "horizontal",
+        "width": 588,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "audio-recorder:开始/结束录音": false,
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "meld-encrypt:Create new encrypted note": false,
+          "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+          "obsidian-bookmaster-plugin:Book Explorer": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "workspaces:管理工作区布局": false
+        }
+      },
+      "active": "e9fe21737275f434"
+    },
+    "常用模板": {
+      "main": {
+        "id": "f7f18286ccaf911d",
+        "type": "split",
+        "children": [
+          {
+            "id": "47fe82ab0c9f3687",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "2ce220bbe57a44f9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "qucikadd/2023-06-05.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "b9d6b4216b841923",
+        "type": "split",
+        "children": [
+          {
+            "id": "019845ee6e37c9ad",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4942ff8686317412",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "3bd5da04d1fb4657",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#消防泵站泵房工艺工程为4",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "d3bd6d1d4ad8cf9d",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              },
+              {
+                "id": "e9fe21737275f434",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "13 笔记/001 概算审核/001 长水改扩建/功能区编码.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "e1a3ffb61a49a1f8",
+                "type": "leaf",
+                "state": {
+                  "type": "bm-explorer-view",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 332
+      },
+      "right": {
+        "id": "678d3599282a3de4",
+        "type": "split",
+        "children": [
+          {
+            "id": "e3aead01eec37037",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "8a1470130715ebe0",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "qucikadd/2023-06-05.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": true,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "17ac33c8c8dfa347",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "qucikadd/2023-06-05.md",
+                    "linksCollapsed": true,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "bb8fcf88036a7880",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "00b9b5b667dbced9",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "qucikadd/2023-06-05.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "horizontal",
+        "width": 415
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "obsidian-bookmaster-plugin:Book Explorer": false,
+          "templater-obsidian:Templater": false,
+          "audio-recorder:开始/结束录音": false,
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "meld-encrypt:Create new encrypted note": false,
+          "obsidian-excalidraw-plugin:新建 Excalidraw 绘图": false,
+          "obsidian-advanced-slides:Show Slide Preview": false,
+          "marp:Marp: Open Preview": false,
+          "workspaces:管理工作区布局": false
+        }
+      },
+      "active": "2ce220bbe57a44f9"
+    }
+  },
+  "active": "常用模板",
+  "quick-explorer@@qe-obsidian-title": "qe-title-right",
+  "quick-explorer@@qe-hide-breadcrumbs": false,
+  "buttons-styles@@button-background@@light": "#F5F6F8",
+  "Blue-Topaz-Codebox-Highlight@@code-theme-selection": "code-theme-bt-default",
+  "Blue-Topaz-Codebox-Highlight@@mute-code-indent-line": false,
+  "Blue-Topaz-Codebox-Highlight@@code-line-number": false,
+  "Blue-Topaz-Codebox-Highlight@@whole-code-wrap": true,
+  "Blue-Topaz-Codebox-Highlight@@letter-space-code": 0,
+  "Blue-Topaz-Codebox-Highlight@@code-box-style-option": "codebox-default-style",
+  "Blue-Topaz-Codebox-Highlight@@muted-code-activeline-bg": false,
+  "shimmering-focus@@normal-header-bar": true,
+  "shimmering-focus@@no-alternating-header-colors": false,
+  "shimmering-focus@@hide-trailing-whitespace": false,
+  "shimmering-focus@@use-relative-line-numbers": false,
+  "shimmering-focus@@show-sidebar-header-buttons": false,
+  "shimmering-focus@@show-urls": false,
+  "shimmering-focus@@show-new-tab-button": false,
+  "shimmering-focus@@show-tab-list-button": false,
+  "shimmering-focus@@show-sidebar-toggle-buttons": true,
+  "shimmering-focus@@show-close-buttons": false,
+  "shimmering-focus@@hide-attachment-folders": false,
+  "shimmering-focus@@show-file-explorer-navigation": false,
+  "shimmering-focus@@hidden-sidebars-hidden-statusbar": false,
+  "shimmering-focus@@hide-properties-in-statusbar": true,
+  "shimmering-focus@@hide-backlinks-status-bar": true,
+  "shimmering-focus@@hide-pane-relief-focus-lock-status-bar": false,
+  "shimmering-focus@@hide-electron-window-tweaker-status-bar": false,
+  "shimmering-focus@@hide-pandoc-reference-list-status-bar": false,
+  "shimmering-focus@@uncolored-italic": false,
+  "hover-editor@@he-title-bar-active-bg@@light": "#C7A2A2",
+  "kakano-style@@base": "#62B6C0",
+  "accent-color@@accent-color-for-light-theme": "accent-color-green-light",
+  "accent-color@@accent-color-for-dark-theme": "accent-color-green-dark",
+  "accent-color@@custom-accent-color": false,
+  "accent-color@@accent-color-light-hue-default": 247,
+  "accent-color@@accent-color-light-saturation-default": 70,
+  "accent-color@@accent-color-light-lightness-default": 72,
+  "pln@@pln-link-mods": true,
+  "pln@@pln-dv-mods": true,
+  "pln@@pln-dv-count": true,
+  "pln@@pln-pin-protect": true,
+  "pln@@pln-stacked-100": false,
+  "pln@@pln-boxed-tags": true,
+  "pln@@pln-attachments": false,
+  "pln@@pln-attachments-canvas": false,
+  "pln@@hide-properties": true,
+  "pln@@pln-props-heading": true,
+  "pln@@pln-props-list": true,
+  "pln@@pln-embd-mods": true,
+  "pln@@pln-embd-link": true,
+  "pln@@pln-embd-title": true,
+  "pln@@pln-embd-first": true,
+  "pln@@pln-rm-folder-nav": false,
+  "pln@@pln-rm-rside": false,
+  "pln@@pln-rm-win-lside-tl": false,
+  "pln@@pln-rm-status": false,
+  "pln@@pln-rm-tablist": false,
+  "pln@@pln-rm-nt": false,
+  "pln@@pln-rm-clstab": false,
+  "pln@@pln-rm-nav": false,
+  "pln@@pln-rm-act": false,
+  "pln@@pln-rm-noteic": false,
+  "pln@@pln-rm-scroll": true,
+  "pln@@pln-rm-mac-tside": false,
+  "pln@@pln-rm-srchSug": false,
+  "pln@@pln-pdf-rm-co-meta": true,
+  "pln@@pln-rm-co-links": false,
+  "pln@@pln-pdf-rm-co-links": true,
+  "sidenote-callout@@sidenote-backgound": true,
+  "sidenote-callout@@top-sidenote-callout-title": true,
+  "sidenote-callout@@aside-offset": 10,
+  "Olivier-s-Theme@@OT-filesNavigator-spacing": "filesNavigator-spacing-compact",
+  "Olivier-s-Theme@@OT-headings-scaling": "headings-scaling-OpSpl",
+  "Olivier-s-Theme@@OT-kanban-font": "Uberhand Pro",
+  "Olivier-s-Theme@@OT-generalPalette": "generalPalette-solarized",
+  "Olivier-s-Theme@@OT-accentColor-lightMode": "accentColor-lightMode-shade",
+  "Olivier-s-Theme@@OT-TextColor-lightMode": "textColor-lightMode-default",
+  "Olivier-s-Theme@@OT-pageBackground-lightMode": "pb-lm-none",
+  "Olivier-s-Theme@@paperBackground-in-livePreview-LM": true,
+  "Olivier-s-Theme@@OT-inkColor-lightMode": "inkColor-lightMode-default",
+  "Olivier-s-Theme@@OT-highlight-color": "highlight-color-default",
+  "Olivier-s-Theme@@OT-darkPalette": "darkPalette-solarized",
+  "Olivier-s-Theme@@paperBackground-in-livePreview-DM": true,
+  "Olivier-s-Theme@@OT-editMode-font": "Candara",
+  "Olivier-s-Theme@@OT-tables-style": "OT-tables-custom",
+  "garden-gnome@@hide-only-tab": "hide-only-tab_interactive",
+  "garden-gnome@@hide-window-buttons": false,
+  "shimmering-focus@@bg-hue-dark": 130,
+  "shimmering-focus@@inactive-pane-opacity": 75,
+  "shimmering-focus@@no-codeblock-line-numbers": false,
+  "shimmering-focus@@file-line-width": 700,
+  "shimmering-focus@@unrestricted-line-length-tables": false,
+  "shimmering-focus@@no-image-alttext-caption": false,
+  "shimmering-focus@@image-size": 50,
+  "shimmering-focus@@no-mouse-hovers": false,
+  "shimmering-focus@@longform-font-size": 1.2,
+  "shimmering-focus@@longform-base-line-height": 1,
+  "shimmering-focus@@longform-letter-spacing": 0,
+  "shimmering-focus@@hide-longform-status-bar": false,
+  "shimmering-focus@@longform-tasks-different": false,
+  "shimmering-focus@@longform-left-aligned": false,
+  "shimmering-focus@@longform-text-indent": false,
+  "shimmering-focus@@normal-out-back-links": false,
+  "shimmering-focus@@show-outline-buttons": false,
+  "shimmering-focus@@classic-inline-backlinks": false,
+  "shimmering-focus@@hide-signature-icon": false,
+  "shimmering-focus@@tab-width": 200,
+  "shimmering-focus@@heading-scaling": 0.85,
+  "shimmering-focus@@no-lp-heading-level-indicator": false,
+  "shimmering-focus@@uncolored-bold": false,
+  "shimmering-focus@@hide-languagetool-status-bar": false,
+  "shimmering-focus@@bg-hue-light": 230,
+  "shimmering-focus@@highlight-hue-1": 60,
+  "minimal-advanced@@cursor": "default",
+  "minimal-advanced@@styled-scrollbars": false,
+  "minimal-mobile@@mobile-toolbar-off": false,
+  "minimal-advanced@@hide-markdown": false,
+  "pln@@pln-cards-borders": true,
+  "pln@@pln-cards-sort": true,
+  "pln@@cards": false,
+  "pln@@pln-rm-co-meta": false,
+  "pln@@pln-embd-h1": false,
+  "pln@@pln-vision": false,
+  "everforest-enchanted-theme@@image-embed-enable-zoom": false,
+  "everforest-enchanted-theme@@image-embed-no-drag": false,
+  "everforest-enchanted-theme@@image-embed-stretch": false,
+  "pln@@pln-attachments-docx": false,
+  "pln@@pln-attachments-xlsx": false,
+  "pln@@pln-attachments-images": false,
+  "pln@@pln-hi-line-hover": false,
+  "pln@@pln-hi-line": false,
+  "pln@@pln-hdcl": true,
+  "Appearance-dark@@theme-dark-style-select": "theme-dark-background-brighter",
+  "Editor@@border-focus-mode": false,
+  "Appearance-dark@@card-layout-open-dark": false,
+  "minimal-cards-style@@cards-min-width": "400px",
+  "ITS@@ITS-Sizes": "sizing-mini",
+  "ITS@@accent-color": false,
+  "ITS@@s-d": false,
+  "ITS@@mini": false,
+  "ITS@@nord": false,
+  "ITS@@its-d": false,
+  "ITS@@notion": false,
+  "ITS@@select": "dnd",
+  "yaozhuwa@css@@blank-line-tweak": false,
+  "yaozhuwa@css@@outline-tweak": false,
+  "yaozhuwa@css@@seamless-embed": false,
+  "yaozhuwa@css@@clutter-free-headings": false,
+  "yaozhuwa@css@@code-line-number": false,
+  "yaozhuwa@css@@increase-paragraph-gap": false,
+  "yaozhuwa@css@@increase-headings-gap": false,
+  "yaozhuwa@css@@bigger-math-font": false,
+  "yaozhuwa@css@@table-line-number": false,
+  "yaozhuwa@css@@full-width-table": true,
+  "pln@@accent-dark-hsl": "#33634A",
+  "pdf-plus@@pdf-plus-sidebar-width": 140,
+  "pdf-plus@@pdf-plus-vim-hint-inverted": false,
+  "yaozhuwa@css@@anp-pdf-blend-toggle-dark": false,
+  "yaozhuwa@css@@anp-pdf-blend-toggle-light": false,
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-pink-topaz",
+  "blue-topaz-theme@@hide-vault-name": true,
+  "yaozhuwa@css@@hr-for-pagination": true,
+  "ytmaps@css@@hr-for-pagination": true,
+  "ytmaps@css@@table-line-number": false,
+  "ytmaps@css@@full-width-table": false,
+  "ytmaps@css@@bigger-math-font": false,
+  "ytmaps@css@@increase-headings-gap": false,
+  "ytmaps@css@@increase-paragraph-gap": false,
+  "ytmaps@css@@blank-line-tweak": false,
+  "ytmaps@css@@outline-tweak": false,
+  "ytmaps@css@@seamless-embed": false,
+  "ytmaps@css@@clutter-free-headings": false,
+  "ytmaps@css@@code-line-number": false,
+  "ytmaps0512@css@@blank-line-tweak": false,
+  "ytmaps0512@css@@outline-tweak": false,
+  "ytmaps0512@css@@seamless-embed": false,
+  "ytmaps0512@css@@clutter-free-headings": false,
+  "ytmaps0512@css@@code-line-number": false,
+  "ytmaps0512@css@@increase-paragraph-gap": false,
+  "ytmaps0512@css@@increase-headings-gap": false,
+  "ytmaps0512@css@@bigger-math-font": false,
+  "ytmaps0512@css@@full-width-table": false,
+  "ytmaps0512@css@@table-line-number": false,
+  "ytmaps0512@css@@hr-for-pagination": true,
+  "👉vx：ytmaps0512更新@@blank-line-tweak": false,
+  "👉vx：ytmaps0512更新@@outline-tweak": false,
+  "👉vx：ytmaps0512更新@@seamless-embed": false,
+  "👉vx：ytmaps0512更新@@clutter-free-headings": false,
+  "👉vx：ytmaps0512更新@@code-line-number": false,
+  "👉vx：ytmaps0512更新@@increase-paragraph-gap": false,
+  "👉vx：ytmaps0512更新@@increase-headings-gap": true,
+  "👉vx：ytmaps0512更新@@bigger-math-font": false,
+  "👉vx：ytmaps0512更新@@full-width-table": false,
+  "👉vx：ytmaps0512更新@@table-line-number": false,
+  "👉vx：ytmaps0512更新@@hr-for-pagination": true,
+  "👉vx：ytmaps0512更新@@anp-pdf-blend-toggle-dark": false,
+  "maple-scrollbar@@scrollbar-movein-animation": true,
+  "maple-scrollbar@@scrollbar-gutter": "scrollbar-gutter-default",
+  "things-style@@h2-underline": false,
+  "things-style@@h2-color": "#3F76C3",
+  "things-style@@tag-background-color-l": "#166144",
+  "things-style@@tag-background-color-d": "#1D694B",
+  "things-style@@default-font-color": true,
+  "things-style@@tag-font-color-d": "#921010",
+  "👉其他排版美化@@blank-line-tweak": false,
+  "👉其他排版美化@@outline-tweak": false,
+  "👉其他排版美化@@seamless-embed": false,
+  "👉其他排版美化@@clutter-free-headings": false,
+  "👉其他排版美化@@code-line-number": false,
+  "👉其他排版美化@@increase-paragraph-gap": false,
+  "👉其他排版美化@@increase-headings-gap": false,
+  "👉其他排版美化@@bigger-math-font": false,
+  "👉其他排版美化@@table-line-number": false,
+  "👉其他排版美化@@anp-pdf-blend-toggle-dark": false,
+  "👉其他排版美化@@hr-for-pagination": true,
+  "anuppuccin-theme-settings-extended@@anp-theme-ext-amoled": false,
+  "anuppuccin-theme-settings@@anp-layout-select": "anp-card-layout",
+  "anuppuccin-theme-settings@@anp-alt-rainbow-style": "anp-simple-rainbow-color-toggle",
+  "anuppuccin-theme-settings@@anp-alt-tab-style": "anp-safari-tab-toggle",
+  "anuppuccin-theme-settings@@anp-callout-select": "anp-callout-sleek",
+  "minimal-style@@base@@light": "#FFFAF0",
+  "minimal-style@@bg1@@dark": "#1B262E",
+  "minimal-style@@bg1@@light": "#F8FDEB",
+  "minimal-style@@bg2@@dark": "#202930",
+  "minimal-style@@bg2@@light": "#F8FDEB",
+  "minimal-style@@bg3@@dark": "#256565",
+  "minimal-style@@bg3@@light": "#D3E6BF",
+  "minimal-style@@ui1@@dark": "#256565",
+  "minimal-style@@ui1@@light": "#34993F87",
+  "minimal-style@@ui2@@dark": "#B0A344",
+  "minimal-style@@ui2@@light": "#DFE06C",
+  "minimal-style@@ui3@@dark": "#256565",
+  "minimal-style@@ui3@@light": "#7F8844",
+  "minimal-style@@ax1@@light": "#4A8F52",
+  "minimal-style@@blockquote-border-color@@light": "#4A8F52",
+  "minimal-style@@blockquote-border-thickness": 3,
+  "minimal-style@@blockquote-font-style": "normal",
+  "minimal-style@@callouts-style": "callouts-outlined",
+  "minimal-style@@callout-blend-mode": "var(--highlight-mix-blend-mode)",
+  "minimal-style@@code-background@@dark": "#1D373D",
+  "minimal-style@@code-background@@light": "#EAF0DB",
+  "minimal-style@@code-comment@@light": "#B04545",
+  "minimal-style@@code-function@@light": "#9115A6",
+  "minimal-style@@trim-cols": true,
+  "minimal-style@@embed-decoration-style": "solid",
+  "minimal-style@@h1-font": "微软雅黑",
+  "minimal-style@@h1-size": "1.3em",
+  "minimal-style@@h1-color@@dark": "#0A870A",
+  "minimal-style@@h1-color@@light": "#9636B1",
+  "minimal-style@@h1-variant": "normal",
+  "minimal-style@@h1-style": "normal",
+  "minimal-style@@h1-l": true,
+  "minimal-style@@h2-font": "微软雅黑",
+  "minimal-style@@h2-size": "1.1em",
+  "minimal-style@@h2-color@@dark": "#668007",
+  "minimal-style@@h2-color@@light": "#742A89",
+  "minimal-style@@h3-font": "微软雅黑",
+  "minimal-style@@h3-size": "1.05em",
+  "minimal-style@@h3-weight": 600,
+  "minimal-style@@h3-color@@dark": "#8BA217",
+  "minimal-style@@h3-color@@light": "#95798E",
+  "minimal-style@@h4-font": "微软雅黑",
+  "minimal-style@@h4-size": "0.9em",
+  "minimal-style@@h4-weight": 600,
+  "minimal-style@@h4-color@@dark": "#95798E",
+  "minimal-style@@h4-color@@light": "#8BA217",
+  "minimal-style@@h4-variant": "normal",
+  "minimal-style@@h5-font": "微软雅黑",
+  "minimal-style@@h5-size": "0.85em",
+  "minimal-style@@h5-weight": 600,
+  "minimal-style@@h5-color@@dark": "#742A89",
+  "minimal-style@@h5-color@@light": "#668007",
+  "minimal-style@@h5-variant": "normal",
+  "minimal-style@@h6-font": "微软雅黑",
+  "minimal-style@@h6-size": "0.8em",
+  "minimal-style@@h6-weight": 600,
+  "minimal-style@@h6-color@@dark": "#9636B1",
+  "minimal-style@@h6-color@@light": "#203403",
+  "minimal-style@@h6-variant": "normal",
+  "minimal-style@@image-muted": 0.45,
+  "minimal-style@@zoom-off": true,
+  "minimal-style@@image-grid-fit": "cover",
+  "minimal-style@@link-unresolved-opacity": 0.7,
+  "minimal-style@@active-line-on": true,
+  "minimal-style@@active-line-bg@@dark": "#32556400",
+  "minimal-style@@active-line-bg@@light": "#B2CDDF00",
+  "minimal-style@@list-spacing": 0.075,
+  "minimal-style@@list-indent": 2,
+  "minimal-style@@pdf-dark-opacity": 1,
+  "minimal-style@@metadata-heading-off": true,
+  "minimal-style@@metadata-dividers": true,
+  "minimal-style@@metadata-label-width": 8,
+  "minimal-style@@sidebar-tabs-style": "sidebar-tabs-wide",
+  "minimal-style@@ribbon-style": "ribbon-hidden",
+  "minimal-style@@maximize-tables-off": "maximize-tables-off",
+  "minimal-style@@table-lines": true,
+  "minimal-style@@tabs-style": "tabs-default",
+  "minimal-style@@tab-stacked-spine-orientation": "tab-stack-top",
+  "minimal-style@@tag-border-width": "1px",
+  "minimal-style@@tag-color@@dark": "#9F659B",
+  "minimal-style@@tag-color@@light": "#3B744A",
+  "minimal-style@@tag-background@@dark": "#9F659B29",
+  "minimal-style@@tag-background@@light": "#3B744A2B",
+  "minimal-style@@tag-background-hover@@dark": "#9F659B29",
+  "minimal-style@@tag-background-hover@@light": "#3B744A2B",
+  "minimal-style@@tx1@@dark": "#BBBBBB",
+  "minimal-style@@tx1@@light": "#070707",
+  "minimal-style@@hl1@@dark": "#714C8A70",
+  "minimal-style@@hl1@@light": "#92C995",
+  "minimal-style@@hl2@@light": "#ECEBA5",
+  "minimal-style@@tx2@@light": "#000000",
+  "minimal-style@@tx3@@dark": "#13972873",
+  "minimal-style@@tx3@@light": "#139728",
+  "minimal-style@@bold-weight": 600,
+  "minimal-style@@file-header-visibility": "minimal-tab-title-hover",
+  "minimal-style@@file-header-font-weight": 400,
+  "minimal-style@@file-header-justify": "center",
+  "minimal-style@@inline-title-weight": 600,
+  "minimal-style@@titlebar-text-weight": 600,
+  "minimal-style@@tab-stacked-pane-width": 700,
+  "minimal-style@@image-radius": 4,
+  "minimal-style@@minimal-code-scroll": false,
+  "👉其他排版美化@@center-image": false,
+  "minimal-style@@italic-color@@light": "#46872D",
+  "minimal-style@@italic-color@@dark": "#46872D",
+  "鱼先生的模块化Obsidian@@enable-grid-background": false,
+  "鱼先生的模块化Obsidian@@custom-line-padding": 3,
+  "鱼先生的模块化Obsidian@@blank-line-tweak": false,
+  "鱼先生的模块化Obsidian@@outline-tweak": false,
+  "鱼先生的模块化Obsidian@@seamless-embed": false,
+  "鱼先生的模块化Obsidian@@clutter-free-headings": false,
+  "鱼先生的模块化Obsidian@@code-line-number": false,
+  "鱼先生的模块化Obsidian@@increase-paragraph-gap": false,
+  "鱼先生的模块化Obsidian@@increase-headings-gap": false,
+  "鱼先生的模块化Obsidian@@bigger-math-font": false,
+  "鱼先生的模块化Obsidian@@table-line-number": false,
+  "鱼先生的模块化Obsidian@@enable-custom-status-bar": false,
+  "default-theme-toggle@@default-theme": false,
+  "theme-style-toggle@@ShibaInu-theme": true,
+  "theme-style-toggle@@default-theme": false,
+  "enhanced-button-styles@@button-theme": "theme-default",
+  "anuppuccin-theme-settings@@anp-colorful-frame": false,
+  "anuppuccin-theme-settings@@anp-colorful-frame-icon-toggle-light": false,
+  "anuppuccin-theme-settings@@anp-colorful-frame-icon-toggle-dark": false,
+  "anuppuccin-theme-settings@@anp-file-icons": false,
+  "anuppuccin-theme-settings@@anp-full-rainbow-text-color-toggle-light": false,
+  "anuppuccin-theme-settings@@anp-rainbow-file-toggle": false,
+  "anuppuccin-theme-settings@@anp-simple-rainbow-title-toggle": true,
+  "anuppuccin-theme-settings@@anp-simple-rainbow-collapse-icon-toggle": true,
+  "anuppuccin-theme-settings@@anp-simple-rainbow-indentation-toggle": false,
+  "anuppuccin-theme-settings@@anp-simple-rainbow-icon-toggle": false,
+  "anuppuccin-theme-settings@@anp-rainbow-subfolder-color-toggle": true,
+  "anuppuccin-theme-settings@@anp-card-shadows": true,
+  "anuppuccin-theme-settings@@anp-card-layout-actions": false,
+  "anuppuccin-theme-settings@@anp-card-layout-filebrowser": true,
+  "anuppuccin-theme-settings@@h1-font": "Arial",
+  "anuppuccin-theme-settings@@anp-header-divider-color-toggle": false,
+  "anuppuccin-theme-settings@@anp-header-color-toggle": true,
+  "anuppuccin-theme-settings@@anp-h1-color-custom": "anp-h1-sky",
+  "anuppuccin-theme-settings@@anp-header-margin-toggle": true,
+  "anuppuccin-theme-settings@@anp-h2-color-custom": "anp-h2-teal",
+  "anuppuccin-theme-settings@@h2-font": "Arial",
+  "anuppuccin-theme-settings@@h3-font": "Arial",
+  "anuppuccin-theme-settings@@hide-comment-indicators": false,
+  "anuppuccin-theme-settings@@hide-comments": false,
+  "anuppuccin-theme-settings@@anp-custom-vault-toggle": false,
+  "anuppuccin-theme-settings@@anp-floating-header": false,
+  "anuppuccin-theme-settings@@anp-collapse-folders": true,
+  "anuppuccin-theme-settings@@anp-file-label-align": "0",
+  "anuppuccin-theme-settings@@anp-list-toggle": false,
+  "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-latte",
+  "anuppuccin-theme-settings@@anuppuccin-theme-dark": "ctp-frappe",
+  "anuppuccin-theme-settings@@anuppuccin-accent-toggle": true,
+  "anuppuccin-theme-settings@@h1-size": 1.5,
+  "anuppuccin-theme-settings@@h2-size": 1.4,
+  "anuppuccin-theme-settings@@h3-size": 1.3,
+  "anuppuccin-theme-settings@@h4-size": 1.2,
+  "anuppuccin-theme-settings@@h5-size": 1.1,
+  "anuppuccin-theme-settings@@h6-size": 1.05,
+  "primary-theme@@ribbon_styles": "ribbon-default",
+  "primary-theme@@zero-tab-anim": false,
+  "primary-theme@@zero-popup-blur": false,
+  "primary-theme@@interface_editor-bg": "editor-bg-default",
+  "shiba-theme-settings@@shiba-colors-theme-light": "sky-light",
+  "shiba-theme-settings@@shiba-accent-colors": "accent-blue",
+  "shiba-theme-settings@@text-highlight-bg@@light": "#EED619",
+  "shiba-theme-settings@@shib-callout-toggle": false,
+  "shiba-theme-settings@@shib-h1-color-custom": "shib-h1-red",
+  "shiba-theme-settings@@shiba-remove-heading-indicator": false,
+  "shiba-theme-settings@@shiba-clutter-free-headings": false,
+  "shiba-theme-settings@@shib-h3-underline": true,
+  "shiba-theme-settings@@shib-h4-underline": false,
+  "shiba-theme-settings@@shib-header-color-toggle": true,
+  "shiba-theme-settings@@shib-callout-fold-position": true
+}

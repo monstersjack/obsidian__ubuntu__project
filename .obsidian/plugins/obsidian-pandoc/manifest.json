@@ -1,0 +1,10 @@
+{
+    "id": "obsidian-pandoc",
+    "name": "Pandoc Plugin",
+    "version": "0.4.1",
+    "minAppVersion": "0.12.5",
+    "description": "提供导出到DOCX、ePub和PDF等格式的命令。",
+    "author": "Oliver Balfour",
+    "authorUrl": "https://github.com/OliverBalfour/obsidian-pandoc",
+    "isDesktopOnly": true
+}

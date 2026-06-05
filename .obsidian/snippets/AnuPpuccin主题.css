@@ -1,0 +1,10 @@
+body.theme-light.anp-card-layout .workspace-split.mod-left-split .workspace-sidedock-vault-profile{
+    margin-bottom:12px;
+    background-color:aliceblue;
+}
+body.theme-dark.anp-card-layout .workspace-split.mod-left-split .workspace-sidedock-vault-profile{
+    margin-bottom:12px;
+    background-color:rgb(63, 71, 79);
+}
+
+    
