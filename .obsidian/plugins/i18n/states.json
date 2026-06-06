@@ -1,0 +1,72 @@
+{
+    "plugins": {
+        "better-fn": {
+            "id": "better-fn",
+            "isApplied": true,
+            "pluginVersion": "1.0.1",
+            "translationVersion": "2.0.0"
+        },
+        "calendar": {
+            "id": "calendar",
+            "isApplied": true,
+            "pluginVersion": "1.5.10",
+            "translationVersion": "2.0.0"
+        },
+        "mysnippets-plugin": {
+            "id": "mysnippets-plugin",
+            "isApplied": true,
+            "pluginVersion": "1.2.3",
+            "translationVersion": "2.0.0"
+        },
+        "obsidian-auto-link-title": {
+            "id": "obsidian-auto-link-title",
+            "isApplied": true,
+            "pluginVersion": "1.5.5",
+            "translationVersion": "2.0.0"
+        },
+        "obsidian-style-settings": {
+            "id": "obsidian-style-settings",
+            "isApplied": true,
+            "pluginVersion": "1.0.9",
+            "translationVersion": "2.0.0"
+        },
+        "obsidian42-brat": {
+            "id": "obsidian42-brat",
+            "isApplied": true,
+            "pluginVersion": "1.4.1",
+            "translationVersion": "2.0.1"
+        },
+        "obsidian-excalidraw-plugin": {
+            "id": "obsidian-excalidraw-plugin",
+            "isApplied": true,
+            "pluginVersion": "2.15.2",
+            "translationVersion": "2.0.0"
+        },
+        "omnisearch": {
+            "id": "omnisearch",
+            "isApplied": true,
+            "pluginVersion": "1.27.2",
+            "translationVersion": "2.0.0"
+        },
+        "github-sync": {
+            "id": "github-sync",
+            "isApplied": true,
+            "pluginVersion": "1.0.7",
+            "translationVersion": "1.0.0"
+        },
+        "obsidian-git": {
+            "id": "obsidian-git",
+            "isApplied": true,
+            "pluginVersion": "2.38.3",
+            "translationVersion": "1.0.0"
+        }
+    },
+    "themes": {
+        "Maple": {
+            "id": "Maple",
+            "isApplied": true,
+            "pluginVersion": "0.8.34",
+            "translationVersion": "2.0.0"
+        }
+    }
+}

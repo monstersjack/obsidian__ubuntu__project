@@ -1,0 +1,123 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "github-sync",
+        "version": "1.0.0",
+        "title": "GitHub Sync",
+        "description": "GitHub Sync Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "1.0.7",
+        "author": "Monstersjack"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [],
+            "regex": [
+                {
+                    "source": "log(`正在检查%s`, path);\n      try {\n        const stat = fs_1.statSync(path);\n        if (stat.isFile() && isFile) {\n          log(`[OK]路径表示一个文件`)",
+                    "target": "log(`正在检查%s`, path);\n      try {\n        const stat = fs_1.statSync(path);\n        if (stat.isFile() && isFile) {\n          log(`[OK]路径表示一个文件`)"
+                },
+                {
+                    "source": "log(`[OK]路径代表一个目录`)",
+                    "target": "log(`[OK]路径代表一个目录`)"
+                },
+                {
+                    "source": "log(`[FAIL]路径表示文件或目录以外的其他内容`)",
+                    "target": "log(`[FAIL]路径表示文件或目录以外的其他内容`)"
+                },
+                {
+                    "source": "Notice(\"github同步成功”，“信息\")",
+                    "target": "Notice(\"github同步成功”，“信息\")"
+                },
+                {
+                    "source": "Notice(\"GitHub同步：通过远程更新。“，”信息\")",
+                    "target": "Notice(\"GitHub同步：通过远程更新。“，”信息\")"
+                },
+                {
+                    "source": "Notice(\"自动同步已启用”，“信息\")",
+                    "target": "Notice(\"自动同步已启用”，“信息\")"
+                },
+                {
+                    "source": "setName(\"远程URL\")",
+                    "target": "setName(\"远程URL\")"
+                },
+                {
+                    "source": "setDesc(\"“）.addText（（text）=>text.set占位符（”\")",
+                    "target": "setDesc(\"“）.addText（（text）=>text.set占位符（”\")"
+                },
+                {
+                    "source": "setName(\"git二进制位置\")",
+                    "target": "setName(\"git二进制位置\")"
+                },
+                {
+                    "source": "setDesc(\"这是可选的！仅当无法通过系统PATH找到git时才设置此项，然后在此处提供其位置。有关更多信息，请参阅README。\")",
+                    "target": "setDesc(\"这是可选的！仅当无法通过系统PATH找到git时才设置此项，然后在此处提供其位置。有关更多信息，请参阅README。\")"
+                },
+                {
+                    "source": "setName(\"通知级别\")",
+                    "target": "setName(\"通知级别\")"
+                },
+                {
+                    "source": "setDesc(\"选择在Obsidian UI中显示哪些GitHub Sync通知。\")",
+                    "target": "setDesc(\"选择在Obsidian UI中显示哪些GitHub Sync通知。\")"
+                },
+                {
+                    "source": "setName(\"隐藏成功消息\")",
+                    "target": "setName(\"隐藏成功消息\")"
+                },
+                {
+                    "source": "setDesc(\"隐藏同步成功完成时显示的单个成功通知。\")",
+                    "target": "setDesc(\"隐藏同步成功完成时显示的单个成功通知。\")"
+                },
+                {
+                    "source": "setName(\"检查启动状态\")",
+                    "target": "setName(\"检查启动状态\")"
+                },
+                {
+                    "source": "setDesc(\"启动黑曜石时，检查您是否在遥控器后面。\")",
+                    "target": "setDesc(\"启动黑曜石时，检查您是否在遥控器后面。\")"
+                },
+                {
+                    "source": "setName(\"启动时自动同步\")",
+                    "target": "setName(\"启动时自动同步\")"
+                },
+                {
+                    "source": "setDesc(\"如果有未同步的更改，则在启动Obsidian时自动与远程同步。\")",
+                    "target": "setDesc(\"如果有未同步的更改，则在启动Obsidian时自动与远程同步。\")"
+                },
+                {
+                    "source": "setName(\"间隔自动同步\")",
+                    "target": "setName(\"间隔自动同步\")"
+                },
+                {
+                    "source": "setDesc(\"设置自动同步保管库的分钟间隔。如果此字段为空或不是正整数，则禁用自动同步。重新启动Obsidan以生效。\")",
+                    "target": "setDesc(\"设置自动同步保管库的分钟间隔。如果此字段为空或不是正整数，则禁用自动同步。重新启动Obsidan以生效。\")"
+                },
+                {
+                    "source": "name = \"empty\"",
+                    "target": "name = \"empty\""
+                },
+                {
+                    "source": "name: \"与远程同步\"",
+                    "target": "name: \"与远程同步\""
+                },
+                {
+                    "source": "text: \"如何使用此插件\"",
+                    "target": "text: \"如何使用此插件\""
+                },
+                {
+                    "source": "text: \"请参阅\"",
+                    "target": "text: \"请参阅\""
+                },
+                {
+                    "source": "text: \"自述文件\"",
+                    "target": "text: \"自述文件\""
+                },
+                {
+                    "source": "text: \"了解更多信息和故障排除。\"",
+                    "target": "text: \"了解更多信息和故障排除。\""
+                }
+            ]
+        }
+    }
+}

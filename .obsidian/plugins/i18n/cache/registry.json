@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "repoAddress": "voxrs/obsidian-translations",
+      "registeredAt": "2026-03-13T10:08:57.461Z",
+      "isOfficial": false,
+      "isFeatured": false
+    },
+    {
+      "repoAddress": "yunrr/obsidian-i18n-resources",
+      "registeredAt": "2026-03-14T01:31:25.965Z",
+      "isOfficial": true,
+      "isFeatured": true
+    },
+    {
+      "repoAddress": "Anonym0usPlayer/obsidian-i18n-resources",
+      "registeredAt": "2026-03-17T09:42:27.058Z"
+    },
+    {
+      "repoAddress": "Ayanami-Shinji/obsidian-i18n-resources",
+      "registeredAt": "2026-03-20T23:06:39.953Z"
+    },
+    {
+      "repoAddress": "xiaosong8584/obsidian-i18n-resources",
+      "registeredAt": "2026-03-23T11:31:25.488Z"
+    },
+    {
+      "repoAddress": "yeeun4028/obsidian-i18n-resources",
+      "registeredAt": "2026-04-06T13:00:51.891Z"
+    },
+    {
+      "repoAddress": "daoziy/obsidian-i18n-daoziz",
+      "registeredAt": "2026-04-07T00:21:21.698Z"
+    },
+    {
+      "repoAddress": "yubolun/obsidian-i18n-resources",
+      "registeredAt": "2026-04-07T09:40:27.106Z"
+    },
+    {
+      "repoAddress": "AscerChan/obsidian-i18n-resources",
+      "registeredAt": "2026-04-10T03:01:21.813Z"
+    },
+    {
+      "repoAddress": "cute-boy-2736/obsidian-translations",
+      "registeredAt": "2026-04-13T15:22:27.983Z"
+    },
+    {
+      "repoAddress": "ljded/obsidian-i18n-resources",
+      "registeredAt": "2026-04-28T02:42:52.566Z"
+    },
+    {
+      "repoAddress": "Dxnixub/obsidian-translations",
+      "registeredAt": "2026-05-06T02:05:21.907Z"
+    },
+    {
+      "repoAddress": "lizhengyi3003/obsidian-i18n-resources",
+      "registeredAt": "2026-05-24T04:36:52.665Z"
+    },
+    {
+      "repoAddress": "Chico890921/obsidian-translations",
+      "registeredAt": "2026-05-25T13:10:05.838Z"
+    },
+    {
+      "repoAddress": "Siyin22/obsidian-i18n-resources",
+      "registeredAt": "2026-05-28T22:25:49.230Z"
+    },
+    {
+      "repoAddress": "win2ter/obsidian-translations",
+      "registeredAt": "2026-05-30T22:38:54.481Z"
+    },
+    {
+      "repoAddress": "Fish-Ring/obsidian-i18n-resources",
+      "registeredAt": "2026-06-01T14:43:08.942Z"
+    },
+    {
+      "repoAddress": "agarcabin/obsidian-translations",
+      "registeredAt": "2026-06-03T12:00:26.887Z"
+    },
+    {
+      "repoAddress": "ZergoWL/obsidian-i18n-resources",
+      "registeredAt": "2026-06-04T11:13:07.430Z"
+    },
+    {
+      "repoAddress": "amouses/haokunyo-resources",
+      "registeredAt": "2026-06-04T16:14:43.261Z"
+    }
+  ],
+  "fetchedAt": 1780663253954
+}

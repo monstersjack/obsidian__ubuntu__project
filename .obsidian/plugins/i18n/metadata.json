@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 2,
+  "sources": {
+    "f7q3PIT4oDpstmykvFKwIDj8eNbGUTkc": {
+      "id": "f7q3PIT4oDpstmykvFKwIDj8eNbGUTkc",
+      "plugin": "obsidian-git",
+      "title": "[Chico][zh-cn] Git",
+      "type": "plugin",
+      "origin": "local",
+      "isActive": false,
+      "checksum": "615684def80f5d0334120b629d4b79275f79bbe43f11b4bea6fbeeecd0b15851",
+      "updatedAt": 1780664289270,
+      "createdAt": 1780663114043
+    },
+    "5plaTXuPvGH8hFz5D0_hOYtvvudfF7UW": {
+      "id": "5plaTXuPvGH8hFz5D0_hOYtvvudfF7UW",
+      "plugin": "better-fn",
+      "title": "Better footnote",
+      "type": "plugin",
+      "origin": "cloud",
+      "isActive": true,
+      "checksum": "d78a89c789bb247bb441c0c65a47497ee539051ec7bedd72b74fe1c81598df0a",
+      "cloud": {
+        "owner": "yubolun",
+        "repo": "obsidian-i18n-resources",
+        "hash": "6733936e6733936e6733936e6733936e"
+      },
+      "updatedAt": 1780663302369,
+      "createdAt": 1780663302369
+    },
+    "Sustxa0aS5IyP03-lRWiwwJTzCh_kPGk": {
+      "id": "Sustxa0aS5IyP03-lRWiwwJTzCh_kPGk",
+      "plugin": "calendar",
+      "title": "Calendar",
+      "type": "plugin",
+      "origin": "cloud",
+      "isActive": true,
+      "checksum": "428d3ba32d6d9686361b121b95ea6c40c088d76c980b1429802741309bbc685c",
+      "cloud": {
+        "owner": "yubolun",
+        "repo": "obsidian-i18n-resources",
+        "hash": "42aa48ff42aa48ff42aa48ff42aa48ff"
+      },
+      "updatedAt": 1780663305387,
+      "createdAt": 1780663305387
+    },
+    "jncL6z8LyQJki85-8ZWFpRj-OyJ3r5sz": {
+      "id": "jncL6z8LyQJki85-8ZWFpRj-OyJ3r5sz",
+      "plugin": "mysnippets-plugin",
+      "title": "MySnippets",
+      "type": "plugin",
+      "origin": "cloud",
+      "isActive": true,
+      "checksum": "cbd1aef47714c9b9a4209fddced4d301cfc90fbda9cb56d7ed6047189098b040",
+      "cloud": {
+        "owner": "yubolun",
+        "repo": "obsidian-i18n-resources",
+        "hash": "5fb049d35fb049d35fb049d35fb049d3"
+      },
+      "updatedAt": 1780663308996,
+      "createdAt": 1780663308996
+    },
+    "SjQblgcL5P73ZW18CH3n4IWnaQEsEtSu": {
+      "id": "SjQblgcL5P73ZW18CH3n4IWnaQEsEtSu",
+      "plugin": "obsidian-auto-link-title",
+      "title": "Auto Link Title",
+      "type": "plugin",
+      "origin": "local",
+      "isActive": true,
+      "checksum": "a7ff5c224a743779658ec1ba0f603405e07d07eb5b3755f92bb10f5a65faec9a",
+      "updatedAt": 1780664302530,
+      "createdAt": 1780663309571
+    },
+    "gt5bbAQTn-fj4XLIf4RA9HwfYpac1-o1": {
+      "id": "gt5bbAQTn-fj4XLIf4RA9HwfYpac1-o1",
+      "plugin": "obsidian-style-settings",
+      "title": "Style Settings",
+      "type": "plugin",
+      "origin": "cloud",
+      "isActive": true,
+      "checksum": "144faebc81b10dd32086dbef0e10aa69ba35a2f5281e4ee672079550a7e7c0d9",
+      "cloud": {
+        "owner": "yubolun",
+        "repo": "obsidian-i18n-resources",
+        "hash": "0dbd31070dbd31070dbd31070dbd3107"
+      },
+      "updatedAt": 1780663311558,
+      "createdAt": 1780663311558
+    },
+    "qRUeTo0OJDb9B2tY7YH1Jy3634bteTnw": {
+      "id": "qRUeTo0OJDb9B2tY7YH1Jy3634bteTnw",
+      "plugin": "obsidian-excalidraw-plugin",
+      "title": "Excalidraw",
+      "type": "plugin",
+      "origin": "cloud",
+      "isActive": true,
+      "checksum": "144accada7db958350a7f2c24b9621a74cc71ceba0dda02525a8a36ae830b85b",
+      "cloud": {
+        "owner": "yubolun",
+        "repo": "obsidian-i18n-resources",
+        "hash": "397d4221397d4221397d4221397d4221"
+      },
+      "updatedAt": 1780663312612,
+      "createdAt": 1780663312612
+    },
+    "1xU8cUQfdqR9D5XVH1PhGAhB28hCi_QB": {
+      "id": "1xU8cUQfdqR9D5XVH1PhGAhB28hCi_QB",
+      "plugin": "obsidian42-brat",
+      "title": "BRAT",
+      "type": "plugin",
+      "origin": "cloud",
+      "isActive": true,
+      "checksum": "abb27c673f59e7a4524375af617e49dbf7974361959880d8fea56921da288c1f",
+      "cloud": {
+        "owner": "yubolun",
+        "repo": "obsidian-i18n-resources",
+        "hash": "1006755e1006755e1006755e1006755e"
+      },
+      "updatedAt": 1780663312922,
+      "createdAt": 1780663312922
+    },
+    "IIsuTPvMeTKNPNOSq85pQ09kRVOk6nAj": {
+      "id": "IIsuTPvMeTKNPNOSq85pQ09kRVOk6nAj",
+      "plugin": "omnisearch",
+      "title": "Omnisearch",
+      "type": "plugin",
+      "origin": "cloud",
+      "isActive": true,
+      "checksum": "166fe23a0a8064d884902cf1e621b1f766b20bf0e27a5885fc939af7b2b4c85d",
+      "cloud": {
+        "owner": "yubolun",
+        "repo": "obsidian-i18n-resources",
+        "hash": "67057ce167057ce167057ce167057ce1"
+      },
+      "updatedAt": 1780663315638,
+      "createdAt": 1780663315638
+    },
+    "6zjbNbxOf0gxBB1Pi8okH-_zwIue500w": {
+      "id": "6zjbNbxOf0gxBB1Pi8okH-_zwIue500w",
+      "plugin": "Maple",
+      "title": "Maple",
+      "type": "theme",
+      "origin": "cloud",
+      "isActive": true,
+      "checksum": "36427eaa424451f4082a59215442ad9183aa655f8a90ca2122cb76e95943ecb1",
+      "cloud": {
+        "owner": "yubolun",
+        "repo": "obsidian-i18n-resources",
+        "hash": "7f4997867f4997867f4997867f499786"
+      },
+      "updatedAt": 1780663317196,
+      "createdAt": 1780663317196
+    },
+    "iMFsy8RJ136dEcYfdqi7CEyOuqa2ouph": {
+      "id": "iMFsy8RJ136dEcYfdqi7CEyOuqa2ouph",
+      "plugin": "github-sync",
+      "title": "GitHub Sync",
+      "type": "plugin",
+      "origin": "local",
+      "isActive": false,
+      "checksum": "d7b51be5223626021c436a517575433743bc8233a66de13ed35fa30b7496a6cf",
+      "updatedAt": 1780663943277,
+      "createdAt": 1780663653196
+    },
+    "NIwWpa_7MmpRIWrndrlHgwvPqlIc24nC": {
+      "id": "NIwWpa_7MmpRIWrndrlHgwvPqlIc24nC",
+      "plugin": "github-sync",
+      "title": "GitHub Sync",
+      "type": "plugin",
+      "origin": "local",
+      "isActive": true,
+      "checksum": "a6a651e0423734d47369cd24925444223393a622036de213a0d1e2dd1db87fa0",
+      "updatedAt": 1780664325373,
+      "createdAt": 1780663952027
+    },
+    "JMvwIIiCTDoR4l11tl8BkhdDpHj_b42e": {
+      "id": "JMvwIIiCTDoR4l11tl8BkhdDpHj_b42e",
+      "plugin": "obsidian-git",
+      "title": "Git",
+      "type": "plugin",
+      "origin": "local",
+      "isActive": false,
+      "checksum": "c067f7f07231b2912d55b203121addd8a031dad5fdca037937ffe8d80efcb889",
+      "updatedAt": 1780664522324,
+      "createdAt": 1780664011576
+    },
+    "thj29KXTWg-5Bq81a6LjQJr2LbqzlCmq": {
+      "id": "thj29KXTWg-5Bq81a6LjQJr2LbqzlCmq",
+      "plugin": "obsidian-git",
+      "title": "Git",
+      "type": "plugin",
+      "origin": "local",
+      "isActive": false,
+      "checksum": "a05f3f6b0960b231065759d570f41be148eb33b13fbafc211c02c1d85ead0e79",
+      "updatedAt": 1780664540489,
+      "createdAt": 1780664540488
+    },
+    "JBt3wTb1zSt-v0w5wUcMA8ZVlrdN-myG": {
+      "id": "JBt3wTb1zSt-v0w5wUcMA8ZVlrdN-myG",
+      "plugin": "obsidian-git",
+      "title": "Git",
+      "type": "plugin",
+      "origin": "local",
+      "isActive": true,
+      "checksum": "1e96ccf54d44820d386cdc54febd4dc745cbe8d248214ddd566645e790562a4c",
+      "updatedAt": 1780664717402,
+      "createdAt": 1780664623850
+    }
+  }
+}

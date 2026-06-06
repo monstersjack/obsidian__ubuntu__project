@@ -1,0 +1,296 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "obsidian-auto-link-title",
+        "version": "2.0.0",
+        "title": "Auto Link Title",
+        "description": "Auto Link Title Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "1.5.5",
+        "author": "Machine丶YU"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "LinkPreview API key is not 32 characters long, please check your settings",
+                    "target": "LinkPreview API 密钥长度不是 32 个字符，请检查您的设置"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "loading obsidian-auto-link-title",
+                    "target": "正在加载 obsidian-auto-link-title"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Title via Link Preview failed, falling back to scraper",
+                    "target": "通过 Link Preview 获取标题失败，回退到抓取器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Using new scraper",
+                    "target": "正在使用新抓取器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "Using old scraper",
+                    "target": "正在使用旧抓取器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "unloading obsidian-auto-link-title",
+                    "target": "正在卸载 obsidian-auto-link-title"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Fetch the link title when pasting a link in the editor with the default paste command",
+                    "target": "使用默认粘贴命令在编辑器中粘贴链接时获取链接标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Fetch the link title when drag and dropping a link from another program",
+                    "target": "从其他程序拖放链接时获取链接标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Set the maximum length of the title. Set to 0 to disable.",
+                    "target": "设置标题的最大长度。设置为 0 以禁用。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Whether to prefer selected text as title over fetched title when pasting",
+                    "target": "粘贴时是否优先使用选中的文本作为标题，而不是获取的标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "List of strings (comma separated) that disable autocompleting website titles. Can be URLs or arbitrary text.",
+                    "target": "禁用自动补全网站标题的字符串列表（逗号分隔）。可以是URL或任意文本。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "Use a more readable placeholder when fetching the title of a link.",
+                    "target": "获取链接标题时使用更易读的占位符。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "API key for the LinkPreview.net service. Get one at https://my.linkpreview.net/access_keys",
+                    "target": "LinkPreview.net服务的API密钥。请在 https://my.linkpreview.net/access_keys 获取。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enhance Default Paste",
+                    "target": "增强默认粘贴"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Enhance Drop Events",
+                    "target": "增强拖放事件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Maximum title length",
+                    "target": "最大标题长度"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Preserve selection as title",
+                    "target": "保留选中内容作为标题"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Website Blacklist",
+                    "target": "网站黑名单"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Use New Scraper",
+                    "target": "使用新抓取器"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Use Better Fetching Placeholder",
+                    "target": "使用更好的获取占位符"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "LinkPreview API Key",
+                    "target": "LinkPreview API 密钥"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "localhost, tiktok.com",
+                    "target": "localhost, tiktok.com"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "LinkPreview API key must be 32 characters long",
+                    "target": "LinkPreview API 密钥长度必须为 32 个字符"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Paste URL and auto fetch title",
+                    "target": "粘贴 URL 并自动获取标题"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Normal paste (no fetching behavior)",
+                    "target": "普通粘贴（无获取行为）"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "Enhance existing URL with link and title",
+                    "target": "为现有 URL 增强链接和标题"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"Enhance Default Paste\")",
+                    "target": "setName(\"Enhance Default Paste\")"
+                },
+                {
+                    "source": "setDesc(\"Fetch the link title when pasting a link in the editor with the default paste command\")",
+                    "target": "setDesc(\"Fetch the link title when pasting a link in the editor with the default paste command\")"
+                },
+                {
+                    "source": "setName(\"Enhance Drop Events\")",
+                    "target": "setName(\"Enhance Drop Events\")"
+                },
+                {
+                    "source": "setDesc(\"Fetch the link title when drag and dropping a link from another program\")",
+                    "target": "setDesc(\"Fetch the link title when drag and dropping a link from another program\")"
+                },
+                {
+                    "source": "setName(\"Maximum title length\")",
+                    "target": "setName(\"Maximum title length\")"
+                },
+                {
+                    "source": "setDesc(\"Set the maximum length of the title. Set to 0 to disable.\")",
+                    "target": "setDesc(\"Set the maximum length of the title. Set to 0 to disable.\")"
+                },
+                {
+                    "source": "setName(\"Preserve selection as title\")",
+                    "target": "setName(\"Preserve selection as title\")"
+                },
+                {
+                    "source": "setDesc(\"Whether to prefer selected text as title over fetched title when pasting\")",
+                    "target": "setDesc(\"Whether to prefer selected text as title over fetched title when pasting\")"
+                },
+                {
+                    "source": "setName(\"Website Blacklist\")",
+                    "target": "setName(\"Website Blacklist\")"
+                },
+                {
+                    "source": "setDesc(\"List of strings (comma separated) that disable autocompleting website titles. Can be URLs or arbitrary text.\")",
+                    "target": "setDesc(\"List of strings (comma separated) that disable autocompleting website titles. Can be URLs or arbitrary text.\")"
+                },
+                {
+                    "source": "setPlaceholder(\"localhost, tiktok.com\")",
+                    "target": "setPlaceholder(\"localhost, tiktok.com\")"
+                },
+                {
+                    "source": "setName(\"Use New Scraper\")",
+                    "target": "setName(\"Use New Scraper\")"
+                },
+                {
+                    "source": "setName(\"Use Better Fetching Placeholder\")",
+                    "target": "setName(\"Use Better Fetching Placeholder\")"
+                },
+                {
+                    "source": "setDesc(\"Use a more readable placeholder when fetching the title of a link.\")",
+                    "target": "setDesc(\"Use a more readable placeholder when fetching the title of a link.\")"
+                },
+                {
+                    "source": "setName(\"LinkPreview API Key\")",
+                    "target": "setName(\"LinkPreview API Key\")"
+                },
+                {
+                    "source": "setDesc(\"API key for the LinkPreview.net service. Get one at https://my.linkpreview.net/access_keys\")",
+                    "target": "setDesc(\"API key for the LinkPreview.net service. Get one at https://my.linkpreview.net/access_keys\")"
+                },
+                {
+                    "source": "Notice(\"LinkPreview API key must be 32 characters long\")",
+                    "target": "Notice(\"LinkPreview API key must be 32 characters long\")"
+                },
+                {
+                    "source": "log(\"loading obsidian-auto-link-title\")",
+                    "target": "log(\"loading obsidian-auto-link-title\")"
+                },
+                {
+                    "source": "log(`Unable to find text \"${pasteId}\" in current editor, bailing out; link ${url}`)",
+                    "target": "log(`Unable to find text \"${pasteId}\" in current editor, bailing out; link ${url}`)"
+                },
+                {
+                    "source": "error(\"LinkPreview API key is not 32 characters long, please check your settings\")",
+                    "target": "error(\"LinkPreview API key is not 32 characters long, please check your settings\")"
+                },
+                {
+                    "source": "log(`Title via Link Preview: ${title}`)",
+                    "target": "log(`Title via Link Preview: ${title}`)"
+                },
+                {
+                    "source": "log(\"Title via Link Preview failed, falling back to scraper\")",
+                    "target": "log(\"Title via Link Preview failed, falling back to scraper\")"
+                },
+                {
+                    "source": "log(\"Using new scraper\")",
+                    "target": "log(\"Using new scraper\")"
+                },
+                {
+                    "source": "log(\"Using old scraper\")",
+                    "target": "log(\"Using old scraper\")"
+                },
+                {
+                    "source": "log(`Title: ${title}`)",
+                    "target": "log(`Title: ${title}`)"
+                },
+                {
+                    "source": "log(\"unloading obsidian-auto-link-title\")",
+                    "target": "log(\"unloading obsidian-auto-link-title\")"
+                },
+                {
+                    "source": "name = \"SuppressedError\"",
+                    "target": "name = \"SuppressedError\""
+                },
+                {
+                    "source": "name: \"Paste URL and auto fetch title\"",
+                    "target": "name: \"Paste URL and auto fetch title\""
+                },
+                {
+                    "source": "name: \"Normal paste (no fetching behavior)\"",
+                    "target": "name: \"Normal paste (no fetching behavior)\""
+                },
+                {
+                    "source": "name: \"Enhance existing URL with link and title\"",
+                    "target": "name: \"Enhance existing URL with link and title\""
+                }
+            ]
+        }
+    }
+}

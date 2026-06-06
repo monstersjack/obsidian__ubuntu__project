@@ -7,7 +7,7 @@ id: maple-basic
 settings:
     -
         id: setting-animation-time
-        title: Animation Duration (ms)
+        title: 动画持续时间(毫秒)
         title.zh: 动画持续时间（毫秒）
         type: variable-number-slider
         format: ms
@@ -24,14 +24,14 @@ settings:
         type: class-toggle
     -
         id: color-accent-light
-        title: Light Mode
+        title: 光式模式
         title.zh: 浅色模式
         type: heading
         collapsed: true
         level: 2
     -
         id: setting-accent-h-light
-        title: Base Color
+        title: 基础色
         title.zh: 基础颜色
         type: variable-number-slider
         default: 35
@@ -40,7 +40,7 @@ settings:
         step: 5
     -
         id: color-active-light
-        title: Highlight Color
+        title: 高亮色
         title.zh: 高亮颜色
         type: class-select
         allowEmpty: false
@@ -93,14 +93,14 @@ settings:
         step: 1
     -
         id: color-accent-dark
-        title: Dark Mode
+        title: 深色模式
         title.zh: 暗色模式
         type: heading
         collapsed: true
         level: 2
     -
         id: setting-accent-h-dark
-        title: Base Color
+        title: 基础色
         title.zh: 基础颜色
         type: variable-number-slider
         default: 207
@@ -109,7 +109,7 @@ settings:
         step: 5
     -
         id: color-active-dark
-        title: Highlight Color
+        title: 高亮色
         title.zh: 高亮颜色
         type: class-select
         allowEmpty: false
@@ -225,7 +225,7 @@ settings:
         default-dark: '#'
     -
         id: explorer
-        title: File Explorer
+        title: 文件管理器
         title.zh: 文件管理器
         type: heading
         collapsed: true
@@ -233,7 +233,7 @@ settings:
     -
         id: explorer-nav-decoration
         title: Add Tail Decorator On Active File
-        description: Reference from https://github.com/Akifyss/obsidian-border
+        description: 参考自 https://github.com/Akifyss/obsidian-border
         title.zh: 在当前文件末尾添加装饰
         description.zh: 参考 https://github.com/Akifyss/obsidian-border
         type: class-toggle
@@ -261,7 +261,7 @@ settings:
         default: true
     -
         id: setting-color-dirs
-        title: Directory Color
+        title: 目录颜色
         title.zh: 文件夹颜色
         type: variable-themed-color
         format: rgb-values
@@ -285,7 +285,7 @@ settings:
         default: true
     -
         id: status-bar
-        title: Status Bar
+        title: 状态栏
         title.zh: 状态栏
         type: heading
         collapsed: true
@@ -304,7 +304,7 @@ settings:
         default: true
     -
         id: status-bar-style
-        title: Status Bar Animation
+        title: 状态栏动画
         description: ❗last style only valid when turn on “round status bar”
         title.zh: 状态栏样式
         description.zh: ❗最后一种样式只在开启“圆角风格的状态栏”才生效
@@ -365,7 +365,7 @@ settings:
         type: class-toggle
     -
         id: tab-show-close
-        title: When To Show Close Button On Tabs
+        title: 何时在标签上显示关闭按钮
         title.zh: 何时显示标签页的关闭按钮
         type: class-select
         allowEmpty: false
@@ -416,12 +416,12 @@ settings:
         level: 2
     -
         id: message-tooltip-hide-arrow
-        title: Hide Tooltip Arrow
+        title: 隐藏工具提示箭头
         title.zh: 隐藏气泡提示框箭头
         type: class-toggle
     -
         id: message-tooltip-hide
-        title: Always Hide Tooltip
+        title: 始终隐藏工具提示
         title.zh: 永久隐藏气泡提示框
         type: class-toggle
     -
@@ -432,7 +432,7 @@ settings:
         default: true
     -
         id: setting-message-bg
-        title: Background Color
+        title: 背景色
         title.zh: 背景色
         type: variable-themed-color
         format: hsl-values
@@ -441,7 +441,7 @@ settings:
         default-dark: '#'
     -
         id: setting-message-fg
-        title: Foreground Color
+        title: 前景色
         title.zh: 文字色
         type: variable-themed-color
         format: rgb-values
@@ -496,7 +496,7 @@ settings:
         default: true
     -
         id: modal-toggle
-        title: Styled Toggle Button
+        title: 样式化开关按钮
         title.zh: 开关按钮美化
         type: class-select
         allowEmpty: false
@@ -543,19 +543,19 @@ settings:
         default: true
     -
         id: scrollbar
-        title: Scrollbar
+        title: 滚动条
         title.zh: 滚动条
         type: heading
         collapsed: true
         level: 2
     -
         id: scrollbar-hide
-        title: Always Hide Scrollbar
+        title: 始终隐藏滚动条
         title.zh: 不显示滚动条
         type: class-toggle
     -
         id: scrollbar-hover
-        title: Scrollbar Hover Action
+        title: 滚动条悬停操作
         title.zh: 鼠标经过时滚动条变化
         type: class-select
         allowEmpty: false
@@ -577,7 +577,7 @@ settings:
         default: true
     -
         id: graph
-        title: Graph
+        title: 图谱
         title.zh: 关系图谱
         type: heading
         collapsed: true
@@ -593,7 +593,7 @@ settings:
         default-dark: '#'
     -
         id: setting-graph-node-unresolved
-        title: Unresolved Node Color
+        title: 未解析节点颜色
         title.zh: 未连接节点颜色
         type: variable-themed-color
         format: rgb-values
@@ -602,7 +602,7 @@ settings:
         default-dark: '#'
     -
         id: setting-graph-node-focus
-        title: Focused Node Color
+        title: 焦点节点颜色
         title.zh: 聚焦节点颜色
         type: variable-themed-color
         format: rgb-values
@@ -611,7 +611,7 @@ settings:
         default-dark: '#'
     -
         id: export-pdf
-        title: PDF Export
+        title: PDF导出
         title.zh: PDF 导出
         type: heading
         collapsed: true
@@ -729,7 +729,7 @@ settings:
         default: clamp(600px, 72%, 850px)
     -
         id: setting-underline-offset
-        title: Underline Offset
+        title: 下划线偏移量
         title.zh: 下划线间距
         type: variable-number-slider
         default: 2
@@ -769,7 +769,7 @@ settings:
                 value: line-active-enable
     -
         id: setting-line-active-color
-        title: Active Line Color
+        title: 活动行颜色
         title.zh: 高亮行颜色
         type: variable-themed-color
         format: hex-values
@@ -777,7 +777,7 @@ settings:
         default-dark: '#'
     -
         id: setting-text-normal
-        title: Editor Text Color
+        title: 编辑器文本颜色
         title.zh: 编辑器文字颜色
         type: variable-themed-color
         format: hex
@@ -786,14 +786,14 @@ settings:
         default-dark: '#'
     -
         id: text-highlight
-        title: Highlight
+        title: 高亮
         title.zh: 高亮
         type: heading
         collapsed: true
         level: 3
     -
         id: setting-text-highlight-bg
-        title: Highlight Text Background Color
+        title: 高亮文本背景色
         description: The value can be the value of any background attribute in css
         title.zh: 文本高亮背景色
         description.zh: 填写的值可以为css中任意 background 属性的值
@@ -801,7 +801,7 @@ settings:
         default: 'rgba(255, 208, 0, 0.4)'
     -
         id: setting-text-highlight-color
-        title: Highlight Text Color
+        title: 高亮文本颜色
         title.zh: 文本高亮文字颜色
         type: variable-themed-color
         format: hex
@@ -810,7 +810,7 @@ settings:
         default-dark: '#'
     -
         id: setting-text-highlight-radius
-        title: Highlight Background Radius
+        title: 高亮背景圆角
         description: Format px
         title.zh: 高亮背景色圆角大小
         description.zh: 单位 px
@@ -834,14 +834,14 @@ settings:
         type: class-toggle
     -
         id: text-bold
-        title: Bold
+        title: 粗体
         title.zh: 粗体
         type: heading
         collapsed: true
         level: 3
     -
         id: setting-text-bold-color
-        title: Bold Text Color
+        title: 粗体文本颜色
         title.zh: 粗体颜色
         type: variable-themed-color
         format: hex
@@ -850,7 +850,7 @@ settings:
         default-dark: '#'
     -
         id: setting-text-bold-style
-        title: Bold Style
+        title: 粗体样式
         description: Support any css text-decoration property
         title.zh: 粗体样式
         description.zh: 支持任何 css 的 text-decoration 属性值
@@ -858,20 +858,20 @@ settings:
         default: "underline dotted"
     -
         id: setting-text-bold-font
-        title: Bold Font
+        title: 粗体字体
         title.zh: 粗体字体
         type: variable-text
         default: "''"
     -
         id: text-italic
-        title: Italic
+        title: 斜体
         title.zh: 斜体
         type: heading
         collapsed: true
         level: 3
     -
         id: setting-text-italic-color
-        title: Italic Text Color
+        title: 斜体文字颜色
         title.zh: 斜体颜色
         type: variable-themed-color
         format: hex
@@ -880,7 +880,7 @@ settings:
         default-dark: '#'
     -
         id: setting-text-italic-style
-        title: Italic Style
+        title: 斜体样式
         description: Support any css text-decoration property
         title.zh: 斜体样式
         description.zh: 支持任何 css 的 text-decoration 属性值
@@ -888,13 +888,13 @@ settings:
         default: "underline dotted"
     -
         id: setting-text-italic-font
-        title: Italic Font
+        title: 斜体字体
         title.zh: 斜体字体
         type: variable-text
         default: "''"
     -
         id: links
-        title: Link
+        title: 链接
         title.zh: 链接
         type: heading
         collapsed: true
@@ -926,14 +926,14 @@ settings:
         type: class-toggle
     -
         id: link-color
-        title: Link Color
+        title: 链接颜色
         title.zh: 链接颜色
         type: heading
         collapsed: true
         level: 3
     -
         id: setting-link-internal-color
-        title: Internal Link Color
+        title: 内部链接颜色
         title.zh: 内部链接颜色
         type: variable-themed-color
         format: rgb-values
@@ -942,7 +942,7 @@ settings:
         default-dark: '#'
     -
         id: setting-link-internal-color-underline
-        title: Internal Link Underline Color
+        title: 内部链接下划线颜色
         title.zh: 内部链接下划线颜色
         type: variable-themed-color
         format: rgb
@@ -951,7 +951,7 @@ settings:
         default-dark: '#'
     -
         id: setting-link-external-color
-        title: External Link Color
+        title: 外部链接颜色
         title.zh: 外部链接颜色
         type: variable-themed-color
         format: rgb-values
@@ -960,7 +960,7 @@ settings:
         default-dark: '#'
     -
         id: setting-link-external-color-underline
-        title: External Link Underline Color
+        title: 外部链接下划线颜色
         title.zh: 外部链接下划线颜色
         type: variable-themed-color
         format: rgb
@@ -969,7 +969,7 @@ settings:
         default-dark: '#'
     -
         id: heading
-        title: Heading
+        title: 标题
         title.zh: 标题
         type: heading
         collapsed: true
@@ -1037,7 +1037,7 @@ settings:
         level: 3
     -
         id: heading-color-style
-        title: Heading Color Style
+        title: 标题颜色样式
         title.zh: 标题颜色样式
         type: class-select
         allowEmpty: false
@@ -1057,7 +1057,7 @@ settings:
         level: 4
     -
         id: setting-h1-color
-        title: H1 Color
+        title: 标题一颜色
         title.zh: 标题 1 颜色
         type: variable-themed-color
         format: hex
@@ -1066,7 +1066,7 @@ settings:
         default-dark: '#'
     -
         id: setting-h2-color
-        title: H2 Color
+        title: 二级标题颜色
         title.zh: 标题 2 颜色
         type: variable-themed-color
         format: hex
@@ -1075,7 +1075,7 @@ settings:
         default-dark: '#'
     -
         id: setting-h3-color
-        title: H3 Color
+        title: 三级标题颜色
         title.zh: 标题 3 颜色
         type: variable-themed-color
         format: hex
@@ -1084,7 +1084,7 @@ settings:
         default-dark: '#'
     -
         id: setting-h4-color
-        title: H4 Color
+        title: 4级标题颜色
         title.zh: 标题 4 颜色
         type: variable-themed-color
         format: hex
@@ -1093,7 +1093,7 @@ settings:
         default-dark: '#'
     -
         id: setting-h5-color
-        title: H5 Color
+        title: H5 颜色
         title.zh: 标题 5 颜色
         type: variable-themed-color
         format: hex
@@ -1102,7 +1102,7 @@ settings:
         default-dark: '#'
     -
         id: setting-h6-color
-        title: H6 Color
+        title: H6 颜色
         title.zh: 标题 6 颜色
         type: variable-themed-color
         format: hex
@@ -1120,7 +1120,7 @@ settings:
         level: 3
     -
         id: setting-h1-size
-        title: H1 Font Size
+        title: 标题一字体大小
         title.zh: 标题 1 字体大小
         type: variable-number-slider
         default: 1.6
@@ -1129,7 +1129,7 @@ settings:
         step: 0.1
     -
         id: setting-h2-size
-        title: H2 Font Size
+        title: 二级标题字号
         title.zh: 标题 2 字体大小
         type: variable-number-slider
         default: 1.5
@@ -1138,7 +1138,7 @@ settings:
         step: 0.1
     -
         id: setting-h3-size
-        title: H3 Font Size
+        title: 3级标题字号
         title.zh: 标题 3 字体大小
         type: variable-number-slider
         default: 1.4
@@ -1147,7 +1147,7 @@ settings:
         step: 0.1
     -
         id: setting-h4-size
-        title: H4 Font Size
+        title: H4字号
         title.zh: 标题 4 字体大小
         type: variable-number-slider
         default: 1.3
@@ -1156,7 +1156,7 @@ settings:
         step: 0.1
     -
         id: setting-h5-size
-        title: H5 Font Size
+        title: H5 字号
         title.zh: 标题 5 字体大小
         type: variable-number-slider
         default: 1.2
@@ -1165,7 +1165,7 @@ settings:
         step: 0.1
     -
         id: setting-h6-size
-        title: H6 Font Size
+        title: H6 字体 大小
         title.zh: 标题 6 字体大小
         type: variable-number-slider
         default: 1.1
@@ -1276,14 +1276,14 @@ settings:
         default: "'⭐'"
     -
         id: table
-        title: Table
+        title: 表格
         title.zh: 表格
         type: heading
         collapsed: true
         level: 2
     -
         id: table-full
-        title: Full Width Table
+        title: 全宽表格
         title.zh: 全宽表格
         type: class-toggle
         default: true
@@ -1345,7 +1345,7 @@ settings:
         default: true
     -
         id: image
-        title: Image
+        title: 图片
         title.zh: 图片
         type: heading
         collapsed: true
@@ -1416,14 +1416,14 @@ settings:
                 value: quote-shadow
     -
         id: list
-        title: List
+        title: 列表
         title.zh: 列表
         type: heading
         collapsed: true
         level: 2
     -
         id: list-enable
-        title: Optimize List Style
+        title: 优化列表样式
         description: ❗no support for list or task items inside callout
         title.zh: 优化列表样式
         description.zh: ❗精力有限，不打算适配 callout 中的列表或者代办项
@@ -1439,7 +1439,7 @@ settings:
         default: true
     -
         id: setting-list-marker
-        title: List Marker Color
+        title: 列表标记颜色
         title.zh: 列表标号颜色
         type: variable-themed-color
         format: hex
@@ -1476,7 +1476,7 @@ settings:
         type: class-toggle
     -
         id: setting-list-checkbox-color
-        title: Checkbox Marker Color
+        title: 复选框标记颜色
         title.zh: 勾选框颜色
         type: variable-themed-color
         format: hex
@@ -1485,7 +1485,7 @@ settings:
         default-dark: '#'
     -
         id: setting-list-checkbox-color-hover
-        title: Checkbox Marker Hover Color
+        title: 复选框标记悬停颜色
         title.zh: 勾选框鼠标经过色
         type: variable-themed-color
         format: hex
@@ -1503,14 +1503,14 @@ settings:
         default-dark: '#'
     -
         id: code
-        title: Code
+        title: 代码
         title.zh: 代码
         type: heading
         collapsed: true
         level: 2
     -
         id: setting-code-inline
-        title: Inline Code Color
+        title: 内联代码颜色
         title.zh: 行内代码文字色
         type: variable-themed-color
         format: hex
@@ -1519,7 +1519,7 @@ settings:
         default-dark: '#'
     -
         id: setting-code-bg
-        title: Code Block Background Color
+        title: 代码块背景颜色
         title.zh: 代码块背景色
         type: variable-themed-color
         format: hex
@@ -1578,7 +1578,7 @@ settings:
         type: class-toggle
     -
         id: setting-code-language-color
-        title: Language Indicator Color
+        title: 语言指示器颜色
         title.zh: 语言标识颜色
         type: variable-themed-color
         format: hex
@@ -1593,7 +1593,7 @@ settings:
         default: true
     -
         id: tag
-        title: Tag
+        title: 标签
         title.zh: 标签
         type: heading
         collapsed: true
@@ -1607,7 +1607,7 @@ settings:
         type: class-toggle
     -
         id: tag-style
-        title: Tag Style
+        title: 标签样式
         description: Tags of obsidian / todo / important / progress / complete will be colorized when use outline or fill
         title.zh: 标签样式
         description.zh: 当选择 outline 或者 fill 时，obsidian / todo / important / progress / complete 标签会有额外颜色
@@ -1625,7 +1625,7 @@ settings:
                 value: tag-fill
     -
         id: setting-tag-bg
-        title: Tag Background Color
+        title: 标签背景色
         title.zh: 标签背景颜色
         type: variable-themed-color
         format: hex
@@ -1641,7 +1641,7 @@ settings:
         level: 3
     -
         id: setting-tag-color
-        title: Tag Text Color
+        title: 标签文本色
         title.zh: 标签文字颜色
         type: variable-themed-color
         format: hex
@@ -1650,7 +1650,7 @@ settings:
         default-dark: '#'
     -
         id: setting-tag-border
-        title: Tag Border Color
+        title: 标签边框色
         title.zh: 标签边框颜色
         type: variable-themed-color
         format: hex
@@ -1659,14 +1659,14 @@ settings:
         default-dark: '#'
     -
         id: canvas
-        title: Canvas
+        title: 画布
         title.zh: 白板
         type: heading
         collapsed: true
         level: 2
     -
         id: canvas-group-hide
-        title: Hide Left Canvas Control Buttons
+        title: 隐藏画布左侧控制按钮
         description: Show on hover
         title.zh: 隐藏左侧的控制按钮
         description.zh: 鼠标移入时显示
@@ -1692,7 +1692,7 @@ settings:
         default: true
     -
         id: prop
-        title: Properties
+        title: 属性
         title.zh: 文档属性
         type: heading
         collapsed: true
@@ -1711,7 +1711,7 @@ id: maple-plugin
 settings:
     -
         id: calendar
-        title: Calendar
+        title: 日历
         title.zh: 日历
         type: heading
         collapsed: true

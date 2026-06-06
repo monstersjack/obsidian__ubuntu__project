@@ -4,7 +4,7 @@
 # =========================
 
 # 只忽略这个附件目录
-z_资料库/attachment/
+#z_资料库/attachment/
 
 # Obsidian 本地状态文件，不建议同步
 .obsidian/workspace.json
@@ -30,3 +30,7 @@ passwords.txt
 .DS_Store
 Thumbs.db
 desktop.ini
+.obsidian/plugins/i18n/data.json
+.obsidian/plugins/i18n/data.json.bak_*
+.obsidian/plugins/obsidian-quiet-outline/markdown-states.json
+.obsidian/plugins/remember-cursor-position/cursor-positions.json
