@@ -1,8 +1,13 @@
 {
-  "lastVersion": "3.1.18",
+  "lastVersion": "4.0.8",
   "aestheticStyle": "default",
   "positionStyle": "top",
   "menuCommands": [
+    {
+      "id": "editing-toolbar:ai-tools",
+      "name": "AI Tools",
+      "icon": "lucide-sparkles"
+    },
     {
       "id": "editing-toolbar:editor-undo",
       "name": "撤销",
@@ -39,9 +44,9 @@
       "icon": "header-n",
       "SubmenuCommands": [
         {
-          "id": "editing-toolbar:header1-text",
-          "name": "Header 1",
-          "icon": "header-1"
+          "id": "editing-toolbar:header6-text",
+          "name": "Header 6",
+          "icon": "header-6"
         },
         {
           "id": "editing-toolbar:header4-text",
@@ -54,9 +59,9 @@
           "icon": "header-5"
         },
         {
-          "id": "editing-toolbar:header6-text",
-          "name": "Header 6",
-          "icon": "header-6"
+          "id": "editing-toolbar:header1-text",
+          "name": "Header 1",
+          "icon": "header-1"
         }
       ]
     },
@@ -89,6 +94,104 @@
           "id": "editing-toolbar:editor:swap-line-up",
           "name": "行上移",
           "icon": "lucide-corner-right-up"
+        }
+      ]
+    },
+    {
+      "id": "SubmenuCommands-text-tools",
+      "name": "Text Tools",
+      "icon": "box",
+      "menuType": "dropdown",
+      "SubmenuCommands": [
+        {
+          "id": "editing-toolbar:get-plain-text",
+          "name": "Get Plain Text",
+          "icon": "lucide-file-text"
+        },
+        {
+          "id": "editing-toolbar:smart-symbols",
+          "name": "Full Half Converter",
+          "icon": "lucide-at-sign"
+        },
+        {
+          "id": "editingToolbar-Divider-Line",
+          "name": "Line Operations",
+          "icon": "vertical-split"
+        },
+        {
+          "id": "editing-toolbar:insert-blank-lines",
+          "name": "Insert Blank Lines",
+          "icon": "lucide-space"
+        },
+        {
+          "id": "editing-toolbar:remove-blank-lines",
+          "name": "Remove Blank Lines",
+          "icon": "lucide-minimize-2"
+        },
+        {
+          "id": "editing-toolbar:split-lines",
+          "name": "Split Lines",
+          "icon": "lucide-split"
+        },
+        {
+          "id": "editing-toolbar:merge-lines",
+          "name": "Merge Lines",
+          "icon": "lucide-merge"
+        },
+        {
+          "id": "editing-toolbar:dedupe-lines",
+          "name": "Dedupe Lines",
+          "icon": "lucide-filter"
+        },
+        {
+          "id": "editingToolbar-Divider-Line",
+          "name": "Text Processing",
+          "icon": "vertical-split"
+        },
+        {
+          "id": "editing-toolbar:add-wrap",
+          "name": "Add Prefix/Suffix",
+          "icon": "lucide-wrap-text"
+        },
+        {
+          "id": "editing-toolbar:number-lines",
+          "name": "Number Lines (Custom)",
+          "icon": "lucide-list-ordered"
+        },
+        {
+          "id": "editing-toolbar:remove-whitespace-trim",
+          "name": "Trim Line Ends",
+          "icon": "lucide-scissors"
+        },
+        {
+          "id": "editing-toolbar:remove-whitespace-compress",
+          "name": "Shrink Extra Spaces",
+          "icon": "lucide-minimize"
+        },
+        {
+          "id": "editing-toolbar:remove-whitespace-all",
+          "name": "Remove All Whitespace",
+          "icon": "lucide-eraser"
+        },
+        {
+          "id": "editingToolbar-Divider-Line",
+          "name": "Advanced Tools",
+          "icon": "vertical-split"
+        },
+        {
+          "id": "editing-toolbar:list-to-table",
+          "name": "List to Table",
+          "icon": "lucide-table"
+        },
+        {
+          "id": "editing-toolbar:table-to-list",
+          "name": "Table to List",
+          "icon": "lucide-list"
+        },
+        {
+          "id": "editing-toolbar:extract-between",
+          "name": "Extract Between Strings",
+          "icon": "lucide-brackets"
         }
       ]
     },
@@ -170,11 +273,6 @@
           "icon": "paintbrush"
         },
         {
-          "id": "editing-toolbar:workplace-fullscreen-focus",
-          "name": "工作区全屏 ",
-          "icon": "exit-fullscreen"
-        },
-        {
           "id": "editing-toolbar:superscript",
           "name": "上标",
           "icon": "superscript-glyph"
@@ -183,6 +281,11 @@
           "id": "editing-toolbar:subscript",
           "name": "下标",
           "icon": "subscript-glyph"
+        },
+        {
+          "id": "editing-toolbar:workplace-fullscreen-focus",
+          "name": "工作区全屏 ",
+          "icon": "exit-fullscreen"
         },
         {
           "id": "editing-toolbar:editor:insert-wikilink",
@@ -221,6 +324,11 @@
       "name": "子菜单-列表",
       "icon": "bullet-list-glyph",
       "SubmenuCommands": [
+        {
+          "id": "editing-toolbar:header1-text",
+          "name": "1级 标题",
+          "icon": "header-1"
+        },
         {
           "id": "editing-toolbar:renumber-ordered-list",
           "name": "有序列表重新编号",
@@ -279,6 +387,11 @@
           "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M20 7v7H7\"/>\n  <path d=\"M11 10l-4 4 4 4\"/>\n</svg>\n"
         },
         {
+          "id": "editing-toolbar:custom-快捷输入-回车<br>",
+          "name": "快捷输入-回车<br>",
+          "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M20 7v7H7\"/>\n  <path d=\"M11 10l-4 4 4 4\"/>\n</svg>\n"
+        },
+        {
           "id": "editing-toolbar:justify",
           "name": "<p aligin=\"justify\"></p>",
           "icon": "<svg width=\"18\" height=\"18\" focusable=\"false\" fill=\"currentColor\"  viewBox=\"0 0 1024 1024\"><g transform=\"scale(1, -1) translate(0, -896) scale(0.9, 0.9) \"><path class=\"path\" d=\"M112 736 l0 0 ZM120 736 l784 0 q8 0 8 -8 l0 -80 q0 -8 -8 -8 l-784 0 q-8 0 -8 8 l0 80 q0 8 8 8 ZM112 331 l0 0 ZM120 331 l784 0 q8 0 8 -8 l0 -80 q0 -8 -8 -8 l-784 0 q-8 0 -8 8 l0 80 q0 8 8 8 ZM112 128 l0 0 ZM120 128 l784 0 q8 0 8 -8 l0 -80 q0 -8 -8 -8 l-784 0 q-8 0 -8 8 l0 80 q0 8 8 8 ZM112 533 l0 0 ZM120 533 l784 0 q8 0 8 -8 l0 -80 q0 -8 -8 -8 l-784 0 q-8 0 -8 8 l0 80 q0 8 8 8 Z\"></path></g></svg>"
@@ -301,6 +414,11 @@
       ]
     },
     {
+      "id": "editing-toolbar:custom-checkbox",
+      "name": "复选框",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-check-square\" viewBox=\"0 0 16 16\">\n  <path d=\"M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z\"/>\n  <path d=\"m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05\"/>\n</svg>"
+    },
+    {
       "id": "editing-toolbar:change-font-color",
       "name": "更改字体颜色[html]",
       "icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" focusable=\"false\" fill=\"currentColor\"><g fill-rule=\"evenodd\"><path id=\"change-font-color-icon\" d=\"M3 18h18v3H3z\" style=\"fill:#2DC26B\"></path><path d=\"M8.7 16h-.8a.5.5 0 01-.5-.6l2.7-9c.1-.3.3-.4.5-.4h2.8c.2 0 .4.1.5.4l2.7 9a.5.5 0 01-.5.6h-.8a.5.5 0 01-.4-.4l-.7-2.2c0-.3-.3-.4-.5-.4h-3.4c-.2 0-.4.1-.5.4l-.7 2.2c0 .3-.2.4-.4.4zm2.6-7.6l-.6 2a.5.5 0 00.5.6h1.6a.5.5 0 00.5-.6l-.6-2c0-.3-.3-.4-.5-.4h-.4c-.2 0-.4.1-.5.4z\"></path></g></svg>"
@@ -309,11 +427,6 @@
       "id": "editing-toolbar:change-background-color",
       "name": "更改背景颜色[html]",
       "icon": "<svg width=\"18\" height=\"24\" viewBox=\"0 0 256 256\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"><g   stroke=\"none\" stroke-width=\"1\" fill=\"currentColor\" fill-rule=\"evenodd\"><g  ><g fill=\"currentColor\"><g transform=\"translate(119.502295, 137.878331) rotate(-135.000000) translate(-119.502295, -137.878331) translate(48.002295, 31.757731)\" ><path d=\"M100.946943,60.8084699 L43.7469427,60.8084699 C37.2852111,60.8084699 32.0469427,66.0467383 32.0469427,72.5084699 L32.0469427,118.70847 C32.0469427,125.170201 37.2852111,130.40847 43.7469427,130.40847 L100.946943,130.40847 C107.408674,130.40847 112.646943,125.170201 112.646943,118.70847 L112.646943,72.5084699 C112.646943,66.0467383 107.408674,60.8084699 100.946943,60.8084699 Z M93.646,79.808 L93.646,111.408 L51.046,111.408 L51.046,79.808 L93.646,79.808 Z\" fill-rule=\"nonzero\"></path><path d=\"M87.9366521,16.90916 L87.9194966,68.2000001 C87.9183543,69.4147389 86.9334998,70.399264 85.7187607,70.4 L56.9423078,70.4 C55.7272813,70.4 54.7423078,69.4150264 54.7423078,68.2 L54.7423078,39.4621057 C54.7423078,37.2523513 55.5736632,35.1234748 57.0711706,33.4985176 L76.4832996,12.4342613 C78.9534987,9.75382857 83.1289108,9.5834005 85.8093436,12.0535996 C87.1658473,13.303709 87.9372691,15.0644715 87.9366521,16.90916 Z\" fill-rule=\"evenodd\"></path><path d=\"M131.3,111.241199 L11.7,111.241199 C5.23826843,111.241199 0,116.479467 0,122.941199 L0,200.541199 C0,207.002931 5.23826843,212.241199 11.7,212.241199 L131.3,212.241199 C137.761732,212.241199 143,207.002931 143,200.541199 L143,122.941199 C143,116.479467 137.761732,111.241199 131.3,111.241199 Z M124,130.241 L124,193.241 L19,193.241 L19,130.241 L124,130.241 Z\" fill-rule=\"nonzero\"></path></g></g><path d=\"M51,218 L205,218 C211.075132,218 216,222.924868 216,229 C216,235.075132 211.075132,240 205,240 L51,240 C44.9248678,240 40,235.075132 40,229 C40,222.924868 44.9248678,218 51,218 Z\" id=\"change-background-color-icon\" style=\"fill:#FA541C\"></path></g></g></svg>"
-    },
-    {
-      "id": "editing-toolbar:custom-快捷输入-回车<br>",
-      "name": "快捷输入-回车<br>",
-      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M20 7v7H7\"/>\n  <path d=\"M11 10l-4 4 4 4\"/>\n</svg>\n"
     },
     {
       "id": "editing-toolbar:fullscreen-focus",
@@ -326,26 +439,43 @@
       "icon": "exit-fullscreen"
     },
     {
-      "id": "editing-toolbar:header1-text",
-      "name": "1级 标题",
-      "icon": "header-1"
-    },
-    {
       "id": "editor:toggle-source",
       "name": "切换实时阅览/源码模式",
       "icon": "lucide-code-2"
-    },
-    {
-      "id": "editing-toolbar:custom-checkbox",
-      "name": "复选框",
-      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-check-square\" viewBox=\"0 0 16 16\">\n  <path d=\"M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z\"/>\n  <path d=\"m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05\"/>\n</svg>"
     }
   ],
-  "followingCommands": [],
-  "topCommands": [],
-  "fixedCommands": [],
-  "mobileCommands": [],
+  "followingCommands": [
+    {
+      "id": "editing-toolbar:ai-tools",
+      "name": "AI Tools",
+      "icon": "lucide-sparkles"
+    }
+  ],
+  "topCommands": [
+    {
+      "id": "editing-toolbar:ai-tools",
+      "name": "AI Tools",
+      "icon": "lucide-sparkles"
+    }
+  ],
+  "fixedCommands": [
+    {
+      "id": "editing-toolbar:ai-tools",
+      "name": "AI Tools",
+      "icon": "lucide-sparkles"
+    }
+  ],
+  "mobileCommands": [
+    {
+      "id": "editing-toolbar:ai-tools",
+      "name": "AI Tools",
+      "icon": "lucide-sparkles"
+    }
+  ],
   "enableMultipleConfig": false,
+  "enableTopToolbar": true,
+  "enableFollowingToolbar": false,
+  "enableFixedToolbar": false,
   "appendMethod": "workspace",
   "shouldShowMenuOnSelect": false,
   "cMenuVisibility": true,
@@ -395,7 +525,127 @@
   "viewTypeSettings": {
     "pkmer-downloader": false
   },
+  "appearanceByStyle": {
+    "top": {
+      "toolbarBackgroundColor": "rgba(var(--background-secondary-rgb), 0.7)",
+      "toolbarIconColor": "var(--text-normal)",
+      "toolbarIconSize": 18,
+      "aestheticStyle": "default"
+    },
+    "following": {
+      "toolbarBackgroundColor": "rgba(var(--background-secondary-rgb), 0.7)",
+      "toolbarIconColor": "var(--text-normal)",
+      "toolbarIconSize": 18,
+      "aestheticStyle": "default"
+    },
+    "fixed": {
+      "toolbarBackgroundColor": "rgba(var(--background-secondary-rgb), 0.7)",
+      "toolbarIconColor": "var(--text-normal)",
+      "toolbarIconSize": 18,
+      "aestheticStyle": "default"
+    },
+    "mobile": {
+      "toolbarBackgroundColor": "rgba(var(--background-secondary-rgb), 0.7)",
+      "toolbarIconColor": "var(--text-normal)",
+      "toolbarIconSize": 18,
+      "aestheticStyle": "default"
+    }
+  },
   "toolbarBackgroundColor": "rgba(var(--background-secondary-rgb), 0.7)",
   "toolbarIconColor": "var(--text-normal)",
-  "toolbarIconSize": 18
+  "toolbarIconSize": 18,
+  "useCurrentLineForRegex": false,
+  "ai": {
+    "enabled": true,
+    "consentAccepted": true,
+    "onboardingShown": true,
+    "providerMode": "pkmer-first",
+    "enableInlineCompletion": true,
+    "inlineCompletionHintLearned": false,
+    "completionTrigger": "manual",
+    "completionDelay": 500,
+    "enableRewrite": true,
+    "showRewriteToolbarOnSelection": false,
+    "rewriteMinSelectionLength": 1,
+    "pkmerApiBaseUrl": "https://newapi.pkmer.cn",
+    "pkmerModel": "04-fast",
+    "pkmerModelRouting": {
+      "mode": "smart",
+      "completion": "04-fast",
+      "rewrite": "04-fast",
+      "reasoning": "03-agent",
+      "artifact": "03-agent"
+    },
+    "pkmer": {
+      "tokenExpiresAt": 1780756756039,
+      "userInfo": {
+        "sub": "2f7977c6-76a2-44a5-be64-8679c3ee86bf",
+        "name": "2481001977@qq.com",
+        "email": "2481001977@qq.com",
+        "ai_quota": {
+          "quota": 50000000,
+          "usedQuota": 0,
+          "remainingQuota": 50000000,
+          "remainingTokens": 100,
+          "requestCount": 0
+        },
+        "thino": false,
+        "supporter": false
+      }
+    },
+    "enableCustomModel": false,
+    "customModel": {
+      "apiFormat": "openai-compatible",
+      "baseUrl": "",
+      "apiKey": "",
+      "model": "",
+      "temperature": 0.2
+    },
+    "customPromptHistory": [],
+    "customPromptTemplates": [
+      {
+        "id": "template-demo-variables",
+        "name": "📝 总结要点",
+        "prompt": "分析 {{file:content}} 的内容结构,重点关注:\n{{selection}}\n\n请提供:\n1. 内容概要\n2. 关键要点\n3. 改进建议",
+        "icon": "lucide-sparkles"
+      },
+      {
+        "id": "template-task-variables",
+        "name": "提炼任务",
+        "prompt": "当前日期{{date}}，从 {{file:content}} 中提取所有待办事项，重点关注:\n{{selection}}\n\n请严格按 Obsidian Tasks 插件格式输出，每条任务单独一行：\n\n- [ ] 任务描述 ⏫/🔼/🔽/⏬ 优先级\n- [ ] 任务描述 📅 YYYY-MM-DD 截止日期\n- [ ] 任务描述 ⏰ YYYY-MM-DD HH:mm 提醒时间\n- [ ] 任务描述 🛫 YYYY-MM-DD 开始日期\n- [ ] 任务描述 🔁 every day/week/month 重复周期\n- [ ] 任务描述 #标签 #项目名\n\n提取规则：\n1. 如果原文提到\"紧急/马上/立即/今天\"，添加 ⏫（最高优先级）\n2. 如果提到\"明天/本周/尽快\"，添加 🔼（高优先级）\n3. 如果提到具体日期，转换为 📅 YYYY-MM-DD 格式\n4. 如果提到时间，转换为 ⏰ YYYY-MM-DD HH:mm 格式\n5. 如果提到周期性工作，添加 🔁 every week/month\n6. 为每个任务添加合适的标签（如 #工作 #会议 #跟进）\n\n示例输出：\n- [ ] 完成项目报告 ⏫ 📅 2026-04-25 #工作\n- [ ] 每周团队例会 🔁 every week on Monday ⏰ 09:00 #会议\n- [ ] 跟进客户需求 🔼 📅 2026-04-23 #跟进",
+        "icon": "lucide-sparkles"
+      },
+      {
+        "id": "template-dataview",
+        "name": "生成 Dataview",
+        "prompt": "根据我的需求,帮我生成一个 Obsidian Dataview 查询代码块。要求:\n1. 使用 DataviewJS 或 DQL 语法\n2. 包含必要的字段筛选和排序\n3. 添加注释说明每个部分的作用\n4. 如果需要复杂逻辑,使用 DataviewJS\n\n我的需求:",
+        "icon": "lucide-database"
+      },
+      {
+        "id": "template-templater",
+        "name": "设计 Templater 模板",
+        "prompt": "帮我设计一个 Obsidian Templater 模板。要求:\n1. 使用 Templater 语法 (<%  %>)\n2. 包含动态日期、时间等变量\n3. 支持用户输入提示\n4. 添加必要的条件判断和循环\n5. 注释说明每个部分的用途\n\n模板用途:",
+        "icon": "lucide-file-code"
+      },
+      {
+        "id": "template-mermaid",
+        "name": "绘制 Mermaid 图表",
+        "prompt": "根据我选中的文本内容 {{selection}},生成 Mermaid 图表代码。要求:\n1. 选择合适的图表类型(流程图/时序图/类图/甘特图等)\n2. 使用清晰的节点命名\n3. 添加必要的样式和注释\n4. 确保语法正确可渲染\n",
+        "icon": "lucide-workflow"
+      },
+      {
+        "id": "template-metadata",
+        "name": "设计 YAML",
+        "prompt": "根据当前笔记内容 {{file:content}},帮我设计一个适合当前笔记的 YAML Frontmatter 元数据结构。要求:\n1. 根据笔记内容推荐合适的字段\n2. 包含常用字段(tags, aliases, date等)\n3. 添加自定义字段建议\n4. 注释说明每个字段的用途\n\n笔记类型:",
+        "icon": "lucide-file-json"
+      },
+      {
+        "id": "template-callout",
+        "name": "使用Callout包装",
+        "prompt": "根据我选中的文本内容 {{selection}},帮我使用 Obsidian Callout 块进行包装。要求:\n1. 选择合适的 callout 类型(note/tip/warning/danger等)\n2. 支持嵌套和折叠\n3. 包含标题和内容\n4. 可以包含代码块或列表\n\n内容需求:",
+        "icon": "lucide-message-square"
+      }
+    ]
+  },
+  "commandIdsFixed": true
 }

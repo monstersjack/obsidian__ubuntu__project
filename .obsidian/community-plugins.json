@@ -13,7 +13,6 @@
   "remember-cursor-position",
   "obsidian-memos",
   "obsidian-file-cleaner",
-  "obsidian-hover-editor",
   "cloze",
   "better-fn",
   "floating-settings",
@@ -54,5 +53,7 @@
   "vscode-editor",
   "mermaid-popup",
   "linked-note-exporter",
-  "obsidian-git"
+  "obsidian-git",
+  "editing-toolbar",
+  "obsidian-hover-editor"
 ]

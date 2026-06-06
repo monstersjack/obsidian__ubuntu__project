@@ -1,5 +1,19 @@
 [
   {
+    "id": "1780752932150",
+    "time": 1780752932150,
+    "trigger": "discovery",
+    "summary": {
+      "total": 0,
+      "success": 0,
+      "error": 0,
+      "skipped": 0,
+      "discovered": 0,
+      "upToDate": 0
+    },
+    "details": "[]"
+  },
+  {
     "id": "1780752600267",
     "time": 1780752600267,
     "trigger": "discovery",
