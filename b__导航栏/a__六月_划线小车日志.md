@@ -23,8 +23,9 @@
 | 早<br>上 | <br><br><br><br><br>       | <br><br><br><br><br>         | <br><br><br><br><br>         | <br><br><br><br><br> |     |
 | 下<br>午 | 两篇课程论文<br><br><br><br><br> | 完成旧小车的连接<br><br><br><br><br> | 测试打墨机的连接<br><br><br><br><br> | <br><br><br><br><br> |     |
 | 晚<br>上 | <br><br><br><br><br>       | <br><br><br><br><br>         | <br><br><br><br><br>         | <br><br><br><br><br> |     |
-| 目标     |                            |                              |                              | <br><br>             |     |
+| 任<br>务 |                            |                              |                              | <br><br>             |     |
 
+- [ ] 自己物品的标签写好
 - [ ] 旧小车的连接文档
 - [ ] 新机器硬件选型的文档,还有电压和控制线的参数
 - [ ]  旧机器硬件选型的文档
