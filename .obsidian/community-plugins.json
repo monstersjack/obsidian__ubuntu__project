@@ -49,11 +49,11 @@
   "obsidian-plugin-groups",
   "customizable-menu",
   "templater-obsidian",
-  "obsidian-quiet-outline",
   "vscode-editor",
   "mermaid-popup",
   "linked-note-exporter",
   "obsidian-git",
   "editing-toolbar",
-  "obsidian-hover-editor"
+  "obsidian-hover-editor",
+  "obsidian-quiet-outline"
 ]
