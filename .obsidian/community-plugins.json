@@ -38,13 +38,10 @@
   "any-block",
   "i18n",
   "header-adjuster",
-  "obsidian-paste-as-html",
   "mousewheel-image-zoom",
-  "url-into-selection",
   "obsidian42-brat",
   "attachment-flow-plugin",
   "note-toolbar",
-  "obsidian-auto-link-title",
   "pdf-plus",
   "obsidian-plugin-groups",
   "customizable-menu",
@@ -55,5 +52,7 @@
   "obsidian-git",
   "editing-toolbar",
   "obsidian-hover-editor",
-  "obsidian-quiet-outline"
+  "obsidian-quiet-outline",
+  "obsidian-paste-as-html",
+  "obsidian-auto-link-title"
 ]

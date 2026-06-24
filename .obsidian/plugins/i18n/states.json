@@ -18,12 +18,6 @@
             "pluginVersion": "1.2.3",
             "translationVersion": "2.0.0"
         },
-        "obsidian-auto-link-title": {
-            "id": "obsidian-auto-link-title",
-            "isApplied": true,
-            "pluginVersion": "1.5.5",
-            "translationVersion": "2.0.0"
-        },
         "obsidian-style-settings": {
             "id": "obsidian-style-settings",
             "isApplied": true,
