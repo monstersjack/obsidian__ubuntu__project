@@ -35,8 +35,10 @@
 - [ ] 确认刷老毛子的型号，还有流程。
 - [ ] 
 
+- [ ] 安装codex的windows端
 - [ ] 安装codex，ubuntu端，试试怎么样
-
+- [ ] 黎博账号接入，然后，有没有美国手机号。
+[https://www.youtube.com/watch?v=F1XbzlahRTw](https://www.youtube.com/watch?v=F1XbzlahRTw)
 
 - [ ] 新机器硬件选型的文档,还有电压和控制线的参数
 - [ ]  旧机器硬件选型的文档
