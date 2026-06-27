@@ -1,7 +1,7 @@
 ---
 标题: 大模型API及相关网站
 创建时间: 2026-04-28
-修改时间: 2026-06-05
+修改时间: 2026-06-27
 ---
 
 ## AI 设计能力评测网站
@@ -57,11 +57,12 @@ OpenRouter = 用一个 API 调用很多 AI 模型
 
 ## deepseek
 
-| API名字        | api-key                             |                                      |
-| ------------ | ----------------------------------- | ------------------------------------ |
-| trae使用       | sk-58ee7a9e07ec4a1593bec219c63d3721 | ![[Pasted image 20260428212059.png]] |
-| claude code  | sk-1487c48426f2411298140674887561e9 |                                      |
-| obsidian-i8n | sk-4e065f79d09b4276bbffe8bdd5508efd |                                      |
+| API名字              | api-key                             |                                      |
+| ------------------ | ----------------------------------- | ------------------------------------ |
+| trae使用             | sk-58ee7a9e07ec4a1593bec219c63d3721 | ![[Pasted image 20260428212059.png]] |
+| claude code        | sk-1487c48426f2411298140674887561e9 |                                      |
+| obsidian-i8n       | sk-4e065f79d09b4276bbffe8bdd5508efd |                                      |
+| windows-claude-cli | sk-bd317dda3863490cac91b5a0b5330fff |                                      |
 
 ### 如何添加模型
 
@@ -95,4 +96,7 @@ OpenRouter = 用一个 API 调用很多 AI 模型
 
 
 
+## claude code 接入cli
 
+
+[ClaudeCode并接入DeepSeek](http://bilibili.com/video/BV16YRLB7Exd/?spm_id_from=333.1391.0.0&vd_source=ea35c10f59aa46851935d37df4345603)

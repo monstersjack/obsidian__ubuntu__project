@@ -29,7 +29,7 @@
 
 - [x] 买个鼠标给黎老师
 - [x] 旧小车的连接文档
-- [ ] 确认手机已经退回
+- [x] 确认手机已经退回
 - [ ] 买凉爽席子
 - [ ] 买电动牙刷
 - [ ] 确认刷老毛子的型号，还有流程。
@@ -38,6 +38,7 @@
 - [ ] 安装codex的windows端
 - [ ] 安装codex，ubuntu端，试试怎么样
 - [ ] 黎博账号接入，然后，有没有美国手机号。
+- [ ] 买一个
 [https://www.youtube.com/watch?v=F1XbzlahRTw](https://www.youtube.com/watch?v=F1XbzlahRTw)
 
 - [ ] 新机器硬件选型的文档,还有电压和控制线的参数
