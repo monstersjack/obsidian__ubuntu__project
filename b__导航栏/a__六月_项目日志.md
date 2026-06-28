@@ -24,6 +24,7 @@
 | 下<br>午 | <br><br><br><br><br> | <br><br><br><br><br> | 兰老师组会，确定自己研究课题<br><br><br><br><br>                              | <br><br><br><br><br> |
 | 晚<br>上 | <br><br><br><br><br> | <br><br><br><br><br> | 理解小车的驱动指令，上位机控制指令，<br>了解，电机三种控制模式<br>搞懂电机的，上位机指令控制。<br><br><br> | <br><br><br><br><br> |
 | 目标     | <br><br><br><br><br> | <br><br><br><br><br> | <br><br><br><br><br>                                            | <br><br>             |
+|        |                      |                      |                                                                 |                      |
 
 #### 琐事
 
