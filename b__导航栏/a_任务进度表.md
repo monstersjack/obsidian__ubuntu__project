@@ -22,7 +22,7 @@
 ### 轮子驱动
 
 #### 第一步
-先用 ISO1050 CAN 隔离模块做 40Pin 转 CAN。
+先用 ==ISO1050 CAN 隔离模块==做 40Pin 转 CAN。
 它负责把香橙派 40Pin 的 CAN_TX/CAN_RX 转成电机需要的 CAN_H/CAN_L，同时隔离电机侧噪声，比较适合 24V 电机系统。
 ![[Pasted image 20260629135039.png]]
 
