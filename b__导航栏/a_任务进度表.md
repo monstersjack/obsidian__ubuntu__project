@@ -28,7 +28,7 @@
 
 
 
-第二步，
+#### 第二步，
 
 
 我后续准备重新写轮子驱动包。原来的 `wheels_driver` 是基于 iWMC 伺服轮和 CANopen 协议的，现在硬件换成 M1505A/B 电机，所以整体思路是保留 ROS2 上层接口，比如 `/cmd_vel`、`/odom`、`/joint_states` 和 TF，但是底层通信层要改成 M1505A/B 自己的 CAN 协议。
