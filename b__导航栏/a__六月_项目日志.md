@@ -20,14 +20,14 @@
 
 - [ ] 买凉爽席子
 - [ ] 买电动牙刷
-- [ ] 确认刷老毛子的型号，还有流程。
+- [x] 确认刷老毛子的型号，还有流程。
 - [ ] 单协，单片机学生招生
 
 #### 工作
 - [x] 安装codex，ubuntu端，试试怎么样
 - [x] 黎博账号接入，然后，有没有美国手机号。
 - [ ] claude code教程整理成文档，
-[https://www.youtube.com/watch?v=F1XbzlahRTw](https://www.youtube.com/watch?v=F1XbzlahRTw)
+
 
 #### 划线小车
 - [ ] 新机器硬件选型的文档,还有电压和控制线的参数
@@ -45,7 +45,7 @@
 - [ ] 
 ##### 志聪
 
-- [ ] glm,还有其他chatgpt套餐
+- [ ] glm,还有其他chatgpt套餐，目前套餐了解
 
 
 ##### 壬勋
