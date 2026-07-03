@@ -1,7 +1,7 @@
 ---
 标题: 大模型API及相关网站
 创建时间: 2026-04-28
-修改时间: 2026-06-27
+修改时间: 2026-07-03
 ---
 
 ## AI 设计能力评测网站
@@ -55,6 +55,9 @@ OpenRouter = 用一个 API 调用很多 AI 模型
 | glm5.1       | [GLM](https://chatglm.cn/main/alltoolsdetail?lang=zh)            |
 |              |                                                                  |
 
+## 国内大模型
+
+
 ### deepseek
 
 
@@ -70,13 +73,13 @@ OpenRouter = 用一个 API 调用很多 AI 模型
 
 
 
-#### 豆包,火山引擎
+### 豆包,火山引擎
 
 [API调用-火山引擎](https://console.volcengine.com/home)
 [在线推理选择具体的模型-火山引擎](https://console.volcengine.com/ark/region:ark+cn-beijing/endpoint?config=%7B%22Filter%22%3A%7B%22Name%22%3A%22%22%7D%2C%22PageNumber%22%3A1%7D)
 
 
-#### GLM
+### GLM
 
 套餐
 ![[Pasted image 20260531222225.png]]
@@ -84,9 +87,18 @@ OpenRouter = 用一个 API 调用很多 AI 模型
 [智谱AI开放平台](https://bigmodel.cn/coding-plan/personal/usage)用量统计
 ![[Pasted image 20260531224053.png]]
 
+### 阿里千问
+
+[api-key-设置秘钥---大模型服务平台百炼控制台](https://bailian.console.aliyun.com/cn-beijing/?tab=model&source_channel=hy_qwen#/api-key)
+
+## 国外大模型
 
 
-## claude code 接入cli
+### claude code 接入cli
 
 
 [ClaudeCode并接入DeepSeek](http://bilibili.com/video/BV16YRLB7Exd/?spm_id_from=333.1391.0.0&vd_source=ea35c10f59aa46851935d37df4345603)
+
+
+
+

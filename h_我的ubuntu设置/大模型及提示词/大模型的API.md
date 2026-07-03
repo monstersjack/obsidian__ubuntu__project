@@ -20,3 +20,9 @@
 | trae   | 0d7c923344524d07b6693f59eee7bcc2.RcEnJw6FgNfpCJ8v |
 | claude | 863d01c3bcaa42ab9bd3da5136e6ccab.3geJGtT6J7KvHfa3 |
 |        |                                                   |
+
+### 阿里千问
+
+|     |     |
+| --- | --- |
+|     |     |
