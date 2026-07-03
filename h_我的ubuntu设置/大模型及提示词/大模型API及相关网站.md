@@ -55,16 +55,12 @@ OpenRouter = 用一个 API 调用很多 AI 模型
 | glm5.1       | [GLM](https://chatglm.cn/main/alltoolsdetail?lang=zh)            |
 |              |                                                                  |
 
-## deepseek
+### deepseek
 
-| API名字              | api-key                             |                                      |
-| ------------------ | ----------------------------------- | ------------------------------------ |
-| trae使用             | sk-58ee7a9e07ec4a1593bec219c63d3721 | ![[Pasted image 20260428212059.png]] |
-| claude code        | sk-1487c48426f2411298140674887561e9 |                                      |
-| obsidian-i8n       | sk-4e065f79d09b4276bbffe8bdd5508efd |                                      |
-| windows-claude-cli | sk-bd317dda3863490cac91b5a0b5330fff |                                      |
 
-### 如何添加模型
+
+
+#### 如何添加模型
 
 [模型 & 价格 \| DeepSeek API Docs](https://api-docs.deepseek.com/zh-cn/quick_start/pricing)
 ![[Pasted image 20260516215207.png]]
@@ -74,19 +70,13 @@ OpenRouter = 用一个 API 调用很多 AI 模型
 
 
 
-## 豆包,火山引擎
+#### 豆包,火山引擎
 
 [API调用-火山引擎](https://console.volcengine.com/home)
 [在线推理选择具体的模型-火山引擎](https://console.volcengine.com/ark/region:ark+cn-beijing/endpoint?config=%7B%22Filter%22%3A%7B%22Name%22%3A%22%22%7D%2C%22PageNumber%22%3A1%7D)
 
 
-## GLM
-
-|        | key                                               |
-| ------ | ------------------------------------------------- |
-| trae   | 0d7c923344524d07b6693f59eee7bcc2.RcEnJw6FgNfpCJ8v |
-| claude | 863d01c3bcaa42ab9bd3da5136e6ccab.3geJGtT6J7KvHfa3 |
-|        |                                                   |
+#### GLM
 
 套餐
 ![[Pasted image 20260531222225.png]]
