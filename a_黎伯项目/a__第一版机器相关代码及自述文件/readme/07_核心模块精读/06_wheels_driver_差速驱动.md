@@ -1,7 +1,13 @@
+---
+标题: 07-06 - wheels_driver 差速驱动
+创建时间: 2026-06-13
+修改时间: 2026-07-06
+---
+
 # 07-06 - wheels_driver 差速驱动
 
-> **位置**: `ros_pack/wheels_driver/`  
-> **语言**: Python 3.10  
+> **位置**: `ros_pack/wheels_driver/`
+> **语言**: Python 3.10
 > **核心依赖**: rclpy, pyserial
 
 ---
@@ -185,6 +191,7 @@ X-LINE 使用**两轮差速驱动**模型：
 ```
 
 **逆运动学**（cmd_vel → 轮速）：
+
 ```
 v_left  = (v - L/2 × ω) / r      // 左轮线速度
 v_right = (v + L/2 × ω) / r      // 右轮线速度
@@ -194,6 +201,7 @@ v_right = (v + L/2 × ω) / r      // 右轮线速度
 ```
 
 **正运动学**（轮速 → 里程计）：
+
 ```
 v = (v_left + v_right) × r / 2   // 机器人线速度
 ω = (v_right - v_left) × r / L   // 机器人角速度
