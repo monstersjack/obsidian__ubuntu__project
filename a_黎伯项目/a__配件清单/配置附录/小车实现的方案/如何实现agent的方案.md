@@ -62,7 +62,7 @@ sequenceDiagram
 ```
 
 ### 生成的格式
-
+图像矢量化，就是把由像素组成的图片，转换成由线段、曲线和坐标点组成的几何路径。
 边缘平滑的矢量图，才好划线，将复杂图形变成一块块的色块
 
 [Ai生成矢量图SVG格式图，可直接编辑图\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1fm5r6HEEJ/?share_source=copy_web&vd_source=ac598847856f571a2cc05827e3382826)
