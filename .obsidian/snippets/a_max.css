@@ -133,3 +133,21 @@ body .nav-files-container.node-insert-event
 .cm-formatting.cm-header {position: absolute; transform: translateX(-100%);} /*#号*/ 
 .cm-formatting.cm-header-2 {left: 1px;}
 
+/* 正文排版：增加行间距、字间距和段落间距 */
+body {
+  /* 原值为 1.52；数值越大，行与行之间越宽 */
+  --line-height-normal: 1.52 !important;
+}
+
+/* 阅读模式和编辑模式：轻微拉开中文字符间距 */
+.markdown-reading-view .markdown-rendered,
+.markdown-source-view.mod-cm6 .cm-content {
+  letter-spacing: 0.04em;
+}
+
+/* 仅阅读模式：拉开段落之间的距离 */
+.markdown-reading-view .markdown-rendered p {
+  margin-bottom: 1em;
+}
+
+
