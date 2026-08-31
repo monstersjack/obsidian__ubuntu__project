@@ -81,6 +81,7 @@ sequenceDiagram
 
 [Ai生成矢量图SVG格式图，可直接编辑图\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1fm5r6HEEJ/?share_source=copy_web&vd_source=ac598847856f571a2cc05827e3382826)
 
+[位图和矢量图有什么区别？为啥图片放大就变模糊了？\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1Ss411L7Ho/?spm_id_from=333.337.search-card.all.click&vd_source=ea35c10f59aa46851935d37df4345603)
 
 先让图片变成描边线稿
 [Ai里将图片转为可编辑的描边线稿\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1QZqRYGE1p?spm_id_from=333.788.recommend_more_video.2&trackid=web_related_0.router-related-2479604-t4rlm.1788155614552.29&vd_source=ac598847856f571a2cc05827e3382826)
