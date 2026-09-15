@@ -1,7 +1,7 @@
 {
   "alwaysUpdateLinks": true,
   "promptDelete": false,
-  "attachmentFolderPath": "z_资料库/attachment",
+  "attachmentFolderPath": "./",
   "pdfExportSettings": {
     "includeName": true,
     "pageSize": "Letter",
@@ -13,5 +13,6 @@
   "foldIndent": true,
   "showUnsupportedFiles": true,
   "trashOption": "local",
-  "vimMode": false
+  "vimMode": false,
+  "newFileLocation": "root"
 }
