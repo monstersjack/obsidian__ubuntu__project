@@ -24,5 +24,6 @@
     "评论区折叠功能",
     "html折叠评论区"
   ],
-  "baseFontSize": 22
+  "baseFontSize": 22,
+  "baseFontSizeAction": true
 }
