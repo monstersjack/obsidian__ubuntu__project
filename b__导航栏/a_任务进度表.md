@@ -13,8 +13,10 @@
 | ------ | ------------------------------------ | -------------------- | -------------------- | -------------------- |
 | 早<br>上 | <br><br><br><br><br>                 | <br><br><br><br><br> | <br><br><br><br><br> | <br><br><br><br><br> |
 | 下<br>午 | 小车外壳修复<br>理线，<br>电池盒结构打印<br><br><br> | <br><br><br><br><br> | <br><br><br><br><br> | <br><br><br><br><br> |
-| 晚<br>上 | <br><br><br><br><br>                 | <br><br><br><br><br> | <br><br><br><br><br> | <br><br><br><br><br> |
+| 晚<br>上 | <br><br><br><br>CAD图纸的使用<br>全站仪的使用   | <br><br><br><br><br> | <br><br><br><br><br> | <br><br><br><br><br> |
 | 目标     | <br>    <br><br><br><br><br><br>     |                      |                      | <br><br>             |
+CAD中的圆弧是怎么画的
+
 
 ### 任务清单表格
 
