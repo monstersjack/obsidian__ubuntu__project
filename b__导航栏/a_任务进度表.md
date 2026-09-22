@@ -1,7 +1,7 @@
 ---
 标题: a_任务进度表
 创建时间: 2026-06-29
-修改时间: 2026-09-22
+修改时间: 2026-09-23
 ---
 
 ## 总任务表
@@ -17,13 +17,15 @@
 | 目标     | <br>    <br><br><br><br><br><br>     |                      |                      | <br><br>             |
 
 
-#### 
-
 
 | 志聪    |     | 乙果  |     | 锐强                   |
 | ----- | --- | --- | --- | -------------------- |
 | 稳压电路板 |     |     |     | CAD中的圆弧是怎么画的，划线原理是什么 |
 |       |     |     |     | 建筑图纸中有什么字段，          |
+
+[codex自动画cad图纸\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1NE796rEr2/?spm_id_from=333.337.search-card.all.click&vd_source=ea35c10f59aa46851935d37df4345603)
+
+[26分钟快速学会CAD套图全站仪测设坐标\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1hidqYuEXF/?spm_id_from=333.337.search-card.all.click&vd_source=ea35c10f59aa46851935d37df4345603)
 
 
 ### 任务清单表格
