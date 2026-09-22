@@ -27,6 +27,11 @@
 
 [26分钟快速学会CAD套图全站仪测设坐标\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1hidqYuEXF/?spm_id_from=333.337.search-card.all.click&vd_source=ea35c10f59aa46851935d37df4345603)
 
+#### 任务分工
+
+| 志聪  |     | 乙果  |     | 锐强       |
+| --- | --- | --- | --- | -------- |
+|     |     |     |     | 要会画CAD图纸 |
 
 ### 任务清单表格
 
