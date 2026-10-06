@@ -1,7 +1,13 @@
+---
+标题: 04 - API接口参考文档
+创建时间: 2026-06-13
+修改时间: 2026-10-06
+---
+
 # 04 - API接口参考文档
 
-> **阅读目标**: 掌握 X-LINE 所有对外通信接口（REST API / WebSocket / TCP）  
-> **建议用时**: 45分钟  
+> **阅读目标**: 掌握 X-LINE 所有对外通信接口（REST API / WebSocket / TCP）
+> **建议用时**: 45分钟
 > **参考**: 可配合 [05_通信拓扑.md](05_通信拓扑.md) 阅读
 
 ---
@@ -76,6 +82,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 | `per_page` | int | 否 | 20 | 每页数量(1-100) |
 
 **响应示例**:
+
 ```json
 {
   "success": true, "code": 200,
@@ -104,6 +111,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 **WebSocket推送**: `file_uploaded` → `conversion_complete`
 
 **响应**:
+
 ```json
 {
   "success": true, "message": "文件上传并转换成功", "code": 200,
@@ -114,6 +122,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 #### `GET /api/v1/files/<file_id>` — 获取文件详情
 
 **响应**:
+
 ```json
 {
   "success": true, "code": 200,
@@ -212,6 +221,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 **Content-Type**: `application/json`
 
 **Body**:
+
 ```json
 {
   "transformed_json": {
@@ -224,6 +234,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 ```
 
 **响应**:
+
 ```json
 {
   "success": true, "message": "规划生成成功",
@@ -283,6 +294,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 #### `GET /api/v1/monitoring/health` — 综合健康检查
 
 **响应示例**:
+
 ```json
 {
   "success": true,
@@ -309,6 +321,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 #### `connect` (系统事件)
 
 **服务端回复**: `connect_response`
+
 ```json
 {"status": "connected", "session_id": "sess_123", "server_time": "..."}
 ```
@@ -318,6 +331,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 **客户端发送**: `{"client_id": "app-001"}`
 
 **服务端回复**: `heartbeat_response`
+
 ```json
 {"server_time": "...", "client_id": "app-001"}
 ```
@@ -325,6 +339,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 #### `get_server_status` (客户端→)
 
 **服务端回复**: `server_status`
+
 ```json
 {
   "server_time": "...",
@@ -339,6 +354,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 **客户端发送**: `{"room": "execution_updates"}`
 
 **服务端回复**: `room_joined` / `room_left`
+
 ```json
 {"room": "execution_updates", "status": "joined"}
 ```
@@ -352,6 +368,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 **最核心的执行入口**。启动离线路径规划任务的顺序下发执行。
 
 **客户端发送**:
+
 ```json
 {
   "plan_path": "a1b2c3d4.json",
@@ -379,6 +396,7 @@ curl http://192.168.0.123:5000/api/v1/files?api_key=xline-production-api-key-123
 4. 按顺序逐条下发路径
 
 **服务端事件序列**:
+
 ```
 plan_accepted → calibration_start → calibration_success
 → execution_start → task_start → [line_execution_status]
@@ -403,6 +421,7 @@ plan_accepted → calibration_start → calibration_success
 #### `get_execution_state` (客户端→)
 
 **服务端回复**: `execution_state`
+
 ```json
 {
   "status": "executing",
@@ -509,6 +528,7 @@ plan_accepted → calibration_start → calibration_success
 ```
 
 支持命令:
+
 | cmd | 说明 |
 |-----|------|
 | `pause` | 暂停当前执行 |
@@ -517,6 +537,7 @@ plan_accepted → calibration_start → calibration_success
 | `watch_status` | 进入5Hz状态推送模式 (长连接) |
 
 **watch_status模式**:
+
 ```json
 // 每0.2秒推送
 {"cmd":"status_update","status":"success","current_status":"executing","plan_uid":"...","timestamp":"..."}
