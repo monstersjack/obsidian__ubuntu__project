@@ -216,6 +216,56 @@ findNearestUnprocessedLine(current_pos, lines, processed_indices):
 
 **时间复杂度**: O(N²), N = 线段数量
 
+### 5.1 源码现状核实（2026-10-07，与上方旧描述有出入，以本段为准）
+
+> 上方伪代码来自早期版本笔记，实际源码（path_planner.cpp:375-707）的机制更复杂，主要差异如下。
+
+**真实签名**（path_planner.cpp:375）：
+
+```
+std::shared_ptr<Line> findNearestUnprocessedLine(
+    const Point3D& current_pos,
+    const std::vector<std::shared_ptr<Line>>& lines,
+    const PathOffsetConfig& offset_config,
+    bool has_current_position,
+    double canvas_center_x)
+```
+
+**真实距离定义**：不是"到线段 start/end 的最近距离"，而是**到该线段预估切入点 `estimate_next_start(line)` 的距离**。切入点 = 该线被绘制时的入口点（起点反向延长 + 喷码偏移后的位置），不同几何类型估算方式见 07 文档 §4.1 表格。
+
+**真实选择规则——双候选 + 转场长度优先窗口**：
+
+```
+对每条未绘制线段:
+    goal = estimate_next_start(line)          // 预估切入点
+    dist = current_pos.distance(goal)
+    维护两个候选:
+        nearest_any       = 全局最小 dist          // 兜底
+        nearest_in_range  = 窗口[transition_length_min, transition_length_max]
+                            内最小 dist            // 优先
+
+返回: nearest_in_range 存在 ? nearest_in_range : nearest_any
+```
+
+即：优先选"转场长度落在合理区间 [min, max] 内最近"的线；窗口内没有候选时，才退回全局最近。目的是避免每次只挪一小段（频繁超短转场）。
+
+**主循环（processGeometryGroup, path_planner.cpp:1712-1890）**：
+
+```
+while (!remaining_lines.empty()):
+    nearest = findNearestUnprocessedLine(current_pos, remaining_lines, ...)
+    drawing = planGeometryPath(nearest)          // DRAWING_PATH
+    if (TEXT 类型): 按运动方向选左/中/右喷头 → applyPathOffset()
+    if (has_current_position):
+        transition = planConnectionPath(...)     // TRANSITION_PATH (贝塞尔)
+        // 起点朝向前段末端方向 previous_path_end_heading
+        // 终点朝向下段起始方向 heading_from_first_motion
+    nearest->is_printed = true                   // 标记已处理 (line 1887)
+    remaining_lines.erase(nearest)               // 移出候选池 (line 1888)
+```
+
+**转场起点/终点朝向**：起点朝向 = 前一条路径末端运动方向；终点朝向 = 下一条绘图路径首段运动方向（保证车到终点时方向对准下一条线）。
+
 ## 6. 配置关联
 
 配置文件: `config/planner.yaml` 中的 `bezier_transition` 和 `path_planner` 段
