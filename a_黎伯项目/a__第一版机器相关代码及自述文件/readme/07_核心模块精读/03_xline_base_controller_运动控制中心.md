@@ -1,7 +1,13 @@
+---
+标题: 07-03 - xline_base_controller 运动控制中心
+创建时间: 2026-06-13
+修改时间: 2026-10-07
+---
+
 # 07-03 - xline_base_controller 运动控制中心
 
-> **位置**: `ros_pack/xline_base_controller/`  
-> **语言**: C++17  
+> **位置**: `ros_pack/xline_base_controller/`
+> **语言**: C++17
 > **核心依赖**: xline_follow_controller, xline_msgs, jsoncpp, rclcpp_action
 
 ---
