@@ -72,16 +72,16 @@ execute(goal_handle):
 
 **Markdown 表格版本：**
 
-| 步骤 | 动作 | 说明 |
-| --- | --- | --- |
-| 1 | 解析路径类型 | `extractLineData / CircleData / ArcData / SplineData / EllipseData` |
-| 2 | 选择控制器 (多态) | 直线→`line_follow_controller_`；圆弧→`rpp_follow_controller_`(CirclePathStrategy)；样条→`rpp_follow_controller_`(CurvePathStrategy)；圆→`lqr_circle_controller_`；曲线→`lqr_curve_controller_` |
-| 3 | 设置路径 | `base_follow_controller_->setPlan(path_data)` |
-| 4 | 控制步进电机 (喷码机升降) | `controlStepperMotor(forward/reverse)` |
-| 5 | 喷码机同步 | `inkjet_client_->start()` + `change_mode(solid/dashed/text)` |
-| 6 | 运动控制循环 | `while(!isGoalReached())`: checkPauseState → compute_velocity → publish(cmd_vel) → publish_feedback |
-| 7 | 喷码机停止 | `inkjet_client_->stop()` |
-| 8 | 检查是否取消 | `if (cancel_requested): return CANCELED` |
+| 步骤  | 动作             | 说明                                                                                                                                                                                |
+| --- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | 解析路径类型         | `extractLineData / CircleData / ArcData / SplineData / EllipseData`                                                                                                               |
+| 2   | 选择控制器 (多态)     | 直线→`line_follow_controller_`；圆弧→`rpp_follow_controller_`(CirclePathStrategy)；样条→`rpp_follow_controller_`(CurvePathStrategy)；圆→`lqr_circle_controller_`；曲线→`lqr_curve_controller_` |
+| 3   | 设置路径           | `base_follow_controller_->setPlan(path_data)`                                                                                                                                     |
+| 4   | 控制步进电机 (喷码机升降) | `controlStepperMotor(forward/reverse)`                                                                                                                                            |
+| 5   | 喷码机同步          | `inkjet_client_->start()` + `change_mode(solid/dashed/text)`                                                                                                                      |
+| 6   | 运动控制循环         | `while(!isGoalReached())`: checkPauseState → compute_velocity → publish(cmd_vel) → publish_feedback                                                                               |
+| 7   | 喷码机停止          | `inkjet_client_->stop()`                                                                                                                                                          |
+| 8   | 检查是否取消         | `if (cancel_requested): return CANCELED`                                                                                                                                          |
 
 ## 4. JSON解析支持的五种路径
 

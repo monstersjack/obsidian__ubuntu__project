@@ -88,16 +88,16 @@ flowchart TD
 
 `findNearestUnprocessedLine()` 遍历每条未绘制线段时，先调用 `estimate_next_start(line)` 估算"机器人真正要到达这条线时的入口点"（考虑延长 + 喷码偏移），再计算 `current_pos` 到该切入点的欧氏距离。不同几何类型的切入点估算：
 
-| 几何类型 | 切入点估算方式（`estimate_next_start`） |
-|------|------|
-| LINE | 起点沿线段方向**反向延长** `path_extension_start_length`，再按 `center_offset` 侧向偏移 |
-| TEXT | 起点反向延长 + 按喷码机类型偏移（左/中/右喷头分别用 left/center/right_offset） |
-| POLYLINE | 取前两个顶点方向做中心偏移 |
-| SPLINE | 起点沿**切线反向**延长 `spline_extension_length` 再偏移；闭合样条不延长 |
-| CIRCLE | 圆心 + (radius + center_offset) 的 **0° 角位置**（圆周入口点） |
-| ARC | 起点角度反向延长 `arc_extension_length`（上限 `arc_extension_max_angle`）再偏移 |
-| ELLIPSE | 参数方程在起始角 t0 处**反向延长**后再旋到世界坐标系 |
-| CURVE | 前两个控制点方向做中心偏移 |
+| 几何类型     | 切入点估算方式（`estimate_next_start`）                                        |
+| -------- | --------------------------------------------------------------------- |
+| LINE     | 起点沿线段方向**反向延长** `path_extension_start_length`，再按 `center_offset` 侧向偏移 |
+| TEXT     | 起点反向延长 + 按喷码机类型偏移（左/中/右喷头分别用 left/center/right_offset）                |
+| POLYLINE | 取前两个顶点方向做中心偏移                                                         |
+| SPLINE   | 起点沿**切线反向**延长 `spline_extension_length` 再偏移；闭合样条不延长                   |
+| CIRCLE   | 圆心 + (radius + center_offset) 的 **0° 角位置**（圆周入口点）                     |
+| ARC      | 起点角度反向延长 `arc_extension_length`（上限 `arc_extension_max_angle`）再偏移      |
+| ELLIPSE  | 参数方程在起始角 t0 处**反向延长**后再旋到世界坐标系                                        |
+| CURVE    | 前两个控制点方向做中心偏移                                                         |
 
 **关键：双候选 + 转场长度优先窗口（避免"每画一条就挪一小步"）**
 
