@@ -76,15 +76,15 @@ execute(goal_handle):
 
 ## 5. 控制器多态调度
 
-```
-base_follow_controller_  (BaseFollowController*)
-    ├── line_follow_controller_    → LineFollowController
-    ├── rpp_follow_controller_     → RPPFollowController
-    │       path_strategy_
-    │         ├── CirclePathStrategy  (圆轨迹)
-    │         └── CurvePathStrategy   (曲线轨迹)
-    ├── lqr_circle_controller_     → LQRCircleController
-    └── lqr_curve_controller_      → LQRCurveController
+```mermaid
+flowchart TD
+    B["base_follow_controller_ (BaseFollowController*)"] --> L["line_follow_controller_ → LineFollowController"]
+    B --> R["rpp_follow_controller_ → RPPFollowController"]
+    R --> S["path_strategy_"]
+    S --> C["CirclePathStrategy (圆轨迹)"]
+    S --> CV["CurvePathStrategy (曲线轨迹)"]
+    B --> LC["lqr_circle_controller_ → LQRCircleController"]
+    B --> LQ["lqr_curve_controller_ → LQRCurveController"]
 ```
 
 运行时通过 `base_follow_controller_->computeVelocityCommands()` 多态调用。
@@ -117,20 +117,21 @@ base_follow_controller_  (BaseFollowController*)
 
 ### 8.1 角色分工
 
-```
-xline_base_controller          xline_follow_controller
-──────────────────────          ──────────────────────
-    调度中枢                            算法库
-    ExecutePlan Action                 静态库（.a lib）
-    Server                             ▼
-        │                     BaseFollowController（基类）
-        │ 编译时链接                    │
-        ├──────────────────────→  LineFollowController
-        │ 运行时多态           RPPFollowController
-        │ 调用                      │  CirclePathStrategy
-        │                     │  CurvePathStrategy
-        ▼                     LQRCircleController
-    compute_velocity()        LQRCurveController
+```mermaid
+flowchart TD
+    subgraph BC["xline_base_controller — 调度中枢"]
+        A["ExecutePlan Action Server"] --> V["compute_velocity()"]
+    end
+    subgraph FC["xline_follow_controller — 算法库 (静态 .a lib)"]
+        B["BaseFollowController (基类)"] --> L1["LineFollowController"]
+        B --> R1["RPPFollowController"]
+        R1 --> P["path_strategy_"]
+        P --> CS["CirclePathStrategy"]
+        P --> CVS["CurvePathStrategy"]
+        B --> LQ1["LQRCircleController"]
+        B --> LQ2["LQRCurveController"]
+    end
+    V -. "编译时链接 + 运行时多态调用" .-> B
 ```
 
 | 维度 | base_controller | follow_controller |
@@ -143,100 +144,48 @@ xline_base_controller          xline_follow_controller
 
 ### 8.2 完整协作流程
 
-```
-execute(goal_handle)  ← ROS2 Action 回调（base_controller 中）
-│
-├── ① 解析 JSON 执行计划
-│   plan_json = goal_handle.plan_json
-│   plan = json.parse(plan_json)
-│   for (auto& path : plan.lines):
-│
-├── ② 根据路径类型选择控制器（多态切换）
-│   if (path.type == LINE)       → base_follow_controller_ = line_follow_controller_
-│   if (path.type == CIRCLE)     → base_follow_controller_ = rpp_follow_controller_ + CirclePathStrategy
-│   if (path.type == ARC)        → base_follow_controller_ = rpp_follow_controller_ + CirclePathStrategy
-│   if (path.type == SPLINE)     → base_follow_controller_ = rpp_follow_controller_ + CurvePathStrategy
-│   if (path.type == ELLIPSE)    → base_follow_controller_ = lqr_curve_controller_
-│
-├── ③ 设置目标路径
-│   base_follow_controller_->setPlan(path_data)
-│   → follow_controller 内部存储路径点序列
-│   → 初始化状态机为 IDLE
-│
-├── ④ 控制步进电机（喷码机升降）
-│   controlStepperMotor(forward)   // 喷码机下降
-│
-├── ⑤ 喷码机同步
-│   inkjet_client_->start()
-│   inkjet_client_->change_mode(mode)  // solid / dashed / text
-│
-├── ⑥ ★ 核心运动控制循环 (18Hz)
-│   while (!base_follow_controller_->isGoalReached()):
-│   │
-│   │ ⑥-a  检查暂停状态
-│   │   checkPauseState()
-│   │   → if (is_paused_): 条件变量阻塞等待恢复
-│   │
-│   │ ⑥-b  ★ 调用 follow_controller 计算速度
-│   │   cmd_vel = base_follow_controller_->computeVelocityCommands(current_pose)
-│   │   │
-│   │   │  [进入 follow_controller 内部]:
-│   │   │  ├── 更新机器人当前位姿 (odom + IMU)
-│   │   │  ├── 状态机运转 (IDLE → ALIGNING → FOLLOWING → ALIGNING_END → GOAL_REACHED)
-│   │   │  ├── 计算误差 (横向误差 / 角度误差 / 距离误差)
-│   │   │  ├── 滤波器级联处理 (Hampel → SG → PID → 四阶低通 → 二阶平滑)
-│   │   │  ├── Sigmoid 速度曲线 / RPP 前瞻追踪 / LQR 最优解
-│   │   │  └── 返回 cmd_vel (线速度 + 角速度)
-│   │   │  [返回 base_controller]
-│   │   │
-│   │ ⑥-c  发布速度指令
-│   │   cmd_vel_publisher_->publish(cmd_vel)
-│   │   → wheels_driver 接收并执行
-│   │
-│   │ ⑥-d  发布反馈
-│   │   feedback->current_line_id = current_layer_id
-│   │   goal_handle->publish_feedback(feedback)
-│   │   → xline_server 接收 → 推送状态到移动端
-│   │
-│   │ ⑥-e  检查取消
-│   │   if (goal_handle->is_canceling()): return CANCELED
-│   │
-│   └───循环结束───
-│
-├── ⑦ 喷码机停止
-│   inkjet_client_->stop()
-│
-├── ⑧ 步进电机抬起
-│   controlStepperMotor(reverse)
-│
-└── ⑨ 返回执行结果
-    goal_handle->succeed(result)
+```mermaid
+flowchart TD
+    START["execute(goal_handle) ← ROS2 Action 回调 (base_controller 中)"]
+    A["① 解析 JSON 执行计划<br/>plan_json = goal_handle.plan_json<br/>plan = json.parse(plan_json)<br/>for path in plan.lines:"] --> B["② 根据路径类型选择控制器（多态切换）<br/>LINE → line_follow_controller_<br/>CIRCLE/ARC → rpp_follow_controller_ + CirclePathStrategy<br/>SPLINE → rpp_follow_controller_ + CurvePathStrategy<br/>ELLIPSE → lqr_curve_controller_"]
+    B --> C["③ 设置目标路径<br/>base_follow_controller_->setPlan(path_data)<br/>存储路径点序列<br/>初始化状态机为 IDLE"]
+    C --> D["④ 控制步进电机（喷码机下降）<br/>controlStepperMotor(forward)"]
+    D --> E["⑤ 喷码机同步<br/>inkjet_client_->start()<br/>inkjet_client_->change_mode(solid/dashed/text)"]
+    E --> F["⑥ 核心运动控制循环 (18Hz)"]
+
+    F --> F1["⑥-a 检查暂停状态<br/>checkPauseState()<br/>if is_paused_: 条件变量阻塞等待恢复"]
+    F1 --> F2["⑥-b 调用 follow_controller 计算速度<br/>cmd_vel = computeVelocityCommands(current_pose)"]
+    F2 --> F2i["[follow_controller 内部]<br/>更新位姿 (odom + IMU)<br/>状态机: IDLE→ALIGNING→FOLLOWING→ALIGNING_END→GOAL_REACHED<br/>计算误差 (横向/角度/距离)<br/>滤波器级联: Hampel→SG→PID→四阶低通→二阶平滑<br/>Sigmoid速度 / RPP前瞻 / LQR最优解<br/>返回 cmd_vel (线速度+角速度)"]
+    F2i --> F3["⑥-c 发布速度指令<br/>cmd_vel_publisher_->publish(cmd_vel)<br/>→ wheels_driver 接收并执行"]
+    F3 --> F4["⑥-d 发布反馈<br/>feedback->current_line_id = current_layer_id<br/>goal_handle->publish_feedback<br/>→ xline_server 推送到移动端"]
+    F4 --> F5["⑥-e 检查取消<br/>if goal_handle->is_canceling(): return CANCELED"]
+    F5 -->|"未到达目标 继续循环"| F1
+    F5 -->|"isGoalReached()=true"| G["⑦ 喷码机停止<br/>inkjet_client_->stop()"]
+    G --> H["⑧ 步进电机抬起<br/>controlStepperMotor(reverse)"]
+    H --> I["⑨ 返回执行结果<br/>goal_handle->succeed(result)"]
+    START --> A
 ```
 
 ### 8.3 暂停/恢复机制
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  pause 流程：                                               │
-│                                                             │
-│  移动端 → WebSocket "pause" → xline_server                  │
-│    → ROS2 Service: /execution/pause                        │
-│      → base_controller::handle_pause()                      │
-│        → is_paused_ = true                                  │
-│        → 控制循环中 checkPauseState() 检测到暂停            │
-│        → 条件变量 wait() 阻塞主循环                         │
-│        → 向 follow_controller 发零速度（保证停车）          │
-│                                                             │
-│  resume 流程：                                              │
-│                                                             │
-│  移动端 → WebSocket "resume" → xline_server                 │
-│    → ROS2 Service: /execution/resume                       │
-│      → base_controller::handle_resume()                     │
-│        → is_paused_ = false                                 │
-│        → 条件变量 notify_all() 唤醒控制循环                 │
-│        → follow_controller 恢复速度计算                      │
-│        → 从当前中断点继续执行                                │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+flowchart TD
+    subgraph PAUSE["pause 流程"]
+        P1["移动端 → WebSocket pause → xline_server"] --> P2["ROS2 Service: /execution/pause"]
+        P2 --> P3["base_controller::handle_pause()"]
+        P3 --> P4["is_paused_ = true"]
+        P4 --> P5["控制循环 checkPauseState() 检测到暂停"]
+        P5 --> P6["条件变量 wait() 阻塞主循环"]
+        P6 --> P7["向 follow_controller 发零速度（保证停车）"]
+    end
+    subgraph RESUME["resume 流程"]
+        R1["移动端 → WebSocket resume → xline_server"] --> R2["ROS2 Service: /execution/resume"]
+        R2 --> R3["base_controller::handle_resume()"]
+        R3 --> R4["is_paused_ = false"]
+        R4 --> R5["条件变量 notify_all() 唤醒控制循环"]
+        R5 --> R6["follow_controller 恢复速度计算"]
+        R6 --> R7["从当前中断点继续执行"]
+    end
 ```
 
 ### 8.4 喷码同步机制

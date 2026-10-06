@@ -10,13 +10,12 @@
 
 xline_msgs 是整个系统的**通信协议层**，定义了所有自定义的 Action/Service/Message。所有其他包通过它进行跨节点通信。
 
-```
-xline_msgs (通信基础)
-  ↑ 依赖
-  ├── xline_base_controller (ExecutePlan Action)
-  ├── xline_server (ExecutePlan Action + 多个srv)
-  ├── xline_inkjet_printer (PrinterCommand srv)
-  └── stepper_motor_driver (MotorCommand srv)
+```mermaid
+flowchart TD
+    M["xline_msgs (通信基础)"] --> B["xline_base_controller<br/>(ExecutePlan Action)"]
+    M --> S["xline_server<br/>(ExecutePlan Action + 多个 srv)"]
+    M --> I["xline_inkjet_printer<br/>(PrinterCommand srv)"]
+    M --> D["stepper_motor_driver<br/>(MotorCommand srv)"]
 ```
 
 ## 2. 文件清单
@@ -56,18 +55,16 @@ string error_msg    # 错误信息 (失败时)
 
 ### 通信模型图
 
-```
-ExecutionManager          MotionControlCenter
-(xline_server)               (base_controller)
-    │                                │
-    │── send_goal(plan_json,uid)──►│
-    │                                │── handleGoal() → 接受/拒绝
-    │                                │
-    │◄── feedback(current_id=1)────│  (执行路径1时)
-    │◄── feedback(current_id=2)────│  (执行路径2时)
-    │◄── feedback(current_id=N)────│  (执行路径N时)
-    │                                │
-    │◄── result(success, error)────│  (全部执行完成)
+```mermaid
+sequenceDiagram
+    participant EM as ExecutionManager (xline_server)
+    participant MC as MotionControlCenter (base_controller)
+    EM->>MC: send_goal(plan_json, uid)
+    Note right of MC: handleGoal() → 接受/拒绝
+    loop 每条路径
+        MC-->>EM: feedback(current_id=1..N)
+    end
+    MC-->>EM: result(success, error)
 ```
 
 ## 4. 对外接口
