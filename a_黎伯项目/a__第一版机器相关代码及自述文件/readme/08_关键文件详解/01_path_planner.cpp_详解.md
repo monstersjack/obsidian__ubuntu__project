@@ -72,6 +72,18 @@ class PathPlanner {
   3. 返回 RouteSegment[] (绘图段用实线/虚线, 转场段标记为spline)
 ```
 
+**Mermaid 可视化版本：**
+
+```mermaid
+flowchart TD
+    A["main.cpp → plan_paths()"] --> B["processGeometryGroup(path_lines)"]
+    A --> C["processGeometryGroup(hole_lines)"]
+    B --> D["1. 将线段按位置分组"]
+    C --> D
+    D --> E["2. 对每组: 贪心排序 → 逐个规划绘图路径 → 规划转场路径"]
+    E --> F["3. 返回 RouteSegment[]<br/>(绘图段用实线/虚线, 转场段标记为 spline)"]
+```
+
 ### 4.2 `processGeometryGroup()` — 贪心排序+逐个规划
 
 ```
@@ -86,6 +98,17 @@ class PathPlanner {
   4. planConnectionPath() 规划到该线段的转场路径
   5. 标记为已处理
   6. 重复2-5直到所有线段处理完毕
+```
+
+**Mermaid 可视化版本：**
+
+```mermaid
+flowchart TD
+    A["1. 从当前终点位置开始"] --> B["2. findNearestUnprocessedLine()<br/>找到最近的未处理线段"]
+    B --> C["3. planGeometryPath()<br/>规划该线段的绘图路径"]
+    C --> D["4. planConnectionPath()<br/>规划到该线段的转场路径"]
+    D --> E["5. 标记为已处理"]
+    E -->|"6. 重复直到所有线段处理完毕"| B
 ```
 
 ### 4.3 `planConnectionPath()` — 贝塞尔转场 ★★

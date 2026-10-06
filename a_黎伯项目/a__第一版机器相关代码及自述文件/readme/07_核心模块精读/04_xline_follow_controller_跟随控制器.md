@@ -50,6 +50,18 @@ v(t) = v_target / (1 + exp(-k×(t-t0)))
 [FourthOrderLowpassFilter] → [SecondOrderSmoother] → 角速度指令
 ```
 
+**Mermaid 可视化版本：**
+
+```mermaid
+flowchart LR
+    E["横向误差"] --> H["HampelFilter<br/>(异常值检测)"]
+    H --> S["SavitzkyGolayFilter<br/>(数据平滑)"]
+    S --> P["PIDController"]
+    P --> L["FourthOrderLowpassFilter<br/>(四阶低通)"]
+    L --> S2["SecondOrderSmoother<br/>(二阶平滑)"]
+    S2 --> OUT["角速度指令"]
+```
+
 ## 5. RPP（Regulated Pure Pursuit）曲线跟随控制器 —— 详解
 
 ### 5.1 算法定义
@@ -73,6 +85,14 @@ v(t) = v_target / (1 + exp(-k×(t-t0)))
 └─────────────────────────────────────────────────────────────┘
 ```
 
+**Mermaid 可视化版本（示意）：**
+
+```mermaid
+flowchart LR
+    R["机器人当前位置 ●<br/>(x, y, θ)"] -->|"圆弧轨迹 / 转向半径 R"| L["★ 前瞻点 (lookahead)<br/>(在目标路径上)"]
+    P["目标路径 ═══════════════════"] --- L
+```
+
 **几何关系推导**：
 ```
 设：α = 前瞻点相对机器人航向的夹角
@@ -86,6 +106,16 @@ v(t) = v_target / (1 + exp(-k×(t-t0)))
 
 因此角速度：ω = v / R = 2 × v × sin(α) / L
 ```
+
+**Markdown 表格版本（推导过程）：**
+
+| 步骤 | 内容 |
+| --- | --- |
+| 设 | `α` = 前瞻点相对机器人航向的夹角；`L` = 前瞻距离；`R` = 转向半径 |
+| 正弦定理 | `L / sin(2α) = R / sin(π/2 - α)` |
+| 化简 | `R = L / (2 × sin(α))` |
+| 曲率 | `κ = 1/R = 2 × sin(α) / L` |
+| 角速度 | `ω = v / R = 2 × v × sin(α) / L` |
 
 这就是 RPP 最核心的公式：`ω = 2 × v × sin(α) / L`
 
@@ -159,6 +189,22 @@ computeVelocityCommands():
   └──────────────────┬──────────────────────────┘
                      ▼
               返回 (v, ω) → /cmd_vel
+```
+
+**Mermaid 可视化版本：**
+
+```mermaid
+flowchart TD
+    A["1. pruneGlobalPlan()<br/>裁剪全局路径，移除后方已走过的路径点<br/>保留当前点到终点的有效路径段"]
+    B["2. 计算前瞻距离<br/>lookahead = k × current_velocity + min<br/>例: k=0.3, min=0.5m<br/>v=0.2m/s → 0.56m; v=1.0m/s → 0.80m"]
+    C["3. 寻找前瞻点 (lookaheadPoint)<br/>沿路径向前搜索 ≥ lookahead 的第一个点<br/>路径点不够密 → 线性插值"]
+    D["4. 计算转向角度 α<br/>α = atan2(lookahead_y - robot_y, lookahead_x - robot_x) - θ<br/>归一化到 [-π, π]"]
+    E["5. 计算角速度<br/>ω = 2 × v × sin(α) / lookahead<br/>(核心公式)"]
+    F["6. applyCurvatureConstraint()<br/>曲率 > 阈值 → v = min(v, max_v/curvature)<br/>急弯自动减速"]
+    G["7. applyApproachConstraint()<br/>dist_to_goal < 阈值 → v = v × (dist/threshold)<br/>接近终点平滑减速"]
+    H["8. smoothAngularVelocity()<br/>ω_smoothed = α×ω + (1-α)×ω_prev<br/>防止指令突变"]
+    I["返回 (v, ω) → /cmd_vel"]
+    A --> B --> C --> D --> E --> F --> G --> H --> I
 ```
 
 ### 5.5 策略模式（Strategy Pattern）

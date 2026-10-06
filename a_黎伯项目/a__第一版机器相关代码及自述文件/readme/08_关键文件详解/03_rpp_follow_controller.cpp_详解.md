@@ -99,6 +99,14 @@ PathStrategy* strategy_ (多态)
     前瞻点: 沿NURBS参数化前进
 ```
 
+**Mermaid 可视化版本：**
+
+```mermaid
+flowchart TD
+    S["PathStrategy* strategy_ (多态)"] --> C["CirclePathStrategy → 圆轨迹时<br/>特点: performYawPrealignment()<br/>前瞻点: 圆上参数方程计算"]
+    S --> CV["CurvePathStrategy → 曲线轨迹时<br/>特点: NURBS插值<br/>前瞻点: 沿NURBS参数化前进"]
+```
+
 ## 5. 配置关联
 
 `config/rpp_circle.yaml` / `config/rpp_curve.yaml`:

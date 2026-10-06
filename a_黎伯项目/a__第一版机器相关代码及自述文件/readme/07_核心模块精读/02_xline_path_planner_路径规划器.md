@@ -39,6 +39,31 @@
 
 ## 4. 6阶段流水线
 
+```
+[cad_transformed.json]
+    ↓ 阶段1: CADParser::parse()
+    ├── parse_line / parse_polyline / parse_circle / parse_arc / parse_ellipse / parse_spline
+    ├── 单位换算 (mm→m, factor=1000)
+    └── store_by_layer() → path_lines / obstacle_lines / hole_lines
+    ↓ 阶段2: GeometryPreprocessor::preprocess()
+    ├── 拆分Polyline → LineSegment[]
+    ├── 共线合并 (同一方向的相邻线段)
+    └── 路径扩展 (起终点延长)
+    ↓ 阶段3: GridMapGenerator::generate_from_cad()
+    ├── Bresenham直线光栅化
+    └── 圆/弧/椭圆/样条→离散→光栅化 (De Casteljau / NURBS)
+    ↓ 阶段4: PathPlanner::plan_paths() ★★
+    ├── 贪心排序: findNearestUnprocessedLine()
+    ├── 绘图路径: planGeometryPath() + applyPathOffset()
+    └── 转场路径: planConnectionPath() + 贝塞尔曲线
+    ↓ 阶段5: TrajectoryGenerator::generate_from_path()
+    └── 路径点→ExecutionNode (含位姿/速度/喷墨信息)
+    ↓ 阶段6: OutputFormatter::format()
+    └── 输出 planned_*.json + 可视化图片
+```
+
+**Mermaid 可视化版本：**
+
 ```mermaid
 flowchart TD
     A["cad_transformed.json"] --> S1["阶段1: CADParser::parse()<br/>parse_line/polyline/circle/arc/ellipse/spline<br/>单位换算 (mm→m, factor=1000)<br/>store_by_layer() → path/obstacle/hole_lines"]

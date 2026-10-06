@@ -10,6 +10,17 @@
 
 xline_msgs 是整个系统的**通信协议层**，定义了所有自定义的 Action/Service/Message。所有其他包通过它进行跨节点通信。
 
+```
+xline_msgs (通信基础)
+  ↑ 依赖
+  ├── xline_base_controller (ExecutePlan Action)
+  ├── xline_server (ExecutePlan Action + 多个srv)
+  ├── xline_inkjet_printer (PrinterCommand srv)
+  └── stepper_motor_driver (MotorCommand srv)
+```
+
+**Mermaid 可视化版本：**
+
 ```mermaid
 flowchart TD
     M["xline_msgs (通信基础)"] --> B["xline_base_controller<br/>(ExecutePlan Action)"]
@@ -54,6 +65,22 @@ string error_msg    # 错误信息 (失败时)
 ```
 
 ### 通信模型图
+
+```
+ExecutionManager          MotionControlCenter
+(xline_server)               (base_controller)
+    │                                │
+    │── send_goal(plan_json,uid)──►│
+    │                                │── handleGoal() → 接受/拒绝
+    │                                │
+    │◄── feedback(current_id=1)────│  (执行路径1时)
+    │◄── feedback(current_id=2)────│  (执行路径2时)
+    │◄── feedback(current_id=N)────│  (执行路径N时)
+    │                                │
+    │◄── result(success, error)────│  (全部执行完成)
+```
+
+**Mermaid 可视化版本：**
 
 ```mermaid
 sequenceDiagram

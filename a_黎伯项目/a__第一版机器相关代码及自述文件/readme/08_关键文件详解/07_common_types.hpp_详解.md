@@ -31,6 +31,14 @@ Vector2D
   └── angle() → 方向角
 ```
 
+**Markdown 表格版本：**
+
+| 类型 | 成员 | 方法 |
+| --- | --- | --- |
+| `Point2D` | `x, y (double)` | `distance(Point2D) → double`；运算符 `+, -, *, /` |
+| `Point3D : Point2D` | `z (double)` | `distance3D(Point3D)`；向量运算 `cross, dot` |
+| `Vector2D` | `x, y` | `magnitude()`, `normalize()`, `dot()`, `angle() → 方向角` |
+
 ### 2.2 几何图元
 
 ```
@@ -48,6 +56,21 @@ Line
       │     └── Arc: start_angle, end_angle
       ├── Ellipse: center, major_axis, ratio, start_angle, end_angle, rotation
       └── Text: position, content, height, rotation, style
+```
+
+**Mermaid 可视化版本：**
+
+```mermaid
+flowchart TD
+    L["Line<br/>id, start, end, length, is_printed, line_type, thickness, layer, color, metadata"] --> P["Polyline<br/>vertices[], closed"]
+    L --> S["Spline<br/>degree, control_points[], knots[], weights[]"]
+    L --> LS["LineSegment<br/>parent_polyline_id, segment_index"]
+    L --> ML["MergedLine<br/>source_line_ids[]"]
+    L --> C["Curve<br/>degree, control_points, knots, weights"]
+    L --> CI["Circle<br/>center, radius"]
+    CI --> A["Arc<br/>start_angle, end_angle"]
+    L --> E["Ellipse<br/>center, major_axis, ratio, start_angle, end_angle, rotation"]
+    L --> T["Text<br/>position, content, height, rotation, style"]
 ```
 
 ### 2.3 规划数据容器
@@ -75,6 +98,26 @@ ExecutionNode
   └── info: string
 ```
 
+**Markdown 表格版本：**
+
+| 容器 | 字段 | 说明 |
+| --- | --- | --- |
+| `CADData` | `path_lines` | 绘图路径 |
+| | `obstacle_lines` | 障碍物 |
+| | `hole_lines` | 空洞 |
+| | `origin_points` | 参考原点 |
+| `RouteSegment` | `points` | 路径点序列 |
+| | `type` | `RouteType`: DRAWING_PATH / TRANSITION_PATH |
+| | `printer_type` | `PrinterType`: LEFT/CENTER/RIGHT |
+| | `ink_mode` | `InkMode`: SOLID/DASHED/TEXT |
+| | `backward` | bool |
+| | `steps` | 步进电机步骤 |
+| `ExecutionNode` | `pose` | 目标位姿 |
+| | `velocity` | 目标速度 |
+| | `ink_enabled` | bool |
+| | `printer` | PrinterType |
+| | `info` | string |
+
 ### 2.4 枚举定义
 
 ```
@@ -84,6 +127,16 @@ PrinterType: LEFT_PRINTER / RIGHT_PRINTER / CENTER_PRINTER
 InkMode: SOLID / DASHED / TEXT
 EndpointTangentMode: ALIGN_PATH / ALIGN_STRAIGHT / BLEND
 ```
+
+**Markdown 表格版本：**
+
+| 枚举 | 取值 |
+| --- | --- |
+| `GeometryType` | LINE / POLYLINE / CIRCLE / ARC / ELLIPSE / SPLINE / CURVE / TEXT |
+| `RouteType` | DRAWING_PATH / TRANSITION_PATH |
+| `PrinterType` | LEFT_PRINTER / RIGHT_PRINTER / CENTER_PRINTER |
+| `InkMode` | SOLID / DASHED / TEXT |
+| `EndpointTangentMode` | ALIGN_PATH / ALIGN_STRAIGHT / BLEND |
 
 ### 2.5 配置结构体
 
@@ -110,6 +163,15 @@ GridMapConfig
   ├── resolution, padding
   └── visualization config
 ```
+
+**Markdown 表格版本：**
+
+| 配置结构体 | 字段 |
+| --- | --- |
+| `PathPlannerConfig` | `extension_start_length/end_length`；`arc_extension_length/max_angle`；`ellipse_extension_length/max_angle` |
+| `BezierTransitionConfig` | `enabled, use_quintic`；`min_curve_distance, min_angle_for_curve`；`control_point_ratio, min/max_control_distance`；`path_resolution`；`min_turning_radius, adaptive_control_point`；`large_angle_threshold, ratio_boost`；`endpoint_tangent_mode`；`consider_backward` |
+| `PathOffsetConfig` | `left_offset, right_offset, center_offset` |
+| `GridMapConfig` | `resolution, padding`；visualization config |
 
 ## 3. 设计模式体现
 

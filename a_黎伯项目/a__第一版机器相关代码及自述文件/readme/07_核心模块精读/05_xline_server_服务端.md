@@ -87,6 +87,24 @@ execute_plan 事件处理:
   5. 全部完成 → plan_complete / plan_failed
 ```
 
+**Mermaid 可视化版本：**
+
+```mermaid
+flowchart TD
+    A["execute_plan 事件处理"] --> B["1. 校验 plan_path (文件存在性+JSON解析)"]
+    B --> C["2. 检查队列占用 (一次仅一个)"]
+    C --> D["3. 调用姿态校正 /motion_control/execute_calibration"]
+    D --> D1["成功 → 继续"]
+    D --> D2["失败 → plan_rejected"]
+    D1 --> E["4. 逐条下发 for line in plan.lines"]
+    E --> E1["检查 _sequence_cancel_event / _sequence_pause_event"]
+    E1 --> E2["构造 ExecutePlan Goal"]
+    E2 --> E3["send_goal → 等待 Result (阻塞)"]
+    E3 --> E4["发布 line_execution_status"]
+    E4 -.下一条路径.-> E
+    E --> F["5. 全部完成 → plan_complete / plan_failed"]
+```
+
 ## 6. 通信通道总览
 
 | 通道 | 端口 | 用途 |
@@ -177,6 +195,31 @@ xline_server 内部采用**分层架构**设计，每个目录承担明确的职
 │              底层 ROS2 节点                                       │
 │  xline_base_controller / xline_path_planner / ...                │
 └──────────────────────────────────────────────────────────────────┘
+```
+
+**Mermaid 可视化版本：**
+
+```mermaid
+flowchart TD
+    subgraph CLIENTS["外部客户端"]
+        C1["xline_cad (PyQt6)"]
+        C2["xline_mobile (Flutter)"]
+    end
+    subgraph SERVER["xline_server 内部"]
+        API["api/ 接口层 (Flask Blueprint)<br/>execution / files / monitoring / planning / sync<br/>职责: 接收HTTP请求 → 参数校验 → 调用services"]
+        SVC["services/ 业务逻辑层<br/>execution_manager (ROS2 Action客户端) ★★★<br/>planning_service (ROS2 Service客户端)<br/>file_service / monitoring_service / sync_service<br/>职责: 核心业务逻辑、ROS2通信、状态管理"]
+        CTRL["controllers/<br/>execution_controller<br/>Event信号量 执行流控制"]
+        COMM["communications/<br/>websocket: connection / execution ★★★ / file<br/>tcp: exec_status(9998) / control_cmd(9997)<br/>职责: 实时通信"]
+        TCP["robot/tcp/<br/>chassis_control_server(8888)<br/>simple_device_server(9996)<br/>motor_command_server(9993)<br/>职责: 机器人硬件TCP直连控制"]
+        UTIL["utils/ 工具层<br/>auth_helper / error_handler / logger<br/>response_helper / ros2_probe / security_helper"]
+        API -->|"调用"| SVC
+        SVC --> CTRL
+        SVC --> COMM
+        SVC --> TCP
+        SVC --> UTIL
+    end
+    CLIENTS -->|"HTTP / WebSocket / TCP"| SERVER
+    SERVER -->|"ROS2 Action/Service"| ROS["底层 ROS2 节点<br/>xline_base_controller / xline_path_planner / ..."]
 ```
 
 ### 8.2 各模块详细职责
