@@ -1,7 +1,13 @@
+---
+标题: 07-05 - xline_server 服务端
+创建时间: 2026-06-13
+修改时间: 2026-10-08
+---
+
 # 07-05 - xline_server 服务端
 
-> **位置**: `ros_pack/xline_server/`  
-> **语言**: Python 3.10  
+> **位置**: `ros_pack/xline_server/`
+> **语言**: Python 3.10
 > **核心依赖**: Flask, Flask-SocketIO, eventlet, rclpy
 
 ---
