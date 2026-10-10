@@ -130,5 +130,14 @@
       ],
       "key": "C"
     }
+  ],
+  "workspace:copy-full-path": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
   ]
 }
