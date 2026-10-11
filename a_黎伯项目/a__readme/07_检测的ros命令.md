@@ -12,7 +12,7 @@ ros2 topic echo /reflector_position
 
 /localization/calibrate_pose
 
-
+/motion_control/execute_calibration和/localization/calibrate_pose
 
 
 
