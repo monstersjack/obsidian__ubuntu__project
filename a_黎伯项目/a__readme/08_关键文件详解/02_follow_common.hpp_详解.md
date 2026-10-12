@@ -1,8 +1,14 @@
+---
+标题: 08-02 - follow_common.hpp 详解
+创建时间: 2026-10-07
+修改时间: 2026-10-12
+---
+
 # 08-02 - follow_common.hpp 详解
 
-> **完整路径**: `ros_pack/xline_follow_controller/include/xline_follow_controller/common/follow_common.hpp`  
-> **语言**: C++17  
-> **所属模块**: xline_follow_controller (第三层)  
+> **完整路径**: `ros_pack/xline_follow_controller/include/xline_follow_controller/common/follow_common.hpp`
+> **语言**: C++17
+> **所属模块**: xline_follow_controller (第三层)
 > **重要性**: ★★★ (所有控制器的算法基础)
 
 ---
