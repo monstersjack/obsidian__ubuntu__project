@@ -137,11 +137,18 @@
 ## 6. 滤波器级联顺序
 
 ```
-直线跟随管道:
-  error → HampelFilter → SavitzkyGolayFilter → PIDController → 
-          FourthOrderLowpassFilter → SecondOrderSmoother → 角速度指令
+直线跟随管道（2026-10-12远程源码核对）:
+  X/Y → HampelFilter → 前瞻制导 → 航向误差 → PIDController →
+        角加速度限制 → 角速度HampelFilter → SecondOrderSmoother →
+        一阶低通 → 最终角速度限幅
+
+  X/Y的SavitzkyGolayFilter输出仅用于调试记录，不进入实时直线纠偏。
 
 RPP管道:
   α → SavitzkyGolayFilter → HampelFilter → ω_raw → 
       SecondOrderSmoother → ω_smoothed
 ```
+
+### 7. 直线纠偏实现与参数补充
+
+详见 [[直线跟随控制器与参数配置_纠偏机制详解]]。该补充依据2026年10月12日香橙派工作空间中的 `line_follow_controller.cpp` 与 `line.yaml`，说明当前制导方式、横向误差、PID、滤波、进线判断、喷墨质量门控和参数生效方式。当前直线控制不使用上文旧版管道所描述的四阶低通级联；其他控制器的级联顺序需分别核对其源码。
