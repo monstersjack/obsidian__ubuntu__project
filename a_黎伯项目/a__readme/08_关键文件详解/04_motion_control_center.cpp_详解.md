@@ -1,7 +1,13 @@
+---
+标题: 08-04 - motion_control_center.cpp 详解
+创建时间: 2026-10-07
+修改时间: 2026-10-13
+---
+
 # 08-04 - motion_control_center.cpp 详解
 
-> **完整路径**: `ros_pack/xline_base_controller/src/motion_control_center.cpp`  
-> **语言**: C++17  
+> **完整路径**: `ros_pack/xline_base_controller/src/motion_control_center.cpp`
+> **语言**: C++17
 > **重要性**: ★★★ (调度中枢)
 
 ---
