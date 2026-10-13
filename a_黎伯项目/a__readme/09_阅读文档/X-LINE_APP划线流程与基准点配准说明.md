@@ -315,3 +315,137 @@ sequenceDiagram
 4. 规划器输出的可执行点列和工作/转场属性才是运动控制器要消费的计划；原始 DXF JSON 不一定能直接执行。
 5. 完成软件 Action 不等于现场划线精度合格；最终还要核对轨迹、喷墨落点和实际误差。
 
+#### 2026年10月13日更新：图形包与8090命令统一英文化
+
+本次将香橙派 `/home/qingz/xline_ws4/xline_ws3/src/CAD_trajectory/trajectory_painter` 的Python标识符、中文模块文件名、命令行参数与形状枚举统一为英文，同时同步launch、单元测试和8090命令生成。中文界面标签、中文注释、提示信息与历史日志字段保留。原来的直线、圆、正方形、椭圆功能保留；没有借此修改运动算法、定位来源、速度上限或速度话题。
+
+| 形状 | 新命令值 |
+| --- | --- |
+| 直线 | `--shape line` |
+| 圆形 | `--shape circle` |
+| 正方形 | `--shape square` |
+| 椭圆形 | `--shape ellipse` |
+
+现有 `shape_painter` 提供24个自定义参数，另有 `--help` 和ROS参数。旧中文命令行参数不再作为正式入口；请将脚本中的旧参数替换为下表英文参数。网页旧页面请求的中文模式值由后端兼容转换，但网页实际生成的ROS命令始终为英文。
+
+| 参数作用 | 英文参数 | 直接运行时的默认值 |
+| --- | --- | --- |
+| 允许车辆运动 | `--authorize-motion` | 默认不允许，运动时须显式填写 |
+| 形状 | `--shape` | 必填：`line/circle/square/ellipse` |
+| 直线长度 | `--length` | `1.0 m` |
+| 圆半径 | `--radius` | `0.5 m` |
+| 正方形边长 | `--side-length` | `1.0 m` |
+| 椭圆长半轴 | `--major-axis` | `1.0 m` |
+| 椭圆短半轴 | `--minor-axis` | `0.5 m` |
+| 启用喷码 | `--enable-printer` | 默认关闭 |
+| 喷码间隔 | `--ink-interval` | `2.0 ms` |
+| 圈数 | `--laps` | `1` |
+| 请求线速度 | `--linear-speed` | `5.0 m/s`，实机必须按现场条件显式设置低速 |
+| 最大角速度 | `--max-angular-speed` | `0.30 rad/s` |
+| 正方形转角容差 | `--turn-tolerance` | `1.0°` |
+| 离散点间距 | `--point-spacing` | `0.02 m` |
+| 中间点容差 | `--point-tolerance` | `0.03 m` |
+| 终点容差 | `--goal-tolerance` | `0.005 m` |
+| 前视距离 | `--lookahead-distance` | `0.10 m` |
+| 喷头前向安装偏移 | `--printer-offset-x` | `0.1071 m` |
+| 顺时针 | `--clockwise` | 默认逆时针 |
+| 图形跟踪超时 | `--timeout` | `180 s` |
+| 控制频率 | `--frequency` | `30 Hz` |
+| 位姿超时 | `--pose-timeout` | `0.5 s` |
+| 等待准备超时 | `--readiness-timeout` | `30 s` |
+| 运动前定位稳定时间 | `--localization-stable-time` | `1.0 s` |
+
+##### 查看参数，不移动车辆
+
+```bash
+cd /home/qingz/xline_ws4/xline_ws3
+source /opt/ros/humble/setup.bash
+source /home/qingz/xline_ws4/xline_ws3/install/setup.bash
+export ROS_LOCALHOST_ONLY=1
+export ROS_DOMAIN_ID=0
+ros2 run trajectory_painter shape_painter --help
+ros2 run trajectory_painter motion_logger --help
+```
+
+##### 英文图形命令示例
+
+以下是会请求运动的正式命令示例，不是此次修改时已经执行的任务。先确认定位新鲜有效、仲裁人工复位和零速握手完成、唯一速度发布链路正常、现场安全，再执行。默认不启用喷码，需要喷墨时追加 `--enable-printer`。
+
+```bash
+# 直线：一米，使用原有路径反馈算法。
+ros2 run trajectory_painter shape_painter --shape line --length 1.0 --linear-speed 0.1 --max-angular-speed 0.2 --printer-offset-x 0.1071 --authorize-motion
+
+# 正方形：一米边长，保留原有路径反馈和转角逻辑。
+ros2 run trajectory_painter shape_painter --shape square --side-length 1.0 --linear-speed 0.1 --max-angular-speed 0.2 --printer-offset-x 0.1071 --authorize-motion
+
+# 圆：这里仍是车体参考点半径，不是完成喷头半径补偿的新开环算法。
+ros2 run trajectory_painter shape_painter --shape circle --radius 0.2 --linear-speed 0.05 --max-angular-speed 0.4 --authorize-motion
+
+# 椭圆：一米长半轴、半米短半轴，保留原有功能。
+ros2 run trajectory_painter shape_painter --shape ellipse --major-axis 1.0 --minor-axis 0.5 --linear-speed 0.1 --max-angular-speed 0.3 --authorize-motion
+```
+
+`--linear-speed`是本次统一后的线速度参数，不能用先前讨论中的拟议 `--speed`替代。此前讨论的 `open_loop_shapes`、`--control-mode open_loop`、`--radius-reference`和按时间开环新算法仍属方案，本次英文化没有实现这些入口，不要把它们写进现有执行命令。
+
+##### 实验三launch与8090网页
+
+launch参数原本多数已经是英文，现在形状值也改为英文。其生命周期仍是安全预检后启动本次底层系统，任务结束关闭该launch所属节点；现有共享运行时在线时，不要仅为查看参数就执行这个launch。
+
+```bash
+# 会启动实机任务，仅作为格式示例。
+ros2 launch trajectory_painter shape_painting_task.launch.py shape:=square side_length:=1.0 linear_speed:=0.1 max_angular_speed:=0.2 enable_printer:=false
+```
+
+8090中文下拉框仍显示“直线、正方形、圆形、转角”，提交值分别为 `line/square/circle/turn`。网页生成直线、正方形或圆形任务时使用英文参数；单独转角脚本使用 `--angle` 与 `--angular-speed`。椭圆仍由ROS入口使用，网页没有因此新增椭圆按钮。
+
+网页仍启动相对定位并执行以下重映射，未因重命名变成CAD融合定位控制：
+
+```text
+/robot_pose             → /drawing_console/pose
+/localization/valid     → /drawing_console/valid
+/tablet_cmd_vel         → /drawing_console/command
+```
+
+网页后端把 `/drawing_console/command`校验后转发到 `/tablet_cmd_vel`，再经唯一仲裁器发布 `/cmd_vel`。直接运行 `shape_painter`不带重映射时，仍订阅 `/robot_pose`、`/localization/valid`并发布 `/tablet_cmd_vel`；本次没有改成 `/task_cmd_vel`。CAD `ExecutePlan`任务的 `/task_cmd_vel`链路不受这次命名修改影响。
+
+##### 源码模块与记录器参数
+
+| 原源码名称 | 新源码名称/接口 | 说明 |
+| --- | --- | --- |
+| `喷墨棱镜TF.py` | `trajectory_painter/inkjet_prism_tf.py` | 命令入口仍为 `inkjet_prism_tf`；TF参数本来就是英文，保持不变 |
+| `小车运动数据记录.py` | `trajectory_painter/motion_logger.py` | 命令入口仍为 `motion_logger` |
+| 记录器 `--目录` | `--directory` | 输出目录 |
+| 记录器 `--频率` | `--frequency` | 采样频率，默认20 Hz |
+| 图形路径生成函数 | `generate_line_path`、`generate_circle_path`、`generate_square_path`、`generate_ellipse_path` | 算法保持不变 |
+| 路径跟踪/转角函数 | `track_path`、`turn_to_heading` | 算法保持不变 |
+
+重命名只统一调用接口，不代表解决了相对定位漂移、正方形前视越过转角索引或喷头角点连续性等问题。这些需要后续单独修改和验证，不能用重命名测试代替实际划线精度验收。
+
+##### 本次部署与无运动验证结果
+
+| 检查项 | 结果 |
+| --- | --- |
+| 只构建图形包 | `colcon build --base-paths src/CAD_trajectory/trajectory_painter --packages-select trajectory_painter --symlink-install`成功 |
+| 几何回归 | 800组计算结果与修改前完全一致 |
+| 已有单元测试 | 6项全部通过 |
+| 英文参数 | 24项参数解析及ROS重映射保留验证通过 |
+| 网页命令构造 | 新英文值和未刷新旧页面的中文值共8种输入验证通过 |
+| 网页服务 | 仅恢复8090服务；8080与8090均返回HTTP 200 |
+| 安全状态 | 没有启动划线任务、没有发送速度指令；8090控制仍关闭 |
+
+工作空间全目录扫描曾发现无关的 `Sim/ros2_ws/src/xline_motion_sim/setup.py`包含空字节；没有修改该仿真包。随后限定图形包目录构建成功，无此扫描错误。
+
+原源码已备份到远程目录：
+
+```text
+/home/qingz/xline_ws4/xline_ws3/a__doc/e_ChatGPT测试文件/参数英文化备份_20261013_9115e9d6/
+```
+
+其中 `原始源码.tar.gz`保留修改前的图形包和三个网页文件；旧中文模块及中文旧缓存也已移入该备份目录，没有丢弃。只读部署验证脚本为：
+
+```text
+/home/qingz/xline_ws4/xline_ws3/a__doc/e_ChatGPT测试文件/参数英文化只读验证_20261013.py
+```
+
+该脚本只导入模块、检查参数、构造预览命令和读取网页，不运行运动节点。刷新8090后，命令预览区即可显示新的英文命令。
+
