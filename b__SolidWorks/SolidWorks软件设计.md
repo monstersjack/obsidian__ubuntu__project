@@ -11,6 +11,10 @@
 
 ![[Pasted image 20261024001053.png]]
 
+
+### 1. 制作草图
+
+
 [00:04:33.281](jv://?url=https://www.bilibili.com/video/BV1wx5y6NEDv/?spm_id_from=333.788.player.switchyu26vd_source=ea35c10f59aa46851935d37df4345603yu26p=2&time=00:04:33.281)
 ![[Pasted image 20261024001345.png]]
 前视图xy面
@@ -22,6 +26,11 @@
 
 智能尺寸，能给线段定尺寸
 ![[Pasted image 20261024180600.png]]
+
+构造线，虚线
+![[Pasted image 20261024224509.png]]
+
+![[Pasted image 20261024224853.png]]
 
 
 # 装软件之后必须要的操作，
