@@ -37,10 +37,15 @@
 
 槽口命令
 
-
+镜像实体
 [00:32:32.280](jv://?url=https://www.bilibili.com/video/BV1wx5y6NEDv/?spm_id_from=333.1391.0.0yu26p=2yu26vd_source=ea35c10f59aa46851935d37df4345603&time=00:32:32.280)
 ![[Pasted image 20261024235545.png]]
 
+线性草图阵列
+![[Pasted image 20261025003050.png]]
+
+
+### 注意事项
 
 最重要的通过几何约束和尺寸约束进行调节
 圆弧一般通过裁剪，画而不是直接画出来
