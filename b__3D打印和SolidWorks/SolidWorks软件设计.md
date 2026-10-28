@@ -59,8 +59,16 @@
 最左边的就是端点约束，中间绿色的就是水平约束，让线水平。
 ![[Pasted image 20261025010734.png]]
 
+
+给一个倾斜角就能固定住线，让线没有办法移动
 ![[Pasted image 20261025011255.png]]
 ![[Pasted image 20261025011413.png]]
+
+
+多条线之间的约束
+[00:07:45.549](jv://?url=https://www.bilibili.com/video/BV1wx5y6NEDv/?spm_id_from=333.1391.0.0yu26p=3yu26vd_source=ea35c10f59aa46851935d37df4345603&time=00:07:45.549)
+![[Pasted image 20261028230909.png]]
+
 
 
 ### 注意事项
