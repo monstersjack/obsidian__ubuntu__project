@@ -11,7 +11,7 @@ SolidWorks学习笔记
 ![[Pasted image 20261031181837.png]]
 
 
-### 软件基础介绍
+### 界面介绍
 ![[Pasted image 20261031192746.png]]
 ![[Pasted image 20261031192013.png]]
 
@@ -40,6 +40,22 @@ SolidWorks学习笔记
 
 ![[Pasted image 20261031235415.png]]
 
+
+自定义属性
+
+![[Pasted image 20261101000816.png]]
+
+视图对应的按键就是这个
+![[Pasted image 20261101001253.png]]
+
+
+窗口设置平铺或者什么的就能看见多个零件
+
+alt+tab就能借还
+
+
+[00:03:34.721](jv://?url=https://www.bilibili.com/video/BV1gYjEzhEZ4/?spm_id_from=333.788.player.switchyu26vd_source=ea35c10f59aa46851935d37df4345603yu26p=5&time=00:03:34.721)
+![[Pasted image 20261101001612.png]]
 
 ### 1. 制作草图
 
