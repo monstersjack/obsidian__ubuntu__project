@@ -10,6 +10,10 @@ SolidWorks学习笔记
 
 ![[Pasted image 20261031181837.png]]
 
+
+### 软件基础介绍
+![[Pasted image 20261031192746.png]]
+![[Pasted image 20261031192013.png]]
 ![[Pasted image 20261023235618.png]]
 
 选项卡后面可以用到的工具
