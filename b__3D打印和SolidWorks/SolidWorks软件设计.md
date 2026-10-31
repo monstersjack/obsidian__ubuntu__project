@@ -155,6 +155,11 @@ SolidWorks学习笔记
 长按S键，就会有，快捷方式栏
 ![[Pasted image 20261031233501.png]]
 ![[Pasted image 20261031233524.png]]
+
+
+### 图标解析
+
+![[Pasted image 20261031234150.png]]
 # 装软件之后必须要的操作，
 
 
