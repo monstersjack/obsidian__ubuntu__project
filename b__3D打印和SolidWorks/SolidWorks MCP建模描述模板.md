@@ -1,6 +1,9 @@
 ### SolidWorks MCP 建模描述模板
 
-项目地址：[solidworks-automation-skill](https://github.com/wzyn20051216/solidworks-automation-skill)
+项目地址：
+
+- [solidworks-automation-skill](https://github.com/wzyn20051216/solidworks-automation-skill)
+- [codex_to_solidworks](https://github.com/jianjwu/codex_to_solidworks)
 
 MCP 安装目录：`C:\aaa_software\aaa_program-self\SolidWorksMCP`
 
