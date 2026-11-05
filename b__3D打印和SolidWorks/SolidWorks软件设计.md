@@ -53,6 +53,18 @@ Ctrl+tab就能切换视图窗口
 [00:03:34.721](jv://?url=https://www.bilibili.com/video/BV1gYjEzhEZ4/?spm_id_from=333.788.player.switchyu26vd_source=ea35c10f59aa46851935d37df4345603yu26p=5&time=00:03:34.721)
 ![[Pasted image 20261101001612.png]]
 
+生成工程图
+![[Pasted image 20261105185105.png]]
+
+![[Pasted image 20261105185222.png]]
+
+自动调取所有的零件，因为有时候导入的零件是散着在各种盘的，还可以加上工程图
+
+前缀上加入一个名字做一个区分
+![[Pasted image 20261105185638.png]]
+
+
+
 ### 1. 制作草图
 
 
