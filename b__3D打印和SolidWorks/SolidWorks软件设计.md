@@ -63,6 +63,199 @@ Ctrl+tab就能切换视图窗口
 前缀上加入一个名字做一个区分
 ![[Pasted image 20261105185638.png]]
 
+### Codex 或豆包通过 SolidWorks MCP 生成模型
+
+#### 最推荐的固定开头
+
+以后让 Codex 或豆包通过 MCP 生成 SolidWorks 模型时，固定使用下面这段开头：
+
+```text
+通过 SolidWorks MCP 执行以下建模任务。
+先检查连接和实际版本。
+新建独立文档，不修改当前打开的文档。
+使用 SolidWorks 原生、可编辑特征完成建模。
+完成后重建、保存、回读关键尺寸，并返回文件路径和验证结果。
+然后按照下面的模型要求执行：
+```
+
+这段固定开头解决了几个常见问题：
+
+| 固定要求 | 作用 |
+|---|---|
+| 通过 SolidWorks MCP | 明确使用 MCP 工具链，不让 Agent 只写一段未执行的 Python 代码 |
+| 先检查连接和实际版本 | 确认 SolidWorks 正在运行，并识别实际 API 版本 |
+| 新建独立文档 | 防止误修改当前打开的零件或装配体 |
+| 原生、可编辑特征 | 要求生成草图、拉伸、孔、圆角等特征树，而不是只生成图片或网格 |
+| 重建、保存、回读 | 验证模型确实生成，尺寸也确实符合要求 |
+| 返回文件路径和验证结果 | 方便找到产物，也能区分“工具调用成功”和“模型真的完成” |
+
+#### 通用建模描述模板
+
+将固定开头后面的内容替换成具体需求：
+
+```text
+通过 SolidWorks MCP 执行以下建模任务。
+先检查连接和实际版本。
+新建独立文档，不修改当前打开的文档。
+使用 SolidWorks 原生、可编辑特征完成建模。
+完成后重建、保存、回读关键尺寸，并返回文件路径和验证结果。
+然后按照下面的模型要求执行：
+
+模型类型：零件 / 装配体 / 工程图
+模型名称：
+单位：mm
+材料：默认 / 指定材料
+几何形状：
+关键尺寸：
+- 长度：
+- 宽度：
+- 高度或厚度：
+- 直径：
+- 半径：
+- 角度：
+- 孔数量和孔距：
+建模顺序：
+1. 
+2. 
+3. 
+保存路径：
+输出格式：SLDPRT / SLDASM / SLDDRW / STEP / PDF
+验证要求：
+- 回读哪些尺寸：
+- 检查哪些特征：
+- 是否导出预览：是 / 否
+- 是否覆盖已有文件：否，必须使用新文件名
+```
+
+#### 圆柱示例
+
+```text
+通过 SolidWorks MCP 执行以下建模任务。
+先检查连接和实际版本。
+新建独立文档，不修改当前打开的文档。
+使用 SolidWorks 原生、可编辑特征完成建模。
+完成后重建、保存、回读关键尺寸，并返回文件路径和验证结果。
+然后按照下面的模型要求执行：
+
+创建一个圆柱零件：
+- 直径：50 mm
+- 厚度：20 mm
+- 单位：mm
+- 保存为新的 SLDPRT 文件
+- 保存路径：
+  C:\aaa_software\aaa_program-self\SolidWorksMCP\output\cylinder_d50_h20.SLDPRT
+
+验证：
+- 回读圆柱直径和厚度
+- 检查重建错误和警告
+- 确认文件真实存在
+- 返回文件路径、文件大小和验证结果
+```
+
+#### 齿轮示例
+
+```text
+通过 SolidWorks MCP 执行以下建模任务。
+先检查连接和实际版本。
+新建独立文档，不修改当前打开的文档。
+使用 SolidWorks 原生、可编辑特征完成建模。
+完成后重建、保存、回读关键尺寸，并返回文件路径和验证结果。
+然后按照下面的模型要求执行：
+
+创建一个标准渐开线直齿轮：
+- 模数：2 mm
+- 齿数：20
+- 压力角：20 degree
+- 齿宽：10 mm
+- 单位：mm
+- 保存路径：
+  C:\aaa_software\aaa_program-self\SolidWorksMCP\output\gear_m2_z20.SLDPRT
+
+建模要求：
+1. 根据模数、齿数和压力角计算渐开线齿廓。
+2. 创建闭合的 SolidWorks 草图轮廓。
+3. 使用原生拉伸特征生成实体。
+4. 重建后检查是否存在错误。
+5. 回读齿数、外径和齿宽。
+6. 返回 SLDPRT 路径和验证结果。
+```
+
+#### SolidWorks MCP 的实际执行原理
+
+Codex 或豆包负责理解需求并选择 MCP 工具，SolidWorks MCP Server 负责把工具调用转交给 Python，Python 再通过 SolidWorks 官方 COM 接口连接本机 SolidWorks。真正创建草图、特征和实体的是 SolidWorks API。
+
+```mermaid
+sequenceDiagram
+    participant U as 用户
+    participant C as Codex 或豆包
+    participant M as MCP Server
+    participant P as Python 执行层
+    participant S as SolidWorks
+    participant F as 模型文件
+
+    U->>C: 描述零件需求
+    C->>M: 查找并调用建模工具
+    M->>P: 校验参数并执行工具
+    P->>S: 通过官方 COM 接口调用 API
+    S-->>P: 返回特征、重建状态和文档状态
+    P->>S: 回读尺寸、实体和活动文档
+    S->>F: 保存 SLDPRT、SLDASM 或 SLDDRW
+    P-->>M: 返回路径和验证结果
+    M-->>C: 返回结构化结果
+    C-->>U: 汇报模型完成情况
+```
+
+#### 你电脑上的实际链路
+
+| 层级 | 当前实现 |
+|---|---|
+| Agent | Codex 或支持 MCP 的豆包客户端 |
+| MCP Server | `C:\aaa_software\aaa_program-self\SolidWorksMCP\mcp-server\server.py` |
+| Python | `C:\aaa_software\aaa_program-self\SolidWorksMCP\.venv\Scripts\python.exe` |
+| COM 库 | `pywin32`、`comtypes`、SolidWorks 类型库 |
+| CAD 软件 | SolidWorks 2025 |
+| 输出目录 | `C:\aaa_software\aaa_program-self\SolidWorksMCP\output` |
+
+#### 描述模型时必须写清楚
+
+| 内容 | 示例 |
+|---|---|
+| 操作对象 | 新建零件、修改零件、创建装配体 |
+| 文档保护 | 不修改当前打开的文档 |
+| 几何形状 | 圆柱、齿轮、支架、法兰 |
+| 关键尺寸 | 长度、厚度、直径、孔距、角度 |
+| 单位 | mm、degree |
+| 建模方式 | 原生草图、拉伸、旋转、孔、圆角、装配配合 |
+| 保存路径 | 使用绝对路径 |
+| 输出格式 | SLDPRT、SLDASM、SLDDRW、STEP、PDF |
+| 验证要求 | 重建、回读尺寸、检查错误和文件存在性 |
+| 覆盖策略 | 不覆盖已有文件，使用新文件名 |
+
+#### 不推荐的简略说法
+
+```text
+帮我画一个支架。
+```
+
+这句话缺少尺寸、单位、特征顺序、保存位置和验证要求。推荐改成：
+
+```text
+通过 SolidWorks MCP 执行以下建模任务。
+先检查连接和实际版本。
+新建独立文档，不修改当前打开的文档。
+使用 SolidWorks 原生、可编辑特征完成建模。
+完成后重建、保存、回读关键尺寸，并返回文件路径和验证结果。
+然后创建一个支架零件：
+- 底板：100 × 60 × 8 mm
+- 两侧立板：厚度 8 mm，高度 50 mm
+- 两侧立板间距：40 mm
+- 顶部通孔：直径 20 mm
+- 单位：mm
+- 保存为新的 SLDPRT 文件
+- 不覆盖已有文件
+- 返回主要尺寸和验证结果
+```
+
 
 
 ### 1. 制作草图
