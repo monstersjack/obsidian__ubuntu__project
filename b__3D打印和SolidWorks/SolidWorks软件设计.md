@@ -48,6 +48,9 @@ SolidWorks学习笔记
 窗口设置平铺或者什么的就能看见多个零件
 
 Ctrl+tab就能切换视图窗口
+多窗口
+![[Pasted image 20261106214602.png]]
+![[Pasted image 20261106214638.png]]
 
 
 [00:03:34.721](jv://?url=https://www.bilibili.com/video/BV1gYjEzhEZ4/?spm_id_from=333.788.player.switchyu26vd_source=ea35c10f59aa46851935d37df4345603yu26p=5&time=00:03:34.721)
