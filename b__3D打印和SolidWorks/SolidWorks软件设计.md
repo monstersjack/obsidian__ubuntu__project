@@ -74,6 +74,18 @@ Ctrl+tab就能切换视图窗口
 
 ## 第一章___知识库讲解
 
+- 零件：**Part**，文件后缀是`.sldprt`（就是 SolidWorks Part 的缩写）
+- 装配体：**Assembly**，文件后缀是`.sldasm`（就是 SolidWorks Assembly 的缩写）
+- 工程图：**Drawing**，文件后缀是`.slddrw`。
+
+
+| 文件后缀 | 是什么东西 | 干嘛用的 |
+|---|---|---|
+| .prtdot | 零件模板（Part Template） | 你新建零件时选的那个"国标空白零件"——选它新建零件，自动带好毫米单位、默认基准面、标题栏设置，不用每次新建都重新调参数 |
+| .asmdot | 装配体模板（Assembly Template） | 你新建装配体时选的空白装配模板，选它新建总装，自动带好国标装配的默认设置 |
+| .prtprp | 自定义属性模板（Part Property Template） | 就是之前你打开文件弹黄色警告找不到的那个属性页模板——选它新建零件，自动就带好填零件名、材料、图号的属性栏，不会再弹"找不到属性页"的报错 |
+
+
 
 ### SolidWorks导出格式速查
 
@@ -256,6 +268,8 @@ Ctrl+tab就能切换视图窗口
 
 ![[Pasted image 20261025004951.png]]
 
+改字体
+![[Pasted image 20261107001831.png]]
 
 ## 问题
 
