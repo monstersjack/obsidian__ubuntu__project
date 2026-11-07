@@ -7,6 +7,10 @@
 SolidWorks学习笔记
 [【全748集】目前B站最全最细的solidworks零基础全套教程，2025最新版，包含所有干货！七天就能从小白到大神！少走99%的弯路！存下吧！很难找全的！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gYjEzhEZ4/?spm_id_from=333.1387.favlist.content.click&vd_source=ea35c10f59aa46851935d37df4345603)
 
+### SolidWorks 格式标准件的网址
+
+1. 沐风网：[https://www.mfcad.com](https://www.mfcad.com)
+2. TraceParts（全球标准件库）：[https://www.traceparts.com/zh](https://www.traceparts.com/zh)
 
 ![[Pasted image 20261031181837.png]]
 
@@ -285,6 +289,17 @@ Ctrl+tab就能切换视图窗口
 ## 第二章____特征命令
 
 ![[Pasted image 20261107213451.png]]
+
+拉伸基体
+
+薄壁向外
+![[Pasted image 20261107215543.png]]
+
+
+拔模
+
+![[Pasted image 20261107215717.png]]
+![[Pasted image 20261107215734.png]]
 
 
 
