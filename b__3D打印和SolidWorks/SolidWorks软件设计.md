@@ -143,6 +143,9 @@ Ctrl+tab就能切换视图窗口
 ![[Pasted image 20261107161017.png]]
 
 
+
+草图绘制要先选基准面
+
 [00:04:33.281](jv://?url=https://www.bilibili.com/video/BV1wx5y6NEDv/?spm_id_from=333.788.player.switchyu26vd_source=ea35c10f59aa46851935d37df4345603yu26p=2&time=00:04:33.281)
 ![[Pasted image 20261024001345.png]]
 前视图xy面
