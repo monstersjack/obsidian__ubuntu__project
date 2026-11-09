@@ -378,6 +378,16 @@ Ctrl+tab就能切换视图窗口
 ![[Pasted image 20261110002530.png]]
 ![[Pasted image 20261110002701.png]]
 
+#### 圆角
+![[Pasted image 20261110002851.png]]
+
+![[Pasted image 20261110002906.png]]
+
+倒角
+![[Pasted image 20261110003030.png]]
+
+![[Pasted image 20261110003035.png]]
+
 
 ## 重点
 
