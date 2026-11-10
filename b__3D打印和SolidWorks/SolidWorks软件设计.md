@@ -7,6 +7,12 @@
 SolidWorks学习笔记
 [【全748集】目前B站最全最细的solidworks零基础全套教程，2025最新版，包含所有干货！七天就能从小白到大神！少走99%的弯路！存下吧！很难找全的！\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gYjEzhEZ4/?spm_id_from=333.1387.favlist.content.click&vd_source=ea35c10f59aa46851935d37df4345603)
 
+
+
+特征和实体，还有草图，
+![[Pasted image 20261111012444.png]]
+
+
 ### SolidWorks 格式标准件的网址
 
 1. 沐风网：[https://www.mfcad.com](https://www.mfcad.com)
@@ -419,6 +425,42 @@ Ctrl+tab就能切换视图窗口
 ![[Pasted image 20261111002356.png]]
 
 #### 曲线驱动阵列
+
+在曲线上的，特征按照格式生成
+
+### 特征命令三____直接编辑
+
+直接移动面
+![[Pasted image 20261111011859.png]]
+
+#### 移动复制实体
+![[Pasted image 20261111011951.png]]
+
+##### 还可以编辑实体的位置，约束实体的位置，
+选择实体
+![[Pasted image 20261111012121.png]]
+![[Pasted image 20261111012201.png]]
+
+
+#### 分割和组合
+多个实体组合或者分割出来
+![[Pasted image 20261111012327.png]]
+
+
+分割
+![[Pasted image 20261111012359.png]]
+
+
+## 第三章__零件实际建模笔记
+
+
+![[Pasted image 20261111012706.png]]
+[零件建模篇：SolidWorks零件建模案例讲解（1）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gYjEzhEZ4/?spm_id_from=333.788.player.switch&vd_source=ea35c10f59aa46851935d37df4345603&p=18)
+
+
+
+
+
 
 
 
