@@ -454,12 +454,12 @@ Ctrl+tab就能切换视图窗口
 ## 第三章__零件实际建模笔记
 
 
-![[Pasted image 20261111012706.png]]
+![[Pasted image 20261111012706.png|1303]]
 [零件建模篇：SolidWorks零件建模案例讲解（1）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gYjEzhEZ4/?spm_id_from=333.788.player.switch&vd_source=ea35c10f59aa46851935d37df4345603&p=18)
 
 弯管先扫描
 
-
+1. 先建三维草图
 
 
 
