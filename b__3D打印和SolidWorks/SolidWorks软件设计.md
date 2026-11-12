@@ -146,7 +146,18 @@ Ctrl+tab就能切换视图窗口
 | STP文件  | 通用3D交换格式，发给任何3D软件都能打开，不挑软件                  |
 
 ## 标准
+![[Pasted image 20261030232840.png]]
+左上角视图 = 前视（正视图）
+右上角视图 = 右视（侧视图）
+左下角视图 = 上视（俯视图，从上面往下看）
+![[Pasted image 20261030233339.png]]
+![[Pasted image 20261030233148.png]]
+![[Pasted image 20261030233408.png]]
+前视图xy面
+上视图xz面
+右视图zy面
 
+![[Pasted image 20261024001634.png]]
 
 
 ## 第二章___制作平面草图
@@ -161,11 +172,6 @@ Ctrl+tab就能切换视图窗口
 
 [00:04:33.281](jv://?url=https://www.bilibili.com/video/BV1wx5y6NEDv/?spm_id_from=333.788.player.switchyu26vd_source=ea35c10f59aa46851935d37df4345603yu26p=2&time=00:04:33.281)
 ![[Pasted image 20261024001345.png]]
-前视图xy面
-上视图xz面
-右视图zy面
-
-![[Pasted image 20261024001634.png]]
 
 #### 智能尺寸
 智能尺寸，能给线段定尺寸，放手的位置就是数字最终落点的位置。
@@ -317,13 +323,7 @@ Ctrl+tab就能切换视图窗口
 ![[Pasted image 20261029000219.png]]
 
 #### 练习题2
-![[Pasted image 20261030232840.png]]
-左上角视图 = 前视（正视图）
-右上角视图 = 右视（侧视图）
-左下角视图 = 上视（俯视图，从上面往下看）
-![[Pasted image 20261030233339.png]]
-![[Pasted image 20261030233148.png]]
-![[Pasted image 20261030233408.png]]
+
 
 中间的矩形可以用中间矩形绘制出来
 可以选中面然后进行拉伸
@@ -337,8 +337,7 @@ Ctrl+tab就能切换视图窗口
 ## 第二章____特征命令
 
 ![[Pasted image 20261107213451.png]]
-![[Pasted image 20261112222824.png]]
-
+![[Pasted image 20261113014522.png]]
 凸台还有切除的特征
 ![[Pasted image 20261107223013.png]]
 
@@ -401,6 +400,11 @@ Ctrl+tab就能切换视图窗口
 旋转凹凸基体
 ![[Pasted image 20261107223631.png]]
 
+
+#### 边界凸台和边界切除，类似于，放养
+![[Pasted image 20261113013815.png]]
+
+
 #### 异型孔向导
 
 ![[Pasted image 20261108000411.png]]
@@ -440,6 +444,9 @@ Ctrl+tab就能切换视图窗口
 
 #### 筋
 
+
+![[Pasted image 20261113014426.png]]
+
 ![[Pasted image 20261110001916.png]]
 ![[Pasted image 20261110001951.png]]
 
@@ -448,6 +455,7 @@ Ctrl+tab就能切换视图窗口
 
 ![[Pasted image 20261110002220.png]]
 ![[Pasted image 20261110002225.png]]
+![[Pasted image 20261113014657.png]]
 
 #### 镜像
 可以选择特征镜像，也可以选择实体镜像
@@ -460,6 +468,8 @@ Ctrl+tab就能切换视图窗口
 ![[Pasted image 20261110002906.png]]
 
 ![[Pasted image 20261111022532.png]]
+、
+![[Pasted image 20261113014322.png]]
 
 
 倒角
