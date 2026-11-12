@@ -11,8 +11,13 @@ SolidWorks学习笔记
 
 特征和实体，还有草图，
 ![[Pasted image 20261111012444.png]]
+零件模型参考网址
 
+[迪威模型](https://www.3dwhere.com/modelslist/Solidworks)
 
+[沐风网-](https://www.mfcad.com/index.html)
+
+[懒石网](https://www.lazystones.com/)
 ### SolidWorks 格式标准件的网址
 
 1. 沐风网：[https://www.mfcad.com](https://www.mfcad.com)
@@ -503,6 +508,13 @@ Ctrl+tab就能切换视图窗口
 
 新建转配体之后加入零件，然后配合，设置零件的各个装配体的位置，
 ![[Pasted image 20261111223350.png]]
+
+
+
+
+
+
+
 
 ## 重点
 
