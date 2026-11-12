@@ -386,7 +386,7 @@ Ctrl+tab就能切换视图窗口
 
 
 拔模
-
+一个草图对外就行偏
 ![[Pasted image 20261107215717.png]]
 ![[Pasted image 20261107215734.png]]
 
