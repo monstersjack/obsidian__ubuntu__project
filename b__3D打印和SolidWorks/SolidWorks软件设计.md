@@ -922,14 +922,32 @@ Ctrl+tab就能切换视图窗口
 
 
 #### 剪裁延伸
+![[Pasted image 20261113235759.png]]
+
+穿过去了，没有对齐
+让他延伸到一个面
+![[Pasted image 20261113235738.png]]
+![[Pasted image 20261113235739.png]]
+
 
 #### 顶端盖
 
+![[Pasted image 20261113235937.png]]
+
 #### 角撑板
+焊接里面的加强筋
+![[Pasted image 20261114000126.png]]
 
 #### 焊缝
+生成焊缝
+![[Pasted image 20261114000234.png]]
+![[Pasted image 20261114000302.png]]
 
 #### 焊件切割清单
+
+生成结果请按![[Pasted image 20261114000438.png]]
+![[Pasted image 20261114000459.png]]
+
 
 #### 多保存实体
 
