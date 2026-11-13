@@ -681,20 +681,22 @@ Ctrl+tab就能切换视图窗口
 ![[Pasted image 20261113033623.png]]
 ![[Pasted image 20261111005630.png]]
 
+### 曲线的体征平面建立
+![[Pasted image 20261113222308.png]]
 
 #### 分割线
 ![[Pasted image 20261113211530.png]]
 
-轮廓 
+##### 轮廓 
 ![[Pasted image 20261113211621.png]]
 在面上按照分割线的平面分割分割体
 
-投影
+##### 投影
 草图上的线分割面
 ![[Pasted image 20261113211833.png]]
 ![[Pasted image 20261113211842.png]]
 
-交叉点
+##### 交叉点
 实体的交叉点分割实体，分割出面，也可以用曲面进行分割
 ![[Pasted image 20261113212015.png]]
 ![[Pasted image 20261113212024.png]]
@@ -705,9 +707,23 @@ Ctrl+tab就能切换视图窗口
 线投影到曲面的面上
 ![[Pasted image 20261113214349.png]]
 
-组合曲线
+#### 组合曲线
 多个不同的曲线组合在一起方便一些。
 ![[Pasted image 20261113214828.png]]
+
+#### 通过xyz建立曲线
+![[Pasted image 20261113222453.png]]
+![[Pasted image 20261113222502.png]]
+
+参考点曲线
+![[Pasted image 20261113222544.png]]
+![[Pasted image 20261113222604.png]]
+![[Pasted image 20261113222616.png]]
+
+螺旋线涡状线
+![[Pasted image 20261113222759.png]]
+
+![[Pasted image 20261113222749.png]]
 
 
 ## 第五章__曲面建模
