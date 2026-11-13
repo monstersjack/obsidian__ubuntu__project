@@ -911,6 +911,8 @@ Ctrl+tab就能切换视图窗口
 ![[Pasted image 20261113211125.png]]
 ![[Pasted image 20261113211129.png]]
 
+## 第六章___焊件的创建
+
 
 
 
