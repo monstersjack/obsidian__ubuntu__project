@@ -1020,12 +1020,16 @@ Ctrl+tab就能切换视图窗口
 
 
 #### 斜接法兰
-
+相当于扫描
 ![[Pasted image 20261115002226.png]]
+![[Pasted image 20261115010233.png]]
+![[Pasted image 20261115010256.png]]
 
 
 #### 边角
-
+![[Pasted image 20261115010512.png]]
+![[Pasted image 20261115010433.png]]
+![[Pasted image 20261115010454.png]]
 
 
 #### 通风口
