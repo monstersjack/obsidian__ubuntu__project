@@ -1028,11 +1028,29 @@ Ctrl+tab就能切换视图窗口
 
 #### 边角
 ![[Pasted image 20261115010512.png]]
+
+闭合角
 ![[Pasted image 20261115010433.png]]
 ![[Pasted image 20261115010454.png]]
 
 
+焊接角
+![[Pasted image 20261115012724.png]]
+![[Pasted image 20261115012734.png]]
+
+
+断裂边角
+![[Pasted image 20261115012754.png]]
+
+
+边角释放槽
+![[Pasted image 20261115012850.png]]
+
+
 #### 通风口
+
+
+![[Pasted image 20261115012934.png]]
 
 
 
