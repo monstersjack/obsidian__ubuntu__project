@@ -1010,6 +1010,12 @@ Ctrl+tab就能切换视图窗口
 
 #### 边线法兰
 
+![[Pasted image 20261115000148.png]]
+![[Pasted image 20261115000248.png]]
+
+编辑释放槽
+![[Pasted image 20261115000505.png]]
+![[Pasted image 20261115000511.png]]
 
 
 #### 斜接法兰
