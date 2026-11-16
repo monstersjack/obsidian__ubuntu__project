@@ -1,9 +1,14 @@
 {
   "pluginList": [
+    "mtymek/opencode-obsidian",
     "quorafind/outliner.md",
     "Yaozhuwa/AttachFlow"
   ],
   "pluginSubListFrozenVersion": [
+    {
+      "repo": "mtymek/opencode-obsidian",
+      "version": "v0.2.1"
+    },
     {
       "repo": "quorafind/outliner.md",
       "version": "latest"
