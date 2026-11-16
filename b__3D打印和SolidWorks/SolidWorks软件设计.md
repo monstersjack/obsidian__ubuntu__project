@@ -1350,6 +1350,41 @@ Ctrl+tab就能切换视图窗口
 ![[Pasted image 20261116235842.png]]
 
 ![[Pasted image 20261116235921.png]]
+一个一个步骤配，
+![[Pasted image 20261117000009.png]]
+这个控制移动距离
+![[Pasted image 20261117000047.png]]
+
+![[Pasted image 20261117000113.png]]
+
+然后，右键爆炸演示，就能演示
+
+#### 干涉检查
+
+![[Pasted image 20261117000335.png]]
+
+
+选择了两个零部件，然后就检查
+![[Pasted image 20261117000428.png]]
+
+![[Pasted image 20261117000627.png]]
+
+#### 间隙验证
+
+右下角可以看见垂直距离
+![[Pasted image 20261117000751.png]]
+
+![[Pasted image 20261117000912.png]]
+计算面与面之间或者实体之间的距离
+![[Pasted image 20261117001045.png]]
+![[Pasted image 20261117001051.png]]
+
+#### 孔对齐
+
+![[Pasted image 20261117001158.png]]![[Pasted image 20261117001210.png]]
+![[Pasted image 20261117001213.png]]
+得到四个孔的误差
+
 
 
 
@@ -1371,6 +1406,8 @@ Ctrl+tab就能切换视图窗口
 可以去其他插件里面调取出来，（怡合达）
 ![[Pasted image 20261116212502.png]]
 
+按住键盘的Ctrl再拖动零件就能复制零件
+![[Pasted image 20261117000547.png]]
 
 
 ## 重点
