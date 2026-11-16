@@ -1090,6 +1090,8 @@ Ctrl+tab就能切换视图窗口
 
 ## 第八章__装配体设计
 ![[Pasted image 20261112203257.png]]
+![[Pasted image 20261116234548.png]]
+
 
 ![[Pasted image 20261115154400.png]]
 新建转配体之后加入零件，然后配合，设置零件的各个装配体的位置，
@@ -1308,16 +1310,46 @@ Ctrl+tab就能切换视图窗口
 ![[Pasted image 20261116234349.png]]
 使之独立，让他不会再受前一个软件牵连
 
+
+### 装配体命令___孔
+![[Pasted image 20261116234816.png]]
+
+#### 孔
+![[Pasted image 20261116234848.png]]
+![[Pasted image 20261116234908.png]]
+![[Pasted image 20261116234912.png]]
+![[Pasted image 20261116234940.png]]
+![[Pasted image 20261116234953.png]]
+
+![[Pasted image 20261116235026.png]]
+中间的过孔有问题
+
 #### 皮带，链
 
+![[Pasted image 20261116235131.png]]
+![[Pasted image 20261116235159.png]]
+![[Pasted image 20261116235337.png]]
+![[Pasted image 20261116235405.png]]
+![[Pasted image 20261116235448.png]]
+可以通诺编辑这个零件就能获取皮带的样式
+
+![[Pasted image 20261116235533.png]]
+
+![[Pasted image 20261116235600.png]]
 
 
 #### 材料明细表
+![[Pasted image 20261116235632.png]]![[Pasted image 20261116235639.png]]
+![[Pasted image 20261116235646.png]]
 
 
 
 #### 爆炸视图
 
+![[Pasted image 20261116235751.png]]
+![[Pasted image 20261116235842.png]]
+
+![[Pasted image 20261116235921.png]]
 
 
 
